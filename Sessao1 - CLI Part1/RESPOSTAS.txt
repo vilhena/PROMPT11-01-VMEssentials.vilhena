@@ -1,0 +1,51 @@
+1
+a)
+assembly dependentes:
+	- mscorlib (unico com extern)
+versao:
+	- ver 1:0:0:0
+tipo:
+	- .module p.dll
+constituicao da classe:
+	- Ponto
+	- _x inteiro
+	- _y inteiro
+	- construtor vazio
+	- construtur com dois inteiros
+	- funcao 
+	
+
+//Funcao Distance que recebe como parametro um ponto e retorna um inteiro	
+.method public hidebysig instance int32  Distance(class Sessao1.Ponto p1) cil managed
+{
+  // Code size       43 (0x2b)
+  .maxstack  3
+  .locals init (int32 V_0,
+           int32 V_1)
+  IL_0000:  ldarg.1								// load do argumento 1 p1
+  IL_0001:  ldfld      int32 Sessao1.Ponto::_x 	// chama o metodo de get sobre o p1
+  IL_0006:  ldarg.0								// load da propria objecto (this)
+  IL_0007:  ldfld      int32 Sessao1.Ponto::_x	// chama o metodo de get sobre o (this)
+  IL_000c:  sub									// p1._x - this._x
+  IL_000d:  stloc.0								// guartar na variavel local V_0
+  IL_000e:  ldarg.1								// load do argumento 1 p1
+  IL_000f:  ldfld      int32 Sessao1.Ponto::_y	// load do valor da variavel _y da classe 
+  IL_0014:  ldarg.0								// igual para this
+  IL_0015:  ldfld      int32 Sessao1.Ponto::_y	// igual para this
+  IL_001a:  sub									// subtrai
+  IL_001b:  stloc.1								// guardar o valor na variavel local V_1
+  IL_001c:  ldloc.0								// le o valor de V_0
+  IL_001d:  ldloc.0								// le o valor de V_0
+  IL_001e:  mul									// V_0 * V_0
+  IL_001f:  ldloc.1								// le o valor de V_1
+  IL_0020:  ldloc.1								// le o valor de V_1
+  IL_0021:  mul									// V_1 * V_1
+  IL_0022:  add									// soma os resultados ( funcao final ---
+  IL_0023:  conv.r8								// converter os dados do topo da stack para float 64 
+  IL_0024:  call       float64 [mscorlib]System.Math::Sqrt(float64)
+  IL_0029:  conv.i4								// converter os dados do topo da stak para int32
+  IL_002a:  ret									// retorno
+} // end of method Ponto::Distance
+
+
+	
