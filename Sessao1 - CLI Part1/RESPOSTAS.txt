@@ -40,12 +40,17 @@ constituicao da classe:
   IL_001f:  ldloc.1								// le o valor de V_1
   IL_0020:  ldloc.1								// le o valor de V_1
   IL_0021:  mul									// V_1 * V_1
-  IL_0022:  add									// soma os resultados ( funcao final ---
+  IL_0022:  add									// soma os resultados ( funcao final --- (p1._x -this._x)^2 + (p1._y -this._y)^2
   IL_0023:  conv.r8								// converter os dados do topo da stack para float 64 
-  IL_0024:  call       float64 [mscorlib]System.Math::Sqrt(float64)
+  IL_0024:  call       float64 [mscorlib]System.Math::Sqrt(float64) // raiz quadrada
   IL_0029:  conv.i4								// converter os dados do topo da stak para int32
   IL_002a:  ret									// retorno
 } // end of method Ponto::Distance
 
+2
+A)
+ok	
 
+3
+a)
 	
