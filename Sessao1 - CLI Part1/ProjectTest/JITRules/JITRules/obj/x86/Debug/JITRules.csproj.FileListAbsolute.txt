@@ -1,0 +1,5 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao1 - CLI Part1\ProjectTest\JITRules\JITRules\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao1 - CLI Part1\ProjectTest\JITRules\JITRules\bin\Debug\JITRules.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao1 - CLI Part1\ProjectTest\JITRules\JITRules\bin\Debug\JITRules.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao1 - CLI Part1\ProjectTest\JITRules\JITRules\obj\x86\Debug\JITRules.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao1 - CLI Part1\ProjectTest\JITRules\JITRules\obj\x86\Debug\JITRules.pdb
