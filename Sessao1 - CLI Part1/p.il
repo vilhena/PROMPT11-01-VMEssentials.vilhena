@@ -111,9 +111,10 @@
     IL_0021:  mul
     IL_0022:  add
     IL_0023:  conv.r8
-    IL_0024:  call       float64 [mscorlib]System.Math::Sqrt(float64)
-    IL_0029:  conv.i4
-    IL_002a:  ret
+call float64 [mscorlib]System.Math::Sqrt(float64)
+pop
+ldstr "aaaa"
+ret
   } // end of method Ponto::Distance
 
   .method public hidebysig virtual instance string 

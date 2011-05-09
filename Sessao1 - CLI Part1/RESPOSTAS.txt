@@ -53,4 +53,14 @@ ok
 
 3
 a)
+
+
+
+
+[IL]: Error: [C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.
+ena\Sessao1 - CLI Part1\p.dll : Sessao1.Ponto::Distance][offset 0x0000002F][
+d ref 'System.String'][expected Int32] Unexpected type on the stack.
+1 Error(s) Verifying p.dll
+
+
 	
