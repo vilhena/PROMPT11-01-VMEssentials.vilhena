@@ -16,7 +16,9 @@ namespace ReflectApp
             
             PID.Inspect(test);
             PID.InspectToFile(test);
-            PID.Seek(test, "");
+            //PID.Seek(test, "");
+
+            PID.Seek(test.GetFileSystemInfos(), "");
 
         }
     }

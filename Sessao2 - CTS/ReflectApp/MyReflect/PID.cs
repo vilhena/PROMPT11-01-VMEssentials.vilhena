@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Collections;
 
 namespace MyReflect
 {
@@ -66,6 +67,12 @@ namespace MyReflect
             sbuild.Close();
         }
 
+        public static void SeekList(object obj, string path)
+        {
+
+            return;
+        }
+
 
         public static string Seek(object obj, string path)
         {
@@ -107,10 +114,16 @@ namespace MyReflect
                             sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>{2}</a></td>", property.Name, processed[value], value.ToString());
                         }
                     }
-
+                    
                     sbuild.WriteLine("</tr>");
                 }
             }
+
+            if (obj.GetType().GetInterfaces().Contains(typeof(IEnumerable)))
+            {
+                SeekList(obj, path);
+            }
+
             sbuild.WriteLine("</table>");
             sbuild.WriteLine("</body>");
             sbuild.WriteLine("</html>");
