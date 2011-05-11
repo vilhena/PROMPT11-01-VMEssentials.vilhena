@@ -67,10 +67,34 @@ namespace MyReflect
             sbuild.Close();
         }
 
-        public static void SeekList(object obj, string path)
+        public static string SeekList(object obj, string path)
         {
+            var filename = path + "_" + obj.GetType().Name;
+            var sbuild = new StreamWriter(@".\teste\" + filename + ".html");
 
-            return;
+            sbuild.WriteLine("<html>");
+            sbuild.WriteLine("<body>");
+            sbuild.WriteLine("<h1>{0}<h1/>", obj.GetType().Name);
+            sbuild.WriteLine(@"<table border=1>");
+
+            IEnumerable list = (IEnumerable)obj;
+            int i = 0;
+            foreach (var item in list)
+            {
+                ++i;
+                sbuild.WriteLine("<tr>");
+
+                sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>{2}</a></td>", i , Seek(item, filename), item.ToString());
+                
+
+                sbuild.WriteLine("<tr/>");
+            }
+
+            sbuild.WriteLine("</table>");
+            sbuild.WriteLine("</body>");
+            sbuild.WriteLine("</html>");
+
+            return filename;
         }
 
 
@@ -95,12 +119,16 @@ namespace MyReflect
 
                     var value = property.GetValue(obj, new object[0]);
 
-
-                    if (property.PropertyType.IsPrimitive || value == null || property.PropertyType == typeof(String))
+                    if (property.PropertyType.GetInterfaces().Contains(typeof(IEnumerable)) && value != null)
+                    {
+                        sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>list</a></td>", value.GetType().Name, SeekList(value, filename));
+                    }
+                    else if (property.PropertyType.IsPrimitive || value == null || property.PropertyType == typeof(String) || property.PropertyType == typeof(DateTime))
                     {
 
                         sbuild.WriteLine("<td>{0}</td><td>{1}</td>", property.Name, value == null ? String.Empty : value);
                     }
+                    
                     else
                     {
                         if (!processed.ContainsKey(value))
@@ -121,7 +149,7 @@ namespace MyReflect
 
             if (obj.GetType().GetInterfaces().Contains(typeof(IEnumerable)))
             {
-                SeekList(obj, path);
+                sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>list</a></td>", obj.GetType().Name, SeekList(obj, filename));
             }
 
             sbuild.WriteLine("</table>");

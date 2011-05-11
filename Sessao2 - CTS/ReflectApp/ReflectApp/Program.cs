@@ -7,6 +7,13 @@ using System.IO;
 
 namespace ReflectApp
 {
+
+    class teste
+    {
+        public int inteiro { get; set; }
+        public List<string> lista { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -18,7 +25,11 @@ namespace ReflectApp
             PID.InspectToFile(test);
             //PID.Seek(test, "");
 
-            PID.Seek(test.GetFileSystemInfos(), "");
+            //PID.Seek(test.GetFileSystemInfos(), "");
+            teste tt = new teste();
+            tt.lista = new List<string>();
+            tt.lista.Add("teasd");
+            PID.Seek(new teste(), "");
 
         }
     }
