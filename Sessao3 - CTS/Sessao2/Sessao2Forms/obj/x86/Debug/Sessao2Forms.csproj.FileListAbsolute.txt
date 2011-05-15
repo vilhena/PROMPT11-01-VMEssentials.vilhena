@@ -1,0 +1,9 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\bin\Debug\Sessao2Forms.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\bin\Debug\Sessao2Forms.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\Sessao2Forms.Form1.resources
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\Sessao2Forms.Properties.Resources.resources
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\Sessao2Forms.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2Forms\obj\x86\Debug\Sessao2Forms.pdb

@@ -84,7 +84,7 @@ namespace MyReflect
                 ++i;
                 sbuild.WriteLine("<tr>");
 
-                sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>{2}</a></td>", i , Seek(item, filename), item.ToString());
+                sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>{2}</a></td>", i , Seek(item, filename+i.ToString()), item.ToString());
                 
 
                 sbuild.WriteLine("<tr/>");
@@ -93,6 +93,9 @@ namespace MyReflect
             sbuild.WriteLine("</table>");
             sbuild.WriteLine("</body>");
             sbuild.WriteLine("</html>");
+
+            sbuild.Flush();
+            sbuild.Close();
 
             return filename;
         }
@@ -119,16 +122,16 @@ namespace MyReflect
 
                     var value = property.GetValue(obj, new object[0]);
 
-                    if (property.PropertyType.GetInterfaces().Contains(typeof(IEnumerable)) && value != null)
-                    {
-                        sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>list</a></td>", value.GetType().Name, SeekList(value, filename));
-                    }
-                    else if (property.PropertyType.IsPrimitive || value == null || property.PropertyType == typeof(String) || property.PropertyType == typeof(DateTime))
+                    
+                    if (property.PropertyType.IsPrimitive || value == null || property.PropertyType == typeof(String) || property.PropertyType == typeof(DateTime))
                     {
 
                         sbuild.WriteLine("<td>{0}</td><td>{1}</td>", property.Name, value == null ? String.Empty : value);
                     }
-                    
+                    else if (property.PropertyType.GetInterfaces().Contains(typeof(IEnumerable)) && value != null)
+                    {
+                        sbuild.WriteLine("<td>{0}</td><td><a href='{1}.html'>list</a></td>", value.GetType().Name, SeekList(value, filename));
+                    }
                     else
                     {
                         if (!processed.ContainsKey(value))

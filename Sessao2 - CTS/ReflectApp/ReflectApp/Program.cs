@@ -25,11 +25,11 @@ namespace ReflectApp
             PID.InspectToFile(test);
             //PID.Seek(test, "");
 
-            //PID.Seek(test.GetFileSystemInfos(), "");
+            PID.Seek(test.GetDirectories(), "");
             teste tt = new teste();
             tt.lista = new List<string>();
             tt.lista.Add("teasd");
-            PID.Seek(new teste(), "");
+            PID.Seek(tt, "");
 
         }
     }

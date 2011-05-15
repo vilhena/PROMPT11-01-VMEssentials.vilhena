@@ -1,0 +1,5 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2\bin\Debug\Sessao2.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2\bin\Debug\Sessao2.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2\obj\x86\Debug\Sessao2.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao3 - CTS\Sessao2\Sessao2\obj\x86\Debug\Sessao2.pdb
