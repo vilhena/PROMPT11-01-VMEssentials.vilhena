@@ -1,0 +1,5 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao5 - CTS\MyCustomEnumerable\MyCustomEnumerable\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao5 - CTS\MyCustomEnumerable\MyCustomEnumerable\bin\Debug\MyCustomEnumerable.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao5 - CTS\MyCustomEnumerable\MyCustomEnumerable\bin\Debug\MyCustomEnumerable.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao5 - CTS\MyCustomEnumerable\MyCustomEnumerable\obj\Debug\MyCustomEnumerable.exe
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao5 - CTS\MyCustomEnumerable\MyCustomEnumerable\obj\Debug\MyCustomEnumerable.pdb

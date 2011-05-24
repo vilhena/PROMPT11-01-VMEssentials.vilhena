@@ -1,0 +1,147 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:InvalidRationalException.cs" caret="190" fromTop="11" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="238" fromTop="0" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="1426" fromTop="26" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2492" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="625" fromTop="2" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="218" fromTop="8" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="415" fromTop="10" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="300" fromTop="5" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="1322" fromTop="7" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="88" fromTop="3" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="1074" fromTop="18" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="1457" fromTop="7" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="1693" fromTop="8" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="1680" fromTop="16" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="886" fromTop="3" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="725" fromTop="14" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="707" fromTop="14" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="551" fromTop="15" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2511" fromTop="28" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2511" fromTop="25" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="551" fromTop="10" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="708" fromTop="15" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RationalNumber.cs" caret="238" fromTop="3" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="1007" fromTop="2" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="1302" fromTop="10" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="774" fromTop="9" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="1562" fromTop="7" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:Program.cs" caret="1426" fromTop="14" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2511" fromTop="12" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2535" fromTop="11" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2003" fromTop="7" />
+      <File id="DE14E8AB-CB34-4155-8C82-735D75CC0CA4/f:RemoveRepeated.cs" caret="2440" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="6" />
+      <Item value="void" priority="0" />
+      <Item value="Console`0" priority="4" />
+      <Item value="n" priority="5" />
+      <Item value="IComparable" priority="0" />
+      <Item value="RationalNumber`0" priority="2" />
+      <Item value="return" priority="14" />
+      <Item value="_denominator" priority="0" />
+      <Item value="other" priority="1" />
+      <Item value="_numerator" priority="0" />
+      <Item value="this" priority="7" />
+      <Item value="float" priority="2" />
+      <Item value="rnumbers" priority="4" />
+      <Item value="IEnumerable" priority="4" />
+      <Item value="GetEnumerator`0" priority="3" />
+      <Item value="IEquatable" priority="0" />
+      <Item value="null" priority="2" />
+      <Item value="seq" priority="7" />
+      <Item value="sbyte" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="HashSet" priority="0" />
+      <Item value="new" priority="7" />
+      <Item value="HashSet&lt;T&gt;" priority="0" />
+      <Item value="yield return" priority="3" />
+      <Item value="foreach" priority="1" />
+      <Item value="if" priority="1" />
+      <Item value="set" priority="2" />
+      <Item value="item" priority="3" />
+      <Item value="continue" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="SortedList" priority="3" />
+      <Item value="T`0" priority="6" />
+      <Item value="criterium" priority="4" />
+      <Item value="Func" priority="1" />
+      <Item value="NullReferenceException`0" priority="0" />
+      <Item value="interface" priority="2" />
+      <Item value="class" priority="0" />
+      <Item value="ISortedEnumerable" priority="1" />
+      <Item value="List" priority="1" />
+      <Item value="IEnumerator" priority="0" />
+      <Item value="prop" priority="3" />
+      <Item value="Comparison" priority="1" />
+      <Item value="Sequence" priority="3" />
+      <Item value="a" priority="0" />
+      <Item value="SortedEnumerable" priority="1" />
+      <Item value="ctor" priority="1" />
+      <Item value="comp" priority="0" />
+      <Item value="Comparison&lt;T&gt;" priority="2" />
+      <Item value="SortedEnumerable&lt;T&gt;" priority="0" />
+      <Item value="s" priority="3" />
+      <Item value="t1" priority="0" />
+      <Item value="t2" priority="0" />
+      <Item value="res" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MyCustomEnumerable.RationalNumber">
+      <Item value="_denominator" priority="6" />
+      <Item value="_numerator" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="ForEach`0" priority="3" />
+      <Item value="RemoveRepeated`1" priority="0" />
+      <Item value="OrderBy`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="2" />
+      <Item value="GetEnumerator`0" priority="1" />
+      <Item value="ThenBy`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.HashSet`1">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MyCustomEnumerable.SortedEnumerable`1">
+      <Item value="Sequence" priority="0" />
+      <Item value="Criteria" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MyCustomEnumerable.ISortedEnumerable`1">
+      <Item value="ThenBy`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="CompareTo`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
