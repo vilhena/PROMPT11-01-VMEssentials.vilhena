@@ -1,0 +1,14 @@
+<Modules>
+  <Module PersistentId="A4953711-FF0B-4327-85E3-AB17F4F6D423" ModuleId="HttpReflectorSrv" />
+  <Module PersistentId="06F9FF3A-A31C-444A-97CF-27872F063C31" ModuleId="ReflectorRouter_1" />
+  <Module PersistentId="C8E9E6EE-C8B4-4364-A751-D8079A633EC8" ModuleId="ReflectorView" />
+  <Module PersistentId="7D68CEDE-CC36-4F55-8C35-0520F2CEF015" ModuleId="Controller" />
+  <Module PersistentId="18E5EC60-0EC2-492A-9765-595689CA52A7" ModuleId="Router" />
+  <Module PersistentId="BA7B44E3-D090-4812-87D8-5AF9BAA35351" ModuleId="Handler" />
+  <Module PersistentId="EA4FEEB3-22D9-418C-B34A-270D03AABC08" ModuleId="View" />
+  <Module PersistentId="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70" ModuleId="ReflectorController" />
+  <Module PersistentId="F65A44F3-E11C-446D-94B0-EBB5C0196108" ModuleId="ReflectorHandler" />
+  <Module PersistentId="ED6655D3-11F8-4A53-AFF0-CFC547F4C721" ModuleId="ReflectorRouter.Test" />
+  <Module PersistentId="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64" ModuleId="UIBinder" />
+  <Module PersistentId="07859F51-8DA9-481A-84DD-B9A84B191B37" ModuleId="HttpBinder" />
+</Modules>

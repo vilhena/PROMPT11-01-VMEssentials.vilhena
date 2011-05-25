@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b5cd7745-68bc-4b26-906a-2e0d9a401e1d" name="gnvilhena@BEE 2011-05-24 21:51:27" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="5cb3f086-b558-4163-915c-eda7e078d9a1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-24 21_51_27">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao4 - CTS\Binding\Binding\bin\Debug\Binding.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-24T21:51:27.0996094+01:00" queuing="2011-05-24T21:51:28.7558594+01:00" start="2011-05-24T21:51:28.9277344+01:00" finish="2011-05-24T21:51:58.6777344+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="10" executed="10" passed="9" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="cannot_bind_complex_data_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="e8db7042-dd41-9215-7487-cd77a2930b7d">
+      <Execution id="ae0841fc-243a-48be-a2c4-f26ebbc93b9c" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_bind_complex_data_to_A" />
+    </UnitTest>
+    <UnitTest name="cannot_bind_inexistent_property_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="f54af81a-b389-63ca-f81f-f1bed83df82f">
+      <Execution id="c7c30bb9-6d6e-4033-8f71-fe2ce45e295e" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_bind_inexistent_property_to_A" />
+    </UnitTest>
+    <UnitTest name="can_bind_fields_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="2dbb2b5c-b047-a714-1658-9f4fcd8187c9">
+      <Execution id="d9d97339-7612-4471-a733-7f2eaf0b0fc1" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_bind_fields_to_A" />
+    </UnitTest>
+    <UnitTest name="cannot_bind_inexistent_field_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="37163dfb-1c43-f483-2d76-21d43b436313">
+      <Execution id="1979ce3a-334f-426c-8b83-67f8aff99e58" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_bind_inexistent_field_to_A" />
+    </UnitTest>
+    <UnitTest name="can_bind_property_to_A_using_different_name_from_attribute" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="031c4015-64c9-7ee4-017b-aa00407feb76">
+      <Execution id="0c9888a8-b5d7-4b28-bd8c-cdeac86dda4b" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem2, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_bind_property_to_A_using_different_name_from_attribute" />
+    </UnitTest>
+    <UnitTest name="cannot_bind_to_A_inexistent_attribute_definition" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="f744df1b-b1ea-eb9b-d07e-fb70c8f88968">
+      <Execution id="acb85f4e-abd4-4dfa-ae6b-ea483b0e9d56" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem2, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_bind_to_A_inexistent_attribute_definition" />
+    </UnitTest>
+    <UnitTest name="can_bind_properties_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="af278377-12c2-3c55-e449-991d83978191">
+      <Execution id="8d6b290b-f1ff-4853-b00d-fa4c11a1b0ba" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_bind_properties_to_A" />
+    </UnitTest>
+    <UnitTest name="must_bind_required_property_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="7dfdf456-2511-89f8-8713-5797cf856171">
+      <Execution id="c680fbf5-6ad6-4e4c-909e-9b41cca10b17" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem2, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="must_bind_required_property_to_A" />
+    </UnitTest>
+    <UnitTest name="cannot_define_same_name_on_different_property_to_B" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="8401fe02-a94e-eaa9-8ba1-9fbf3a4e4a82">
+      <Execution id="9f691e32-59c6-4c43-ab67-10f6edc90865" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem2, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_define_same_name_on_different_property_to_B" />
+    </UnitTest>
+    <UnitTest name="can_bind_property_to_A_using_attribute" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="2592b2c2-0b9c-d184-2840-1945dae3032a">
+      <Execution id="204b0ef1-b51e-41af-91d6-a7ec51167ae6" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem2, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_bind_property_to_A_using_attribute" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="031c4015-64c9-7ee4-017b-aa00407feb76" executionId="0c9888a8-b5d7-4b28-bd8c-cdeac86dda4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2592b2c2-0b9c-d184-2840-1945dae3032a" executionId="204b0ef1-b51e-41af-91d6-a7ec51167ae6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2dbb2b5c-b047-a714-1658-9f4fcd8187c9" executionId="d9d97339-7612-4471-a733-7f2eaf0b0fc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37163dfb-1c43-f483-2d76-21d43b436313" executionId="1979ce3a-334f-426c-8b83-67f8aff99e58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dfdf456-2511-89f8-8713-5797cf856171" executionId="c680fbf5-6ad6-4e4c-909e-9b41cca10b17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8401fe02-a94e-eaa9-8ba1-9fbf3a4e4a82" executionId="9f691e32-59c6-4c43-ab67-10f6edc90865" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af278377-12c2-3c55-e449-991d83978191" executionId="8d6b290b-f1ff-4853-b00d-fa4c11a1b0ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8db7042-dd41-9215-7487-cd77a2930b7d" executionId="ae0841fc-243a-48be-a2c4-f26ebbc93b9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f54af81a-b389-63ca-f81f-f1bed83df82f" executionId="c7c30bb9-6d6e-4033-8f71-fe2ce45e295e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f744df1b-b1ea-eb9b-d07e-fb70c8f88968" executionId="acb85f4e-abd4-4dfa-ae6b-ea483b0e9d56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0c9888a8-b5d7-4b28-bd8c-cdeac86dda4b" testId="031c4015-64c9-7ee4-017b-aa00407feb76" testName="can_bind_property_to_A_using_different_name_from_attribute" computerName="BEE" duration="00:00:00.0354229" startTime="2011-05-24T21:51:29.0996094+01:00" endTime="2011-05-24T21:51:30.0058594+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c9888a8-b5d7-4b28-bd8c-cdeac86dda4b">
+    </UnitTestResult>
+    <UnitTestResult executionId="204b0ef1-b51e-41af-91d6-a7ec51167ae6" testId="2592b2c2-0b9c-d184-2840-1945dae3032a" testName="can_bind_property_to_A_using_attribute" computerName="BEE" duration="00:00:00.0017720" startTime="2011-05-24T21:51:30.0371094+01:00" endTime="2011-05-24T21:51:30.0527344+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="204b0ef1-b51e-41af-91d6-a7ec51167ae6">
+    </UnitTestResult>
+    <UnitTestResult executionId="d9d97339-7612-4471-a733-7f2eaf0b0fc1" testId="2dbb2b5c-b047-a714-1658-9f4fcd8187c9" testName="can_bind_fields_to_A" computerName="BEE" duration="00:00:00.0061700" startTime="2011-05-24T21:51:30.0683594+01:00" endTime="2011-05-24T21:51:30.0839844+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9d97339-7612-4471-a733-7f2eaf0b0fc1">
+    </UnitTestResult>
+    <UnitTestResult executionId="1979ce3a-334f-426c-8b83-67f8aff99e58" testId="37163dfb-1c43-f483-2d76-21d43b436313" testName="cannot_bind_inexistent_field_to_A" computerName="BEE" duration="00:00:00.0470230" startTime="2011-05-24T21:51:30.0996094+01:00" endTime="2011-05-24T21:51:30.1621094+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1979ce3a-334f-426c-8b83-67f8aff99e58">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Binding.Test.Problem1.cannot_bind_inexistent_field_to_A did not throw expected exception Binding.InexistentMemberBinderException.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c680fbf5-6ad6-4e4c-909e-9b41cca10b17" testId="7dfdf456-2511-89f8-8713-5797cf856171" testName="must_bind_required_property_to_A" computerName="BEE" startTime="2011-05-24T21:51:30.1777344+01:00" endTime="2011-05-24T21:51:30.1933594+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c680fbf5-6ad6-4e4c-909e-9b41cca10b17">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f691e32-59c6-4c43-ab67-10f6edc90865" testId="8401fe02-a94e-eaa9-8ba1-9fbf3a4e4a82" testName="cannot_define_same_name_on_different_property_to_B" computerName="BEE" startTime="2011-05-24T21:51:30.2089844+01:00" endTime="2011-05-24T21:51:30.2246094+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f691e32-59c6-4c43-ab67-10f6edc90865">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d6b290b-f1ff-4853-b00d-fa4c11a1b0ba" testId="af278377-12c2-3c55-e449-991d83978191" testName="can_bind_properties_to_A" computerName="BEE" duration="00:00:00.0007188" startTime="2011-05-24T21:51:30.2558594+01:00" endTime="2011-05-24T21:51:30.2714844+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d6b290b-f1ff-4853-b00d-fa4c11a1b0ba">
+    </UnitTestResult>
+    <UnitTestResult executionId="ae0841fc-243a-48be-a2c4-f26ebbc93b9c" testId="e8db7042-dd41-9215-7487-cd77a2930b7d" testName="cannot_bind_complex_data_to_A" computerName="BEE" duration="00:00:05.1343827" startTime="2011-05-24T21:51:30.2871094+01:00" endTime="2011-05-24T21:51:35.4589844+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae0841fc-243a-48be-a2c4-f26ebbc93b9c">
+    </UnitTestResult>
+    <UnitTestResult executionId="c7c30bb9-6d6e-4033-8f71-fe2ce45e295e" testId="f54af81a-b389-63ca-f81f-f1bed83df82f" testName="cannot_bind_inexistent_property_to_A" computerName="BEE" duration="00:00:22.9812861" startTime="2011-05-24T21:51:35.4746094+01:00" endTime="2011-05-24T21:51:58.4746094+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7c30bb9-6d6e-4033-8f71-fe2ce45e295e">
+    </UnitTestResult>
+    <UnitTestResult executionId="acb85f4e-abd4-4dfa-ae6b-ea483b0e9d56" testId="f744df1b-b1ea-eb9b-d07e-fb70c8f88968" testName="cannot_bind_to_A_inexistent_attribute_definition" computerName="BEE" duration="00:00:00.0002609" startTime="2011-05-24T21:51:58.4902344+01:00" endTime="2011-05-24T21:51:58.5371094+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acb85f4e-abd4-4dfa-ae6b-ea483b0e9d56">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -27,6 +27,11 @@ namespace MyReflect
         }
     }
 
+    public interface TypeProperty
+    {
+        
+    }
+
 
     public class PID
     {
@@ -38,7 +43,7 @@ namespace MyReflect
             foreach (var property in obj.GetType().GetProperties())
             {
                 var value = property.GetValue(obj, new object[0]);
-                Console.WriteLine("{0} - {1}", property.Name, value == null ? String.Empty : value);
+                Console.WriteLine("{0} - {1}", property.Name, value?? String.Empty);
             }
         }
 

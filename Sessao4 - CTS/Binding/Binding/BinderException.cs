@@ -13,6 +13,8 @@ namespace Binding
 
     public class NotPrimitiveMemberBinderException : BinderException
     {
+        private Type memberType;
+
         public MemberInfo MemberInfo { get; private set; }
 
         public NotPrimitiveMemberBinderException(MemberInfo mi)
@@ -20,6 +22,13 @@ namespace Binding
             mi.Name, mi.DeclaringType.Name))
         {
             this.MemberInfo = mi;
+        }
+
+        public NotPrimitiveMemberBinderException(MemberInfo memberInfo, Type memberType)
+            : this(memberInfo)
+        {
+            this.MemberInfo = memberInfo;
+            this.memberType = memberType;
         }
     }
 

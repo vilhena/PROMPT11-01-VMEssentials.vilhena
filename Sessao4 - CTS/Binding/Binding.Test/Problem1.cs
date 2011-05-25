@@ -65,12 +65,12 @@ namespace Binding.Test
             public int AnInteger { get; set; }
             public string AString { get; set; }
             public int AnFieldInteger = -1;
-            public List<string> AnList;
+            public Array AnList { get; set; }
         }
 
 
         [TestMethod]
-        public void cann_bind_properties_to_A()
+        public void can_bind_properties_to_A()
         {
             var binder = new Binder<A>();
             var pairs = new KeyValuePair<string, string>[]{
@@ -85,7 +85,7 @@ namespace Binding.Test
         }
 
         [TestMethod]
-        public void cann_bind_fields_to_A()
+        public void can_bind_fields_to_A()
         {
             var binder = new Binder<A>();
             var pairs = new KeyValuePair<string, string>[]{
@@ -111,7 +111,7 @@ namespace Binding.Test
             }
             catch (NotPrimitiveMemberBinderException ex)
             {
-                Assert.AreEqual(typeof(A).GetField("AnList"), ex.MemberInfo);
+                Assert.AreEqual(typeof(A).GetProperty("AnList"), ex.MemberInfo);
                 throw;
             }
         }
@@ -122,7 +122,7 @@ namespace Binding.Test
         {
             var binder = new Binder<A>();
             var pairs = new KeyValuePair<string, string>[]{
-                new KeyValuePair<string,string>("AnInteger","10")
+                new KeyValuePair<string,string>("AnIntegerInexistent","10")
             };
             try
             {
@@ -130,7 +130,7 @@ namespace Binding.Test
             }
             catch (InexistentMemberBinderException ex)
             {
-                Assert.AreEqual("AnInteger", ex.MemberName);
+                Assert.AreEqual("AnIntegerInexistent", ex.MemberName);
                 throw;
             }
         }
@@ -141,7 +141,7 @@ namespace Binding.Test
         {
             var binder = new Binder<A>();
             var pairs = new KeyValuePair<string, string>[]{
-                new KeyValuePair<string,string>("AnFieldInteger","10")
+                new KeyValuePair<string,string>("AnFieldIntegerInexistent","10")
             };
             try
             {
@@ -149,7 +149,7 @@ namespace Binding.Test
             }
             catch (InexistentMemberBinderException ex)
             {
-                Assert.AreEqual("AnFieldInteger", ex.MemberName);
+                Assert.AreEqual("AnFieldIntegerInexistent", ex.MemberName);
                 throw;
             }
         }

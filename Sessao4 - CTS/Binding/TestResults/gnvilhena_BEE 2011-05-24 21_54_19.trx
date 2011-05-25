@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bb7e5bf7-2d30-45c5-ac9e-9e3a6e187c2a" name="gnvilhena@BEE 2011-05-24 21:54:19" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="5cb3f086-b558-4163-915c-eda7e078d9a1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao4 - CTS\Binding\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-24 21_54_19">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Sessao4 - CTS\Binding\Binding\bin\Debug\Binding.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-24T21:54:19.3076172+01:00" queuing="2011-05-24T21:54:19.5419922+01:00" start="2011-05-24T21:54:19.6201172+01:00" finish="2011-05-24T21:54:20.0888672+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="cannot_bind_inexistent_field_to_A" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\sessao4 - cts\binding\binding.test\bin\debug\binding.test.dll" id="37163dfb-1c43-f483-2d76-21d43b436313">
+      <Execution id="67e0a335-26b1-40c2-bfce-cbfa5c663695" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Sessao4 - CTS/Binding/Binding.Test/bin/Debug/Binding.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Binding.Test.Problem1, Binding.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cannot_bind_inexistent_field_to_A" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="37163dfb-1c43-f483-2d76-21d43b436313" executionId="67e0a335-26b1-40c2-bfce-cbfa5c663695" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="67e0a335-26b1-40c2-bfce-cbfa5c663695" testId="37163dfb-1c43-f483-2d76-21d43b436313" testName="cannot_bind_inexistent_field_to_A" computerName="BEE" duration="00:00:00.0263600" startTime="2011-05-24T21:54:19.6513672+01:00" endTime="2011-05-24T21:54:19.9951172+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67e0a335-26b1-40c2-bfce-cbfa5c663695">
+    </UnitTestResult>
+  </Results>
+</TestRun>

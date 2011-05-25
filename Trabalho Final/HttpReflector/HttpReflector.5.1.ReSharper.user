@@ -1,0 +1,229 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="8" />
+      <Item value="void" priority="13" />
+      <Item value="string" priority="19" />
+      <Item value="IRouteHandler`0" priority="1" />
+      <Item value="controller" priority="5" />
+      <Item value="new" priority="15" />
+      <Item value="ReflectorController" priority="0" />
+      <Item value="using" priority="0" />
+      <Item value="HttpReflector" priority="0" />
+      <Item value="Controllers" priority="0" />
+      <Item value="private" priority="2" />
+      <Item value="Dictionary" priority="2" />
+      <Item value="IRouteNode`0" priority="4" />
+      <Item value="ReflectorRouter`0" priority="0" />
+      <Item value="ctor" priority="0" />
+      <Item value="_route" priority="0" />
+      <Item value="Dictionary&lt;string,ReflectorRouteNode&gt;" priority="0" />
+      <Item value="this" priority="11" />
+      <Item value="route" priority="3" />
+      <Item value="routeHandler" priority="0" />
+      <Item value="public" priority="9" />
+      <Item value="IRouteCollection`0" priority="1" />
+      <Item value="class" priority="3" />
+      <Item value="handler" priority="2" />
+      <Item value="IHandler`0" priority="14" />
+      <Item value="bool" priority="2" />
+      <Item value="List" priority="2" />
+      <Item value="List&lt;IRouteNode&gt;" priority="0" />
+      <Item value="if" priority="9" />
+      <Item value="_routeList" priority="6" />
+      <Item value="s" priority="0" />
+      <Item value="prop" priority="4" />
+      <Item value="pattern" priority="8" />
+      <Item value="container" priority="10" />
+      <Item value="return" priority="7" />
+      <Item value="path" priority="4" />
+      <Item value="foreach" priority="3" />
+      <Item value="Regex`0" priority="1" />
+      <Item value="routePatterns" priority="2" />
+      <Item value="List&lt;string&gt;" priority="0" />
+      <Item value="false" priority="3" />
+      <Item value="var" priority="3" />
+      <Item value="Stack" priority="1" />
+      <Item value="null" priority="1" />
+      <Item value="token" priority="9" />
+      <Item value="switch" priority="0" />
+      <Item value="for" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="i" priority="2" />
+      <Item value="routeTokens" priority="3" />
+      <Item value="listTokens" priority="1" />
+      <Item value="is" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="item" priority="0" />
+      <Item value="ParallelEnumerable`0" priority="0" />
+      <Item value="MyDummyHandler`0" priority="2" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="IRouteContainer`0" priority="0" />
+      <Item value="RouteList`0" priority="1" />
+      <Item value="TestMethod" priority="4" />
+      <Item value="Test" priority="0" />
+      <Item value="_dummyHandler" priority="5" />
+      <Item value="object" priority="0" />
+      <Item value="T`0" priority="2" />
+      <Item value="result" priority="4" />
+      <Item value="Activator`0" priority="0" />
+      <Item value="typeof" priority="1" />
+      <Item value="IRouteResult" priority="0" />
+      <Item value="sealed" priority="0" />
+      <Item value="TMap`0" priority="1" />
+      <Item value="where" priority="2" />
+      <Item value="RouteResult" priority="1" />
+      <Item value="IRouteResultMapper" priority="2" />
+      <Item value="Type`0" priority="1" />
+      <Item value="Tuple`0" priority="0" />
+      <Item value="loader" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.ReflectorController">
+      <Item value="LoadHandlers`0" priority="0" />
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Routers.ReflectorRouter">
+      <Item value="_route" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.IRouteContainer">
+      <Item value="CanRoute`0" priority="0" />
+      <Item value="Get`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Map`0" priority="2" />
+      <Item value="UnMap`0" priority="2" />
+      <Item value="Find`0" priority="1" />
+      <Item value="Route`0" priority="0" />
+      <Item value="Seek`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Contains`0" priority="0" />
+      <Item value="First`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.IRouteNode">
+      <Item value="Route" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Contains`0" priority="0" />
+      <Item value="ContainsKey`0" priority="2" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Keys" priority="0" />
+      <Item value="Remove`0" priority="1" />
+      <Item value="First`1" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Routers.RouteList">
+      <Item value="_routeList" priority="5" />
+      <Item value="Find`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.RegularExpressions.Regex">
+      <Item value="IsMatch`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Split`0" priority="2" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="Contains`0" priority="3" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Stack`1">
+      <Item value="Count" priority="3" />
+      <Item value="Pop`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Tasks.Parallel">
+      <Item value="ForEach`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsTrue`0" priority="0" />
+      <Item value="IsNotNull`0" priority="2" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="AreEqual`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.IRouteContainer`1">
+      <Item value="Find`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Activator">
+      <Item value="CreateInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.RouteResult`1">
+      <Item value="Handler" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Contracts.Controller.IController">
+      <Item value="LoadUI`0" priority="0" />
+      <Item value="LoadHandlers`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouteNode.cs" caret="235" fromTop="9" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="325" fromTop="0" />
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouteNode.cs" caret="0" fromTop="0" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2881" fromTop="9" />
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:RouteResult.cs" caret="282" fromTop="10" />
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouteContainer.cs" caret="301" fromTop="11" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="565" fromTop="2" />
+      <File id="EA4FEEB3-22D9-418C-B34A-270D03AABC08/f:IView.cs" caret="0" fromTop="0" />
+      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="127" fromTop="6" />
+      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandlerLoader.cs" caret="212" fromTop="9" />
+      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="99" fromTop="5" />
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="260" fromTop="7" />
+      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="398" fromTop="8" />
+      <File id="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64/f:IUIBinder.cs" caret="68" fromTop="2" />
+      <File id="7D68CEDE-CC36-4F55-8C35-0520F2CEF015/f:IController.cs" caret="202" fromTop="7" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="594" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:RouteResult.cs" caret="182" fromTop="8" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="1931" fromTop="10" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="1742" fromTop="7" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2267" fromTop="8" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2513" fromTop="15" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3036" fromTop="6" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3249" fromTop="13" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3475" fromTop="14" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3700" fromTop="12" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3968" fromTop="11" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4232" fromTop="9" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4507" fromTop="16" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4823" fromTop="14" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5416" fromTop="4" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5718" fromTop="11" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5108" fromTop="9" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="257" fromTop="9" />
+      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2960" fromTop="10" />
+      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="108" fromTop="12" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="454" fromTop="8" />
+      <File id="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64/f:IUIBinder.cs" caret="38" fromTop="0" />
+      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="118" fromTop="4" />
+      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandlerLoader.cs" caret="212" fromTop="9" />
+      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="238" fromTop="7" />
+      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="99" fromTop="5" />
+      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="398" fromTop="8" />
+      <File id="7D68CEDE-CC36-4F55-8C35-0520F2CEF015/f:IController.cs" caret="194" fromTop="7" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="135" fromTop="6" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="261" fromTop="8" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="394" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

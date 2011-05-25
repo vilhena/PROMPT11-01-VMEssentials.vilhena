@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442" ModuleId="Binding" />
+  <Module PersistentId="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B" ModuleId="Binding.Test" />
+  <Module PersistentId="9D2F9AFB-F70A-4520-84A1-416C9583F48F" ModuleId="ConsoleCommand" />
+</Modules>

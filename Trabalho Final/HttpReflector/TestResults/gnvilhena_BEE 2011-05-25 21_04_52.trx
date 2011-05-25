@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e180d781-1393-4626-9148-9eca702b247f" name="gnvilhena@BEE 2011-05-25 21:04:52" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-25 21_04_52">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter\bin\Debug\ReflectorRouter.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\bin\Debug\Handler.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Router\bin\Debug\Router.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-25T21:04:52.1503906+01:00" queuing="2011-05-25T21:04:52.1972656+01:00" start="2011-05-25T21:04:52.2285156+01:00" finish="2011-05-25T21:04:52.9941406+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="14" executed="14" passed="14" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="route_works_with_root_ctx_as_assemblyName_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="86893bfb-be04-aae5-a5fa-ca9227474806">
+      <Execution id="3fb21207-9ec3-4731-99f9-e5b13b7f821a" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_as_assemblyName_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_r_eventName_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="2a6ec2f6-d35b-c54c-c160-e26e0e265cb0">
+      <Execution id="748adb17-f122-4138-a573-b14163e1e17d" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_r_eventName_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="419cff02-657a-3965-de29-7a8f8acda2b7">
+      <Execution id="379bcf0e-03ef-411e-bf41-aae6e1b68462" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_as_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="d59acf1f-a253-e6cf-7e23-69f312ea7e8e">
+      <Execution id="b2e9074d-ad02-4f29-bc8b-50003df66115" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_as_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespacePrefix_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="d925060e-b185-ba9d-cb8a-7d34570abf7b">
+      <Execution id="3e2725fe-b844-429e-846e-5c040cc23694" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespacePrefix_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_m_methodName_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="b2399e27-2042-789f-85ac-c3c74b764925">
+      <Execution id="9d0834d3-c87a-4ddf-996a-2952f46cd852" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_m_methodName_RouteList" />
+    </UnitTest>
+    <UnitTest name="can_remove_route_from_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="4c494ddf-b058-6548-1980-d31346170c63">
+      <Execution id="a8858781-f665-490f-8557-08f81e764df9" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_remove_route_from_RouteList" />
+    </UnitTest>
+    <UnitTest name="can_add_route_to_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="d1dee57c-1940-8f04-4f78-b0b16e6ccb9b">
+      <Execution id="bdfefe45-4484-4dcc-a0e2-c7f63658b853" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_add_route_to_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="49dcdfbe-1770-2b79-57ef-25fbe2214b7e">
+      <Execution id="524d5b33-a410-4984-893a-d2ff4f407989" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_p_propName_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="ed598ad0-37b7-693b-84b4-c114d33baffa">
+      <Execution id="02417f77-0002-478c-b7fc-22cac0e7adad" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_p_propName_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_only_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="91ac2bfb-733e-51c4-02d0-a2c33b5edafb">
+      <Execution id="66c33da0-7d77-40ec-b5c7-b5eabbcff329" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_only_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="431fa883-5a55-6054-e257-97faed4cc207">
+      <Execution id="ffec21bb-30c2-4e2a-9f81-461f436ab1c7" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_f_fieldName_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="4cd4f6de-05d0-3676-cfde-6fb96b64160a">
+      <Execution id="7b26d201-2688-4bc8-bdc6-37e3ac6aefe7" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_f_fieldName_RouteList" />
+    </UnitTest>
+    <UnitTest name="route_works_with_root_ctx_ns_namespace_shortname_c_RouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="2f8ef4b3-0dc8-9ec8-07b6-5fdd7a55baf7">
+      <Execution id="59312dd2-8ed0-41f2-82ac-42351f0fce73" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="route_works_with_root_ctx_ns_namespace_shortname_c_RouteList" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2a6ec2f6-d35b-c54c-c160-e26e0e265cb0" executionId="748adb17-f122-4138-a573-b14163e1e17d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f8ef4b3-0dc8-9ec8-07b6-5fdd7a55baf7" executionId="59312dd2-8ed0-41f2-82ac-42351f0fce73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="419cff02-657a-3965-de29-7a8f8acda2b7" executionId="379bcf0e-03ef-411e-bf41-aae6e1b68462" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="431fa883-5a55-6054-e257-97faed4cc207" executionId="ffec21bb-30c2-4e2a-9f81-461f436ab1c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49dcdfbe-1770-2b79-57ef-25fbe2214b7e" executionId="524d5b33-a410-4984-893a-d2ff4f407989" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c494ddf-b058-6548-1980-d31346170c63" executionId="a8858781-f665-490f-8557-08f81e764df9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4cd4f6de-05d0-3676-cfde-6fb96b64160a" executionId="7b26d201-2688-4bc8-bdc6-37e3ac6aefe7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86893bfb-be04-aae5-a5fa-ca9227474806" executionId="3fb21207-9ec3-4731-99f9-e5b13b7f821a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91ac2bfb-733e-51c4-02d0-a2c33b5edafb" executionId="66c33da0-7d77-40ec-b5c7-b5eabbcff329" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2399e27-2042-789f-85ac-c3c74b764925" executionId="9d0834d3-c87a-4ddf-996a-2952f46cd852" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1dee57c-1940-8f04-4f78-b0b16e6ccb9b" executionId="bdfefe45-4484-4dcc-a0e2-c7f63658b853" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d59acf1f-a253-e6cf-7e23-69f312ea7e8e" executionId="b2e9074d-ad02-4f29-bc8b-50003df66115" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d925060e-b185-ba9d-cb8a-7d34570abf7b" executionId="3e2725fe-b844-429e-846e-5c040cc23694" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed598ad0-37b7-693b-84b4-c114d33baffa" executionId="02417f77-0002-478c-b7fc-22cac0e7adad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="748adb17-f122-4138-a573-b14163e1e17d" testId="2a6ec2f6-d35b-c54c-c160-e26e0e265cb0" testName="route_works_with_root_ctx_ns_namespace_shortname_r_eventName_RouteList" computerName="BEE" duration="00:00:00.0430878" startTime="2011-05-25T21:04:52.2753906+01:00" endTime="2011-05-25T21:04:52.6347656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="748adb17-f122-4138-a573-b14163e1e17d">
+    </UnitTestResult>
+    <UnitTestResult executionId="59312dd2-8ed0-41f2-82ac-42351f0fce73" testId="2f8ef4b3-0dc8-9ec8-07b6-5fdd7a55baf7" testName="route_works_with_root_ctx_ns_namespace_shortname_c_RouteList" computerName="BEE" duration="00:00:00.0040041" startTime="2011-05-25T21:04:52.6503906+01:00" endTime="2011-05-25T21:04:52.6816406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59312dd2-8ed0-41f2-82ac-42351f0fce73">
+    </UnitTestResult>
+    <UnitTestResult executionId="379bcf0e-03ef-411e-bf41-aae6e1b68462" testId="419cff02-657a-3965-de29-7a8f8acda2b7" testName="route_works_with_root_ctx_ns_namespace_shortname_RouteList" computerName="BEE" duration="00:00:00.0010082" startTime="2011-05-25T21:04:52.6816406+01:00" endTime="2011-05-25T21:04:52.6972656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="379bcf0e-03ef-411e-bf41-aae6e1b68462">
+    </UnitTestResult>
+    <UnitTestResult executionId="ffec21bb-30c2-4e2a-9f81-461f436ab1c7" testId="431fa883-5a55-6054-e257-97faed4cc207" testName="route_works_with_root_ctx_ns_RouteList" computerName="BEE" duration="00:00:00.0105770" startTime="2011-05-25T21:04:52.7128906+01:00" endTime="2011-05-25T21:04:52.7753906+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffec21bb-30c2-4e2a-9f81-461f436ab1c7">
+    </UnitTestResult>
+    <UnitTestResult executionId="524d5b33-a410-4984-893a-d2ff4f407989" testId="49dcdfbe-1770-2b79-57ef-25fbe2214b7e" testName="route_works_with_root_ctx_RouteList" computerName="BEE" startTime="2011-05-25T21:04:52.7910156+01:00" endTime="2011-05-25T21:04:52.7910156+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="524d5b33-a410-4984-893a-d2ff4f407989">
+    </UnitTestResult>
+    <UnitTestResult executionId="a8858781-f665-490f-8557-08f81e764df9" testId="4c494ddf-b058-6548-1980-d31346170c63" testName="can_remove_route_from_RouteList" computerName="BEE" startTime="2011-05-25T21:04:52.8066406+01:00" endTime="2011-05-25T21:04:52.8066406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8858781-f665-490f-8557-08f81e764df9">
+    </UnitTestResult>
+    <UnitTestResult executionId="7b26d201-2688-4bc8-bdc6-37e3ac6aefe7" testId="4cd4f6de-05d0-3676-cfde-6fb96b64160a" testName="route_works_with_root_ctx_ns_namespace_shortname_f_fieldName_RouteList" computerName="BEE" duration="00:00:00.0001938" startTime="2011-05-25T21:04:52.8066406+01:00" endTime="2011-05-25T21:04:52.8222656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b26d201-2688-4bc8-bdc6-37e3ac6aefe7">
+    </UnitTestResult>
+    <UnitTestResult executionId="3fb21207-9ec3-4731-99f9-e5b13b7f821a" testId="86893bfb-be04-aae5-a5fa-ca9227474806" testName="route_works_with_root_ctx_as_assemblyName_RouteList" computerName="BEE" duration="00:00:00.0093291" startTime="2011-05-25T21:04:52.8222656+01:00" endTime="2011-05-25T21:04:52.8535156+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fb21207-9ec3-4731-99f9-e5b13b7f821a">
+    </UnitTestResult>
+    <UnitTestResult executionId="66c33da0-7d77-40ec-b5c7-b5eabbcff329" testId="91ac2bfb-733e-51c4-02d0-a2c33b5edafb" testName="route_works_with_root_only_RouteList" computerName="BEE" duration="00:00:00.0035811" startTime="2011-05-25T21:04:52.8535156+01:00" endTime="2011-05-25T21:04:52.8691406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66c33da0-7d77-40ec-b5c7-b5eabbcff329">
+    </UnitTestResult>
+    <UnitTestResult executionId="9d0834d3-c87a-4ddf-996a-2952f46cd852" testId="b2399e27-2042-789f-85ac-c3c74b764925" testName="route_works_with_root_ctx_ns_namespace_shortname_m_methodName_RouteList" computerName="BEE" duration="00:00:00.0002419" startTime="2011-05-25T21:04:52.8691406+01:00" endTime="2011-05-25T21:04:52.8847656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d0834d3-c87a-4ddf-996a-2952f46cd852">
+    </UnitTestResult>
+    <UnitTestResult executionId="bdfefe45-4484-4dcc-a0e2-c7f63658b853" testId="d1dee57c-1940-8f04-4f78-b0b16e6ccb9b" testName="can_add_route_to_RouteList" computerName="BEE" duration="00:00:00.0005187" startTime="2011-05-25T21:04:52.8847656+01:00" endTime="2011-05-25T21:04:52.9316406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bdfefe45-4484-4dcc-a0e2-c7f63658b853">
+    </UnitTestResult>
+    <UnitTestResult executionId="b2e9074d-ad02-4f29-bc8b-50003df66115" testId="d59acf1f-a253-e6cf-7e23-69f312ea7e8e" testName="route_works_with_root_ctx_as_RouteList" computerName="BEE" duration="00:00:00.0002419" startTime="2011-05-25T21:04:52.9316406+01:00" endTime="2011-05-25T21:04:52.9316406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2e9074d-ad02-4f29-bc8b-50003df66115">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e2725fe-b844-429e-846e-5c040cc23694" testId="d925060e-b185-ba9d-cb8a-7d34570abf7b" testName="route_works_with_root_ctx_ns_namespacePrefix_RouteList" computerName="BEE" duration="00:00:00.0004151" startTime="2011-05-25T21:04:52.9472656+01:00" endTime="2011-05-25T21:04:52.9472656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e2725fe-b844-429e-846e-5c040cc23694">
+    </UnitTestResult>
+    <UnitTestResult executionId="02417f77-0002-478c-b7fc-22cac0e7adad" testId="ed598ad0-37b7-693b-84b4-c114d33baffa" testName="route_works_with_root_ctx_ns_namespace_shortname_p_propName_RouteList" computerName="BEE" startTime="2011-05-25T21:04:52.9472656+01:00" endTime="2011-05-25T21:04:52.9628906+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02417f77-0002-478c-b7fc-22cac0e7adad">
+    </UnitTestResult>
+  </Results>
+</TestRun>

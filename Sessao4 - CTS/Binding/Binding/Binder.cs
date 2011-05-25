@@ -14,6 +14,12 @@ namespace Binding
             T ret = Activator.CreateInstance<T>();
             Type retType = typeof(T);
 
+            foreach (var keyValuePair in pairs)
+            {
+                if(retType.GetProperty(keyValuePair.Key) == null && retType.GetField(keyValuePair.Key) == null)
+                    throw new InexistentMemberBinderException(keyValuePair.Key);
+            }
+
             foreach (var prop in retType.GetProperties())
             {
                 foreach (var item in pairs)

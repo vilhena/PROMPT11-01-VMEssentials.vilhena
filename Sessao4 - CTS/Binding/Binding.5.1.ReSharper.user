@@ -1,0 +1,207 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Type`0" priority="1" />
+      <Item value="this" priority="4" />
+      <Item value="memberType" priority="0" />
+      <Item value="prop" priority="6" />
+      <Item value="if" priority="3" />
+      <Item value="item" priority="2" />
+      <Item value="retType" priority="1" />
+      <Item value="null" priority="3" />
+      <Item value="return" priority="1" />
+      <Item value="for" priority="0" />
+      <Item value="foreach" priority="2" />
+      <Item value="keyValuePair" priority="3" />
+      <Item value="throw" priority="0" />
+      <Item value="new" priority="9" />
+      <Item value="InexistentMemberBinderException" priority="0" />
+      <Item value="Array`0" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="public" priority="4" />
+      <Item value="class" priority="1" />
+      <Item value="string" priority="7" />
+      <Item value="Attribute`0" priority="0" />
+      <Item value="CommandRepository`0" priority="3" />
+      <Item value="List" priority="0" />
+      <Item value="ICommand`0" priority="3" />
+      <Item value="List&lt;ICommand&gt;" priority="2" />
+      <Item value="IList" priority="0" />
+      <Item value="ctor" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="Activator`0" priority="0" />
+      <Item value="_commands" priority="1" />
+      <Item value="where" priority="0" />
+      <Item value="typeof" priority="1" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="T`0" priority="2" />
+      <Item value="ListCommand`0" priority="0" />
+      <Item value="MyFirstCommand`0" priority="0" />
+      <Item value="command" priority="3" />
+      <Item value="Console`0" priority="4" />
+      <Item value="TextWriter`0" priority="1" />
+      <Item value="args" priority="5" />
+      <Item value="output" priority="1" />
+      <Item value="Stack" priority="1" />
+      <Item value="Stack&lt;string&gt;" priority="0" />
+      <Item value="commandstak" priority="3" />
+      <Item value="commandName" priority="0" />
+      <Item value="tType" priority="2" />
+      <Item value="false" priority="0" />
+      <Item value="DivideByZeroException`0" priority="0" />
+      <Item value="Queue" priority="0" />
+      <Item value="queue" priority="2" />
+      <Item value="Convert`0" priority="0" />
+      <Item value="value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Binding.NotPrimitiveMemberBinderException">
+      <Item value="memberType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetProperty`0" priority="2" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="GetMember`0" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="GetCustomAttributes`0" priority="0" />
+      <Item value="GetCustomAttributesData`0" priority="1" />
+      <Item value="GetField`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Binding.Test.Problem2+A">
+      <Item value="AStringCustoName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleCommand.CommandRepository">
+      <Item value="Commands" priority="0" />
+      <Item value="_commands" priority="0" />
+      <Item value="With`1" priority="2" />
+      <Item value="Run`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="First`1" priority="1" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Activator">
+      <Item value="CreateInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConsoleCommand.CommandRepository">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Values" priority="0" />
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleCommand.ICommand">
+      <Item value="Run`0" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="OpenStandardOutput`0" priority="0" />
+      <Item value="Out" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.TextWriter">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Stack`1">
+      <Item value="Push`0" priority="1" />
+      <Item value="Pop`0" priority="1" />
+      <Item value="Reverse`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.CustomAttributeData">
+      <Item value="NamedArguments" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.CustomAttributeNamedArgument">
+      <Item value="TypedValue" priority="0" />
+      <Item value="MemberInfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.CustomAttributeTypedArgument">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MemberInfo">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Queue`1">
+      <Item value="Dequeue`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="0" />
+      <Item value="Trim`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.FieldInfo">
+      <Item value="SetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToBase64CharArray`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442/f:BinderException.cs" caret="912" fromTop="8" />
+      <File id="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442/f:MemberBinder.cs" caret="676" fromTop="0" />
+      <File id="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442/f:Binder.cs" caret="530" fromTop="8" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="4807" fromTop="16" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem2.cs" caret="657" fromTop="0" />
+      <File id="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442/f:BindableAttribute.cs" caret="292" fromTop="10" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="977" fromTop="3" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Program.cs" caret="211" fromTop="11" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1479" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="3871" fromTop="9" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="4111" fromTop="14" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="2017" fromTop="10" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="3465" fromTop="18" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="2560" fromTop="11" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="2078" fromTop="14" />
+      <File id="D77CAD69-4C5E-43C2-BBC4-D3D121B1C442/f:Binder.cs" caret="481" fromTop="7" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="4520" fromTop="7" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem1.cs" caret="4765" fromTop="15" />
+      <File id="6BB5B7BE-D9FE-40CD-9B02-73F04F64AC0B/f:Problem2.cs" caret="666" fromTop="0" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="624" fromTop="13" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="635" fromTop="13" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="483" fromTop="16" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="1091" fromTop="18" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="1081" fromTop="12" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="1089" fromTop="17" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="409" fromTop="10" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="519" fromTop="10" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1700" fromTop="6" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="314" fromTop="3" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="471" fromTop="9" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Program.cs" caret="197" fromTop="10" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="743" fromTop="4" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1675" fromTop="12" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1401" fromTop="12" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1151" fromTop="14" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1132" fromTop="13" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="804" fromTop="8" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:Command.cs" caret="1071" fromTop="16" />
+      <File id="9D2F9AFB-F70A-4520-84A1-416C9583F48F/f:CommandRepository.cs" caret="1478" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

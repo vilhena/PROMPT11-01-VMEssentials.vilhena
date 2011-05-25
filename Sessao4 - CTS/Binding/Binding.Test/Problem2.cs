@@ -20,6 +20,7 @@ namespace Binding.Test
             public int AStringCustoName { get; set; }
 
             public int AnFieldInteger = -1;
+
             public List<string> AnList;
         }
 
@@ -48,7 +49,7 @@ namespace Binding.Test
 
             var a = binder.BindTo(pairs);
 
-            Assert.AreEqual(4, a.AnInteger);
+            Assert.AreEqual(4, a.AStringCustoName);
         }
 
         [TestMethod]
