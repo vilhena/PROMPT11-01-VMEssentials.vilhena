@@ -1,0 +1,7 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\bin\Debug\AssemblyModel.Test.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\bin\Debug\AssemblyModel.Test.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\bin\Debug\AssemblyReflector.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\obj\Debug\AssemblyModel.Test.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\obj\Debug\AssemblyModel.Test.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\bin\Debug\AssemblyReflector.dll

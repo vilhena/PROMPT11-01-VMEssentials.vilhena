@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="79904873-81e8-4c79-86b4-7a99f9f03905" name="gnvilhena@BEE 2011-05-28 13:47:53" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-28 13_47_53">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-28T13:47:53.2431640+01:00" queuing="2011-05-28T13:47:55.0556640+01:00" start="2011-05-28T13:47:55.2978515+01:00" finish="2011-05-28T13:48:08.5712890+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BEE" outcome="Error" timestamp="2011-05-28T13:48:08.5556640+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetContextAssemblyContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="791f5605-823c-1bb5-35fe-ba025a3168fa">
+      <Execution id="f176e90d-1bd7-43b4-bba4-ae59bbe897df" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextAssemblyContextModel" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="791f5605-823c-1bb5-35fe-ba025a3168fa" executionId="f176e90d-1bd7-43b4-bba4-ae59bbe897df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f176e90d-1bd7-43b4-bba4-ae59bbe897df" testId="791f5605-823c-1bb5-35fe-ba025a3168fa" testName="GetContextAssemblyContextModel" computerName="BEE" duration="00:00:13.0390625" startTime="2011-05-28T13:47:55.5322265+01:00" endTime="2011-05-28T13:48:08.5712890+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f176e90d-1bd7-43b4-bba4-ae59bbe897df">
+    </UnitTestResult>
+  </Results>
+</TestRun>

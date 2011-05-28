@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c88ecdec-6a2a-4c90-b47f-de11238769ff" name="gnvilhena@BEE 2011-05-28 13:35:45" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-28 13_35_45">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-28T13:35:45.0068359+01:00" queuing="2011-05-28T13:35:45.0693359+01:00" start="2011-05-28T13:35:45.0927734+01:00" finish="2011-05-28T13:35:45.6396484+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddContextToAssemblyModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="7795dffc-b7a5-5c43-1aa2-03f78084ca66">
+      <Execution id="2373dc8e-8669-4fe7-84ac-22dd65b957c8" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddContextToAssemblyModel" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" executionId="2373dc8e-8669-4fe7-84ac-22dd65b957c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2373dc8e-8669-4fe7-84ac-22dd65b957c8" testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" testName="AddContextToAssemblyModel" computerName="BEE" duration="00:00:00.2414371" startTime="2011-05-28T13:35:45.1162109+01:00" endTime="2011-05-28T13:35:45.6005859+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2373dc8e-8669-4fe7-84ac-22dd65b957c8">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;System&gt;. Actual:&lt;ContextTest1&gt;. </Message>
+          <StackTrace>   at AssemblyModelTest.AssemblyModelTest.AddContextToAssemblyModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="135aaaa5-a273-48ae-8e37-b2902b6eaa77" name="gnvilhena@BEE 2011-05-28 13:47:38" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-28 13_47_38">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-28T13:47:38.4697265+01:00" queuing="2011-05-28T13:47:38.4697265+01:00" start="2011-05-28T13:47:38.4697265+01:00" finish="2011-05-28T13:47:40.8261718+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="4" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BEE" outcome="Error" timestamp="2011-05-28T13:47:40.7548828+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+      <RunInfo computerName="BEE" outcome="Error" timestamp="2011-05-28T13:47:40.8251953+01:00">
+        <Text>Failed to queue test run 'gnvilhena@BEE 2011-05-28 13:47:38': Unable to start the agent process. </Text>
+        <Exception>Microsoft.VisualStudio.TestTools.Exceptions.EqtException: Unable to start the agent process. 
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProcessManager.HandleCannotStartAgentProcessError(Exception ex)
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProcessManager.HandleCannotStartAgentProcessError()
+   at Microsoft.VisualStudio.TestTools.Agent.OutOfProcessStrategy.StartAgentProcess(AgentProcessStartupInfo agentProcessStartupInfo, Boolean restarting)
+   at Microsoft.VisualStudio.TestTools.Agent.OutOfProcessStrategy.StartAgentProcess(AgentProcessStartupInfo agentProcessStartupInfo)
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProxy.StartAgentProcess(AgentProcessStartupInfo agentProcessStartupInfo)
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProcessProxyManager.StartTestAgentProcesses(AgentProcessStartupInfo agentProcessStartupInfo)
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProcessManager.StartAgentProcess(AgentProcessStartupInfo agentProcessStartupInfo, Boolean startDataCollectionAgent)
+   at Microsoft.VisualStudio.TestTools.Agent.AgentProcessManager.StartAgentProcess(AgentProcessStartupInfo agentProcessStartupInfo, TestRunConfiguration testRunConfiguration)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.StartProcess(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.PrepareProcess(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.InitializeController(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.ControllerProxy.QueueTestRunWorker(Object state)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ListAllContextAssembliesContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="9278291c-e6b0-e32b-9ad3-6d545921b6d2">
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListAllContextAssembliesContextModel" />
+    </UnitTest>
+    <UnitTest name="ListAllContextReturnsAllContextModels" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="76f7c0a7-6879-6d47-f6cf-e7d87e75c556">
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListAllContextReturnsAllContextModels" />
+    </UnitTest>
+    <UnitTest name="AddContextWithInvalidPathThrowsInvalidPathException" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="6fa0d37b-e32d-d89e-4167-068ec55c8ffd">
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddContextWithInvalidPathThrowsInvalidPathException" />
+    </UnitTest>
+    <UnitTest name="AddContextToAssemblyModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="7795dffc-b7a5-5c43-1aa2-03f78084ca66">
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddContextToAssemblyModel" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6fa0d37b-e32d-d89e-4167-068ec55c8ffd" executionId="60868afc-22ee-4444-93e3-4675eba6a568" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76f7c0a7-6879-6d47-f6cf-e7d87e75c556" executionId="5f767b38-b733-429d-a3d7-80fcc7574e88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" executionId="3a71f3a8-2574-404c-8c2f-93f04b518380" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9278291c-e6b0-e32b-9ad3-6d545921b6d2" executionId="b6d7b02c-779f-4056-8b70-f8ac20105696" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="60868afc-22ee-4444-93e3-4675eba6a568" testId="6fa0d37b-e32d-d89e-4167-068ec55c8ffd" testName="AddContextWithInvalidPathThrowsInvalidPathException" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60868afc-22ee-4444-93e3-4675eba6a568">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f767b38-b733-429d-a3d7-80fcc7574e88" testId="76f7c0a7-6879-6d47-f6cf-e7d87e75c556" testName="ListAllContextReturnsAllContextModels" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f767b38-b733-429d-a3d7-80fcc7574e88">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a71f3a8-2574-404c-8c2f-93f04b518380" testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" testName="AddContextToAssemblyModel" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a71f3a8-2574-404c-8c2f-93f04b518380">
+    </UnitTestResult>
+    <UnitTestResult executionId="b6d7b02c-779f-4056-8b70-f8ac20105696" testId="9278291c-e6b0-e32b-9ad3-6d545921b6d2" testName="ListAllContextAssembliesContextModel" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6d7b02c-779f-4056-8b70-f8ac20105696">
+    </UnitTestResult>
+  </Results>
+</TestRun>

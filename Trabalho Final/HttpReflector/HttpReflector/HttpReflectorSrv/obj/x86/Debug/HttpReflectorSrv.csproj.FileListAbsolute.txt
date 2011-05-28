@@ -7,3 +7,7 @@ C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho F
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\ReflectorController.pdb
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\Controller.dll
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\Controller.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\UIBinder.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\Handler.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\UIBinder.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\HttpReflector\HttpReflectorSrv\bin\Debug\Handler.pdb

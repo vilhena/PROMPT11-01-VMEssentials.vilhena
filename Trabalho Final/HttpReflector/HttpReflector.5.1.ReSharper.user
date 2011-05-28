@@ -10,49 +10,49 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="interface" priority="8" />
-      <Item value="void" priority="13" />
-      <Item value="string" priority="19" />
+      <Item value="void" priority="23" />
+      <Item value="string" priority="35" />
       <Item value="IRouteHandler`0" priority="1" />
       <Item value="controller" priority="5" />
-      <Item value="new" priority="15" />
+      <Item value="new" priority="39" />
       <Item value="ReflectorController" priority="0" />
       <Item value="using" priority="0" />
       <Item value="HttpReflector" priority="0" />
-      <Item value="Controllers" priority="0" />
+      <Item value="Controllers" priority="1" />
       <Item value="private" priority="2" />
-      <Item value="Dictionary" priority="2" />
+      <Item value="Dictionary" priority="8" />
       <Item value="IRouteNode`0" priority="4" />
       <Item value="ReflectorRouter`0" priority="0" />
-      <Item value="ctor" priority="0" />
+      <Item value="ctor" priority="1" />
       <Item value="_route" priority="0" />
       <Item value="Dictionary&lt;string,ReflectorRouteNode&gt;" priority="0" />
-      <Item value="this" priority="11" />
+      <Item value="this" priority="19" />
       <Item value="route" priority="3" />
       <Item value="routeHandler" priority="0" />
-      <Item value="public" priority="9" />
+      <Item value="public" priority="23" />
       <Item value="IRouteCollection`0" priority="1" />
       <Item value="class" priority="3" />
       <Item value="handler" priority="2" />
       <Item value="IHandler`0" priority="14" />
       <Item value="bool" priority="2" />
-      <Item value="List" priority="2" />
+      <Item value="List" priority="9" />
       <Item value="List&lt;IRouteNode&gt;" priority="0" />
-      <Item value="if" priority="9" />
+      <Item value="if" priority="15" />
       <Item value="_routeList" priority="6" />
-      <Item value="s" priority="0" />
-      <Item value="prop" priority="4" />
+      <Item value="s" priority="5" />
+      <Item value="prop" priority="9" />
       <Item value="pattern" priority="8" />
       <Item value="container" priority="10" />
-      <Item value="return" priority="7" />
-      <Item value="path" priority="4" />
-      <Item value="foreach" priority="3" />
+      <Item value="return" priority="13" />
+      <Item value="path" priority="9" />
+      <Item value="foreach" priority="12" />
       <Item value="Regex`0" priority="1" />
       <Item value="routePatterns" priority="2" />
       <Item value="List&lt;string&gt;" priority="0" />
-      <Item value="false" priority="3" />
-      <Item value="var" priority="3" />
+      <Item value="false" priority="4" />
+      <Item value="var" priority="14" />
       <Item value="Stack" priority="1" />
-      <Item value="null" priority="1" />
+      <Item value="null" priority="5" />
       <Item value="token" priority="9" />
       <Item value="switch" priority="0" />
       <Item value="for" priority="0" />
@@ -65,17 +65,17 @@
       <Item value="item" priority="0" />
       <Item value="ParallelEnumerable`0" priority="0" />
       <Item value="MyDummyHandler`0" priority="2" />
-      <Item value="Assert`0" priority="1" />
+      <Item value="Assert`0" priority="22" />
       <Item value="IRouteContainer`0" priority="0" />
       <Item value="RouteList`0" priority="1" />
-      <Item value="TestMethod" priority="4" />
+      <Item value="TestMethod" priority="9" />
       <Item value="Test" priority="0" />
       <Item value="_dummyHandler" priority="5" />
       <Item value="object" priority="0" />
       <Item value="T`0" priority="2" />
       <Item value="result" priority="4" />
       <Item value="Activator`0" priority="0" />
-      <Item value="typeof" priority="1" />
+      <Item value="typeof" priority="2" />
       <Item value="IRouteResult" priority="0" />
       <Item value="sealed" priority="0" />
       <Item value="TMap`0" priority="1" />
@@ -85,6 +85,61 @@
       <Item value="Type`0" priority="1" />
       <Item value="Tuple`0" priority="0" />
       <Item value="loader" priority="0" />
+      <Item value="DictionaryBase`0" priority="0" />
+      <Item value="context" priority="14" />
+      <Item value="Model" priority="3" />
+      <Item value="AssemblyModel" priority="0" />
+      <Item value="DirectoryInfo" priority="2" />
+      <Item value="dinfo" priority="1" />
+      <Item value="file" priority="3" />
+      <Item value="Context`0" priority="4" />
+      <Item value="list" priority="0" />
+      <Item value="Context" priority="3" />
+      <Item value="Folder" priority="1" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="0" />
+      <Item value="Name" priority="2" />
+      <Item value="ctx" priority="3" />
+      <Item value="DirectoryInfo`0" priority="0" />
+      <Item value="directoryInfo" priority="2" />
+      <Item value="throw" priority="3" />
+      <Item value="ExpectedException" priority="0" />
+      <Item value="try" priority="0" />
+      <Item value="ex" priority="0" />
+      <Item value="AssemblyModel`0" priority="0" />
+      <Item value="ctxs" priority="1" />
+      <Item value="Model`0" priority="4" />
+      <Item value="Assembly`0" priority="4" />
+      <Item value="newCtx" priority="1" />
+      <Item value="FileInfo`0" priority="0" />
+      <Item value="System" priority="1" />
+      <Item value="Reflection" priority="1" />
+      <Item value="asm" priority="12" />
+      <Item value="Console`0" priority="0" />
+      <Item value="assembly" priority="14" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="sb" priority="0" />
+      <Item value="Namespace`0" priority="1" />
+      <Item value="type" priority="9" />
+      <Item value="newassembly" priority="2" />
+      <Item value="Namespace" priority="0" />
+      <Item value="currNamespace" priority="2" />
+      <Item value="WatcherChangeTypes`0" priority="0" />
+      <Item value="ReflectType" priority="0" />
+      <Item value="newType" priority="1" />
+      <Item value="ReflectMethod`0" priority="0" />
+      <Item value="ReflectModel`0" priority="1" />
+      <Item value="asms" priority="12" />
+      <Item value="Assemblies" priority="0" />
+      <Item value="Dictionary&lt;string,ReflectAssembly&gt;" priority="0" />
+      <Item value="addinContract" priority="0" />
+      <Item value="addin" priority="0" />
+      <Item value="InvalidContextModelException`0" priority="0" />
+      <Item value="InvalidAssemblyModelException`0" priority="0" />
+      <Item value="_contexts" priority="0" />
+      <Item value="Contexts" priority="1" />
+      <Item value="InvalidContextModelException" priority="0" />
+      <Item value="InvalidAssemblyModelException" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.ReflectorController">
       <Item value="LoadHandlers`0" priority="0" />
@@ -94,8 +149,12 @@
       <Item value="_route" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
-      <Item value="Add`0" priority="0" />
+      <Item value="Add`0" priority="3" />
       <Item value="Remove`0" priority="0" />
+      <Item value="ContainsKey`0" priority="3" />
+      <Item value="Keys" priority="0" />
+      <Item value="Values" priority="1" />
+      <Item value="Count" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.IRouteContainer">
       <Item value="CanRoute`0" priority="0" />
@@ -144,10 +203,14 @@
       <Item value="ForEach`2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
-      <Item value="IsTrue`0" priority="0" />
-      <Item value="IsNotNull`0" priority="2" />
+      <Item value="IsTrue`0" priority="1" />
+      <Item value="IsNotNull`0" priority="8" />
       <Item value="Equals`0" priority="0" />
-      <Item value="AreEqual`0" priority="1" />
+      <Item value="AreEqual`0" priority="15" />
+      <Item value="IsFalse`0" priority="0" />
+      <Item value="Fail`0" priority="2" />
+      <Item value="AreNotEqual`0" priority="0" />
+      <Item value="IsNull`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Contracts.Router.IRouteContainer`1">
       <Item value="Find`0" priority="0" />
@@ -162,57 +225,164 @@
       <Item value="LoadUI`0" priority="0" />
       <Item value="LoadHandlers`0" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.AssemblyModel">
+      <Item value="Context" priority="8" />
+      <Item value="AddContext`0" priority="1" />
+      <Item value="ListContexts`0" priority="2" />
+      <Item value="ListContextAssemblies`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AssemblyModelTest.AssemblyModelTest">
+      <Item value="Model" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="GetFiles`0" priority="1" />
+      <Item value="Exists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="1" />
+      <Item value="Contains`0" priority="1" />
+      <Item value="Find`0" priority="3" />
+      <Item value="Count" priority="1" />
+      <Item value="ForEach`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Context">
+      <Item value="Name" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+ValueCollection">
+      <Item value="ToList`1" priority="1" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.InvalidPathAssemblyModelException">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Exception.InvalidPathAssemblyModelException">
+      <Item value="Path" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.Context">
+      <Item value="Folder" priority="2" />
+      <Item value="Assemblies" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="LoadFrom`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="FullName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="CodeBase" priority="0" />
+      <Item value="FullName" priority="0" />
+      <Item value="GetName`0" priority="2" />
+      <Item value="GetReferencedAssemblies`0" priority="0" />
+      <Item value="GetManifestResourceInfo`0" priority="0" />
+      <Item value="EscapedCodeBase" priority="0" />
+      <Item value="ManifestModule" priority="0" />
+      <Item value="GetTypes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.Assembly">
+      <Item value="Name" priority="1" />
+      <Item value="PublicKey" priority="0" />
+      <Item value="Namespaces" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.AssemblyName">
+      <Item value="Name" priority="1" />
+      <Item value="GetPublicKey`0" priority="0" />
+      <Item value="FullName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="0" />
+      <Item value="AppendFormat`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Namespace" priority="6" />
+      <Item value="Name" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectNamespace">
+      <Item value="Types" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectAssembly">
+      <Item value="FullName" priority="1" />
+      <Item value="Name" priority="1" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="PublicKey" priority="0" />
+      <Item value="Version" priority="0" />
+      <Item value="Namespaces" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectContext">
+      <Item value="Assemblies" priority="2" />
+      <Item value="Name" priority="0" />
+      <Item value="Folder" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Exception.InvalidContextModelException">
+      <Item value="Context" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Controllers.Exception.InvalidAssemblyModelException">
+      <Item value="Assembly" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouteNode.cs" caret="235" fromTop="9" />
       <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="325" fromTop="0" />
       <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouteNode.cs" caret="0" fromTop="0" />
       <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2881" fromTop="9" />
       <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:RouteResult.cs" caret="282" fromTop="10" />
       <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouteContainer.cs" caret="301" fromTop="11" />
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="565" fromTop="2" />
       <File id="EA4FEEB3-22D9-418C-B34A-270D03AABC08/f:IView.cs" caret="0" fromTop="0" />
       <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="127" fromTop="6" />
       <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandlerLoader.cs" caret="212" fromTop="9" />
       <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="99" fromTop="5" />
       <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="260" fromTop="7" />
       <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="398" fromTop="8" />
+      <File id="7D68CEDE-CC36-4F55-8C35-0520F2CEF015/f:IController.cs" caret="201" fromTop="7" />
       <File id="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64/f:IUIBinder.cs" caret="68" fromTop="2" />
-      <File id="7D68CEDE-CC36-4F55-8C35-0520F2CEF015/f:IController.cs" caret="202" fromTop="7" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="594" fromTop="11" />
+      <File id="284B67E9-1ACA-453F-A62D-3CB5686883FC/f:ReflectorController.cs" caret="1684" fromTop="8" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectModel.cs" caret="237" fromTop="12" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectMethod.cs" caret="188" fromTop="8" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectAssembly.cs" caret="388" fromTop="9" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectField.cs" caret="149" fromTop="7" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectNamespace.cs" caret="201" fromTop="9" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectProperty.cs" caret="199" fromTop="9" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectContext.cs" caret="232" fromTop="8" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectType.cs" caret="0" fromTop="0" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="551" fromTop="14" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:ModelException.cs" caret="277" fromTop="10" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidPathAssemblyModelException.cs" caret="60" fromTop="3" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidContextModelException.cs" caret="146" fromTop="7" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidAssemblyModelException.cs" caret="367" fromTop="12" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5121" fromTop="30" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="3837" fromTop="12" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="269" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:RouteResult.cs" caret="182" fromTop="8" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="1931" fromTop="10" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="1742" fromTop="7" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2267" fromTop="8" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2513" fromTop="15" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3036" fromTop="6" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3249" fromTop="13" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3475" fromTop="14" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3700" fromTop="12" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="3968" fromTop="11" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4232" fromTop="9" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4507" fromTop="16" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="4823" fromTop="14" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5416" fromTop="4" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5718" fromTop="11" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="5108" fromTop="9" />
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="257" fromTop="9" />
-      <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="2960" fromTop="10" />
-      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="108" fromTop="12" />
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="454" fromTop="8" />
-      <File id="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64/f:IUIBinder.cs" caret="38" fromTop="0" />
-      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="118" fromTop="4" />
-      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandlerLoader.cs" caret="212" fromTop="9" />
-      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="238" fromTop="7" />
-      <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="99" fromTop="5" />
-      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="398" fromTop="8" />
-      <File id="7D68CEDE-CC36-4F55-8C35-0520F2CEF015/f:IController.cs" caret="194" fromTop="7" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="135" fromTop="6" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="261" fromTop="8" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="394" fromTop="10" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5196" fromTop="13" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5196" fromTop="13" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="2670" fromTop="14" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="6714" fromTop="18" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:ModelException.cs" caret="277" fromTop="10" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidPathAssemblyModelException.cs" caret="54" fromTop="2" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidContextModelException.cs" caret="475" fromTop="18" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidContextModelException.cs" caret="173" fromTop="7" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidContextModelException.cs" caret="318" fromTop="11" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidContextModelException.cs" caret="405" fromTop="13" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidAssemblyModelException.cs" caret="483" fromTop="18" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidAssemblyModelException.cs" caret="174" fromTop="7" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Exception/f:InvalidAssemblyModelException.cs" caret="367" fromTop="12" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="5909" fromTop="7" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="6385" fromTop="12" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="414" fromTop="3" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="644" fromTop="12" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="4406" fromTop="7" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5121" fromTop="6" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5675" fromTop="18" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="5417" fromTop="14" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="6662" fromTop="13" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="6039" fromTop="6" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="4794" fromTop="10" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="3861" fromTop="3" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="4273" fromTop="11" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="4054" fromTop="10" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="4654" fromTop="8" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="574" fromTop="7" />
+      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="791" fromTop="9" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

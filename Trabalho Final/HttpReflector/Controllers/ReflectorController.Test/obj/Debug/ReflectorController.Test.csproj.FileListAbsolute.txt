@@ -1,0 +1,13 @@
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\ReflectorController.Test.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\ReflectorController.Test.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\ReflectorController.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\Controller.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\UIBinder.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\Handler.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\ReflectorController.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\Controller.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\UIBinder.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\bin\Debug\Handler.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\obj\Debug\ReflectorController.Test.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\ReflectorController.Test\obj\Debug\ReflectorController.Test.pdb
