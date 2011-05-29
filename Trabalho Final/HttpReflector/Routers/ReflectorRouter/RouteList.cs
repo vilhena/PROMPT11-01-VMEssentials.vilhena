@@ -26,8 +26,10 @@ namespace HttpReflector.Routers
             {
                 if (IsMatch(path, routePatterns))
                 {
-                    var result = new RouteResult<T>();
-                    result.Handler = this._routeList[routePatterns];
+                    var result = new RouteResult<T>
+                                     {
+                                         Handler = this._routeList[routePatterns]
+                                     };
                     return result;
                 }
                     

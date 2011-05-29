@@ -31,10 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>privatekey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -55,20 +56,27 @@
     <Compile Include="AssemblyModel.cs" />
     <Compile Include="Exception\InvalidAssemblyModelException.cs" />
     <Compile Include="Exception\InvalidContextModelException.cs" />
+    <Compile Include="Exception\InvalidCtsTypeModelException.cs" />
+    <Compile Include="Exception\InvalidNamespaceModelException.cs" />
     <Compile Include="Exception\ModelException.cs" />
     <Compile Include="Model\ReflectAssembly.cs" />
     <Compile Include="Model\ReflectContext.cs" />
     <Compile Include="Exception\InvalidPathAssemblyModelException.cs" />
+    <Compile Include="Model\ReflectEvent.cs" />
     <Compile Include="Model\ReflectField.cs" />
     <Compile Include="Model\ReflectMethod.cs" />
     <Compile Include="Model\ReflectModel.cs" />
     <Compile Include="Model\ReflectNamespace.cs" />
+    <Compile Include="Model\ReflectParameter.cs" />
     <Compile Include="Model\ReflectProperty.cs" />
     <Compile Include="Model\ReflectType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="privatekey.pfx" />
+    <ProjectReference Include="..\..\Utils\Tree\Tree.csproj">
+      <Project>{9AB64D12-4998-43BE-BE87-5A4C04D83909}</Project>
+      <Name>Tree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

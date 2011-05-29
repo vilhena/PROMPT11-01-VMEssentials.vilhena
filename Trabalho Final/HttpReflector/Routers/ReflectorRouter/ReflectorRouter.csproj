@@ -44,6 +44,7 @@
     <Compile Include="ReflectorRouteNode.cs" />
     <Compile Include="ReflectorRouter.cs" />
     <Compile Include="RouteList.cs" />
+    <Compile Include="RouteTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Contracts\Handler\Handler.csproj">
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\..\Handlers\ReflectorHandler\ReflectorHandler.csproj">
       <Project>{F65A44F3-E11C-446D-94B0-EBB5C0196108}</Project>
       <Name>ReflectorHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\Tree\Tree.csproj">
+      <Project>{9AB64D12-4998-43BE-BE87-5A4C04D83909}</Project>
+      <Name>Tree</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

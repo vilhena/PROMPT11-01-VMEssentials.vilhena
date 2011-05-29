@@ -9,3 +9,5 @@ C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho F
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter.Test\bin\Debug\ReflectorRouter.pdb
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter.Test\obj\Debug\ReflectorRouter.Test.dll
 C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter.Test\obj\Debug\ReflectorRouter.Test.pdb
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter.Test\bin\Debug\Tree.dll
+C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter.Test\bin\Debug\Tree.pdb

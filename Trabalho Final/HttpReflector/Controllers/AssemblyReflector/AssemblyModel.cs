@@ -3,110 +3,298 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using HttpReflector.Controllers.Exception;
 using HttpReflector.Controllers.Model;
+using HttpReflector.Utils;
 
 namespace HttpReflector.Controllers
 {
     public class AssemblyModel
     {
-        private Dictionary<string, ReflectContext> _contexts;
-        private Dictionary<string, ReflectContext> Contexts
-        {
-            get { return _contexts; }
-            set { _contexts = value; }
-        }
+        private Dictionary<string, ReflectContext> Contexts { get; set; }
 
         public AssemblyModel()
         {
             Contexts = new Dictionary<string, ReflectContext>();
         }
 
+        private string PublicKeyToString(IEnumerable<byte> key)
+        {
+            var sb = new StringBuilder();
+            key.ToList().ForEach(s => sb.AppendFormat("{0:x}", s));
+            return sb.ToString();
+        }
+
         public void AddContext(string context, string path)
         {
-            if (!this.Contexts.ContainsKey(context))
+            if (this.Contexts.ContainsKey(context)) 
+                return;
+
+            var directoryInfo = new DirectoryInfo(path);
+
+            if (!directoryInfo.Exists)
+                throw new InvalidPathAssemblyModelException(path);
+
+            var newCtx = new ReflectContext()
+                             {
+                                 Name = context,
+                                 Folder = path,
+                                 Assemblies = new Dictionary<string, ReflectAssembly>(),
+                                 Namespaces = new Dictionary<string, ReflectNamespace>()
+                             };
+
+            Contexts.Add(context, newCtx);
+
+            foreach (var file in directoryInfo.GetFiles("*.dll"))
             {
-                var directoryInfo = new DirectoryInfo(path);
-                if (!directoryInfo.Exists)
-                    throw new InvalidPathAssemblyModelException(path);
-                var newCtx = new ReflectContext()
-                                 {
-                                     Name = context, 
-                                     Folder = path,
-                                     Assemblies = new Dictionary<string, ReflectAssembly>()
-                                 };
+                Assembly asm = null;
 
-                foreach (FileInfo file in directoryInfo.GetFiles("*.dll"))
+                try { asm = Assembly.LoadFrom(file.FullName); }
+                catch (BadImageFormatException)
                 {
-                    System.Reflection.Assembly asm = null;
-                    try
+                    continue;
+                } //Ignores Invalid type of Exception
+
+                
+                var newassembly = new ReflectAssembly
+                                      {
+                                          Context = newCtx,
+                                          Name = asm.GetName().Name,
+                                          FullName = asm.GetName().FullName,
+                                          Version = asm.ImageRuntimeVersion,
+                                          Namespaces = new Dictionary<string, ReflectNamespace>(),
+                                          PublicKey = PublicKeyToString(asm.GetName().GetPublicKey())
+                                      };
+
+                newCtx.Assemblies.Add(newassembly.Name, newassembly);
+
+
+                foreach (var type in asm.GetTypes())
+                {
+                    //adds to context namespace list
+                    if (type.Namespace != null)
                     {
-                        asm = System.Reflection.Assembly.LoadFrom(file.FullName);
-                    }
-                    catch (BadImageFormatException)
-                    {
-                        //Ignores Invalid type of Exception
-                    }
+                        ReflectNamespace newNamesspace;
 
-                    if (asm != null)
-                    {
-                        var newassembly = new ReflectAssembly
-                                           {
-                                               Name = asm.GetName().Name,
-                                               FullName = asm.GetName().FullName,
-                                               Version = asm.ImageRuntimeVersion,
-                                               Namespaces = new Dictionary<string, ReflectNamespace>(),
-                                           };
-
-                        var sb = new StringBuilder();
-                        asm.GetName().GetPublicKey().ToList().ForEach(s => sb.AppendFormat("{0:x}", s));
-
-
-                        foreach (var type in asm.GetTypes())
+                        if (!newCtx.Namespaces.ContainsKey(type.Namespace) ||
+                            !newassembly.Namespaces.ContainsKey(type.Namespace))
                         {
-                            if (type.Namespace != null)
-                            {
-                                // Adds to assembly
-                                if (!newassembly.Namespaces.ContainsKey(type.Namespace))
-                                    newassembly.Namespaces.Add(type.Namespace,
-                                                               new ReflectNamespace()
-                                                                   {
-                                                                       Name = type.Namespace,
-                                                                       Types = new Dictionary<string, ReflectType>() 
-                                                                   });
+                            newNamesspace =
+                                new ReflectNamespace()
+                                    {
+                                        Name = type.Namespace,
+                                        Assembly = newassembly,
+                                        Types = new Dictionary<string, Lazy<ReflectType>>()
+                                    };
 
-                                var currNamespace = newassembly.Namespaces[type.Namespace];
+                            // Adds to assembly
+                            if (!newassembly.Namespaces.ContainsKey(type.Namespace))
+                                newassembly.Namespaces.Add(newNamesspace.Name, newNamesspace);
 
-                                var newType = new ReflectType()
-                                                  {
-                                                      Name = type.Name,
-                                                      NameSpace = currNamespace,
-                                                      Assembly = newassembly,
-                                                      Methods = new Dictionary<string, ReflectMethod>(),
-                                                      Fields = new Dictionary<string, ReflectField>(),
-                                                      Properties = new Dictionary<string, ReflectProperty>()
-                                                  };
-
-
-                                
-                                //TODO: Listas com os membros do tipo, agrupadas por tipo de membro (e.g. método, campo, propriedade).
-
-
-                                // Adds to List
-                                if (!currNamespace.Types.ContainsKey(newType.Name))
-                                    currNamespace.Types.Add(newType.Name, newType);
-                            }
+                            if (!newCtx.Namespaces.ContainsKey(newNamesspace.Name))
+                                newCtx.Namespaces.Add(newNamesspace.Name, newNamesspace);
                         }
-
-                        newCtx.Assemblies.Add(newassembly.Name, newassembly);
+                        else
+                        {
+                            newNamesspace = newCtx.Namespaces[type.Namespace];
+                        }
+                        // Adds to List
+                        if (!newNamesspace.Types.ContainsKey(type.Name))
+                        {
+                            var reflectionType = type;
+                            newNamesspace.Types.Add(type.Name,
+                                                    new Lazy<ReflectType>(() => AddNewReflectType(reflectionType,
+                                                                                                  newassembly,
+                                                                                                  newNamesspace)));
+                        }
                     }
-                }
 
-                Contexts.Add(context, newCtx);
+                }
             }
         }
+
+        private ReflectType AddNewSimpleReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+            var newType = new ReflectType()
+            {
+                Name = type.Name,
+                FullName = type.FullName,
+                NameSpace = currNamespace,
+                Assembly = newassembly,
+                Contructors = new List<ReflectMethod>(),
+                Methods = new List<ReflectMethod>(),
+                Fields = new List<ReflectField>(),
+                Properties = new List<ReflectProperty>(),
+                Events = new List<ReflectEvent>()
+            };
+
+            return newType;
+        }
+
+        private ReflectType AddNewReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+    
+            var newType = new ReflectType()
+                              {
+                                  Name = type.Name,
+                                  FullName = type.FullName,
+                                  NameSpace = currNamespace,
+                                  Assembly = newassembly,
+                                  Contructors = new List<ReflectMethod>(),
+                                  Methods = new List<ReflectMethod>(),
+                                  Fields = new List<ReflectField>(),
+                                  Properties = new List<ReflectProperty>(),
+                                  Events = new List<ReflectEvent>()
+                              };
+
+            FillConstructors(type, newType, newassembly,currNamespace);
+            FillMethods(type, newType, newassembly, currNamespace);
+            FillFields(type, newType, newassembly, currNamespace);
+            FillProperties(type, newType, newassembly, currNamespace);
+            FillEvents(type, newType);
+
+            return newType;
+        }
+
+        private void FillEvents(Type type, ReflectType newType)
+        {
+            foreach (var eventInfo in type.GetEvents())
+            {
+                // Finds or crates a new Type on this assembly
+                Tuple<ReflectNamespace,ReflectAssembly> asmns = FindNamespaceAndAssembly(eventInfo.EventHandlerType);
+
+                var newEvent = new ReflectEvent()
+                                   {
+                                       Name = eventInfo.Name,
+                                       Type = 
+                                           AddNewSimpleReflectType(eventInfo.EventHandlerType, asmns.Item2, asmns.Item1)
+                                   };
+
+                newType.Events.Add(newEvent);
+            }
+        }
+
+        private Tuple<ReflectNamespace, ReflectAssembly> FindNamespaceAndAssembly(Type type)
+        {
+            var asm = FindAssembly(type.Assembly.GetName().Name);
+            if(asm == null)
+                asm = new ReflectAssembly
+                          {
+                              Name = type.Assembly.GetName().Name,
+                              FullName = type.Assembly.GetName().FullName,
+                              Version = type.Assembly.ImageRuntimeVersion,
+                              Namespaces = new Dictionary<string, ReflectNamespace>(),
+                              PublicKey =
+                                  PublicKeyToString(
+                                      type.Assembly.GetName().GetPublicKey())
+                          };
+
+            var ns = FindNamespace(type.Namespace);
+            if (ns == null)
+                ns = new ReflectNamespace()
+                         {
+                             Assembly = asm,
+                             Name = type.Namespace,
+                             Types = new Dictionary<string, Lazy<ReflectType>>()
+                         };
+            return new Tuple<ReflectNamespace, ReflectAssembly>(ns, asm);
+        }
+
+
+        private void FillProperties(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+            foreach (var propertyInfo in type.GetProperties())
+            {
+                // Finds or crates a new Type on this assembly
+                Tuple<ReflectNamespace, ReflectAssembly> asmns = FindNamespaceAndAssembly(propertyInfo.PropertyType);
+
+                newType.Properties.Add(new ReflectProperty()
+                                           {
+                                               Name = propertyInfo.Name,
+                                               Type =
+                                                   AddNewSimpleReflectType(propertyInfo.PropertyType, asmns.Item2, asmns.Item1)
+                                           });
+            }
+        }
+
+        private void FillFields(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+            foreach (var fieldInfo in type.GetFields())
+            {
+                // Finds or crates a new Type on this assembly
+                Tuple<ReflectNamespace, ReflectAssembly> asmns = FindNamespaceAndAssembly(fieldInfo.FieldType);
+                
+
+                newType.Fields.Add(new ReflectField()
+                                       {
+                                           Name = fieldInfo.Name,
+                                           Type =
+                                                   AddNewSimpleReflectType(fieldInfo.FieldType, asmns.Item2, asmns.Item1)
+                                       });
+
+            }
+        }
+
+        private void FillMethods(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+            foreach (var methodInfo in type.GetMethods())
+            {
+                // Finds or crates a new Type on this assembly
+                Tuple<ReflectNamespace, ReflectAssembly> asmns = FindNamespaceAndAssembly(methodInfo.ReturnType);
+
+                var newMethod =
+                    new ReflectMethod()
+                        {
+                            Name = methodInfo.Name,
+                            Parameters = new List<ReflectParameter>(),
+                            Return =
+                                AddNewSimpleReflectType(methodInfo.ReturnType, asmns.Item2, asmns.Item1)
+                        };
+                foreach (var parameterInfo in methodInfo.GetParameters())
+                {
+                    Tuple<ReflectNamespace, ReflectAssembly> asmns2 = FindNamespaceAndAssembly(parameterInfo.ParameterType);
+
+                    newMethod.Parameters.Add(new ReflectParameter()
+                                                 {
+                                                     Name = parameterInfo.Name,
+                                                     Type = AddNewSimpleReflectType(parameterInfo.ParameterType, asmns2.Item2, asmns2.Item1)
+                                                 });
+                }
+
+                newType.Methods.Add(newMethod);
+            }
+        }
+
+        private void FillConstructors(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        {
+            foreach (var constructorInfo in type.GetConstructors())
+            {
+                var newMethod =
+                    new ReflectMethod()
+                        {
+                            Name = constructorInfo.Name,
+                            Parameters = new List<ReflectParameter>(),
+                            Return = null
+                        };
+
+                foreach (var parameterInfo in constructorInfo.GetParameters())
+                {
+                    Tuple<ReflectNamespace, ReflectAssembly> asmns2 = FindNamespaceAndAssembly(parameterInfo.ParameterType);
+
+                    newMethod.Parameters.Add(new ReflectParameter()
+                    {
+                        Name = parameterInfo.Name,
+                        Type = AddNewSimpleReflectType(parameterInfo.ParameterType, asmns2.Item2, asmns2.Item1)
+                    });
+                }
+
+                newType.Contructors.Add(newMethod);
+            }
+        }
+
 
         public List<ReflectContext> ListContexts()
         {
@@ -119,12 +307,35 @@ namespace HttpReflector.Controllers
             return GetContext(context).Assemblies.Values.ToList();
         }
 
+        public ReflectAssembly FindAssembly(string assemblyName)
+        {
+            foreach (var ctxs in Contexts.Values)
+            {
+                if (ctxs.Assemblies.ContainsKey(assemblyName))
+                {
+                    return ctxs.Assemblies[assemblyName];
+                }
+            }
+            return null;
+        }
+
+        public ReflectNamespace FindNamespace(string nameSpace)
+        {
+            foreach (var ctxs in Contexts.Values)
+            {
+                if (ctxs.Namespaces.ContainsKey(nameSpace))
+                {
+                    return ctxs.Namespaces[nameSpace];
+                }
+            }
+            return null;
+        }
 
         public ReflectAssembly GetAssembly(string context, string assembly)
         {
             var ctx = GetContext(context);
             if(!ctx.Assemblies.ContainsKey(assembly))
-                throw new InvalidAssemblyModelException(assembly);
+                throw new InvalidAssemblyModelException(context, assembly);
             return GetContext(context).Assemblies[assembly];
         }
 
@@ -134,6 +345,28 @@ namespace HttpReflector.Controllers
                 throw new InvalidContextModelException(context);
             return Contexts[context];
         }
+
+        public List<ReflectNamespace> ListNamespaces(string context)
+        {
+            return GetContext(context).Namespaces.Values.ToList();
+        }
+
+        public ReflectNamespace GetNamespace(string context, string namespacePrefix)
+        {
+            var ctx = GetContext(context);
+            if (!ctx.Namespaces.ContainsKey(namespacePrefix))
+                throw new InvalidNamespaceModelException(context, namespacePrefix);
+            return GetContext(context).Namespaces[namespacePrefix];
+        }
+
+        public ReflectType GetCtsType(string context, string namespacePrefix, string shortName)
+        {
+            var reflectNamespace = GetNamespace(context, namespacePrefix);
+            if (!reflectNamespace.Types.ContainsKey(shortName))
+                throw new InvalidCtsTypeModelException(context, namespacePrefix, shortName);
+            return reflectNamespace.Types[shortName].Value;
+        }
+
     }
 
 

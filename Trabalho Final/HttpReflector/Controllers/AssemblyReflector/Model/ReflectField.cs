@@ -7,5 +7,6 @@ namespace HttpReflector.Controllers.Model
 {
     public class ReflectField : ReflectModel
     {
+        public ReflectType Type { get; set; }
     }
 }

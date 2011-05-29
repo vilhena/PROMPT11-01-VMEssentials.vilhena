@@ -7,6 +7,7 @@ namespace HttpReflector.Controllers.Model
 {
     public class ReflectNamespace:ReflectModel
     {
-        public Dictionary<string, ReflectType> Types { get; set; }
+        public ReflectAssembly Assembly { get; set; }
+        public Dictionary<string, Lazy<ReflectType>> Types { get; set; }
     }
 }

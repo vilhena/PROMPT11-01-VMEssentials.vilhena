@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d74acd4c-2df5-4c53-9674-7acb4da90baf" name="gnvilhena@BEE 2011-05-29 18:04:18" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-29 18_04_18">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Utils\Tree\bin\Debug\Tree.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\bin\Debug\Handler.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Routers\ReflectorRouter\bin\Debug\ReflectorRouter.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Router\bin\Debug\Router.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-29T18:04:18.3300781+01:00" queuing="2011-05-29T18:04:20.5517578+01:00" start="2011-05-29T18:04:20.7382812+01:00" finish="2011-05-29T18:09:55.0195312+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="33" executed="26" passed="16" error="0" failed="9" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BEE" outcome="Error" timestamp="2011-05-29T18:09:54.9951172+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAssemblyInvalidContextThrowsInvalidContextException" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="516b6c68-c5e5-bf9c-2c60-a4dfddc51fb8">
+      <Execution id="82fe9cf2-6b58-413d-bf5b-2cfb7540680b" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAssemblyInvalidContextThrowsInvalidContextException" />
+    </UnitTest>
+    <UnitTest name="ListAllContextNamespacesContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="1133a30c-721f-dfb0-6e8e-fc4e09453bba">
+      <Execution id="715ac1a0-be8b-4477-a97c-1f4c568b6326" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListAllContextNamespacesContextModel" />
+    </UnitTest>
+    <UnitTest name="ContainsResultsTrueRootValueOnNewTree" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="4b243ddf-9b4e-7f68-2282-1d15a85bab9b">
+      <Execution id="93642f02-b3a1-419c-898d-7342493acbdc" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContainsResultsTrueRootValueOnNewTree" />
+    </UnitTest>
+    <UnitTest name="GetContextNamespaceContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="43754c34-18a7-b891-3c8a-c6f51c87076d">
+      <Execution id="25de7e1f-9741-4760-88b9-05fba00b127c" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextNamespaceContextModel" />
+    </UnitTest>
+    <UnitTest name="AddValueToTree" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="2896e079-7af6-aed4-10c7-ee442a00cf0b">
+      <Execution id="4b400280-0588-44e0-94de-cf190a9bb873" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddValueToTree" />
+    </UnitTest>
+    <UnitTest name="CanRemoveRouteFromRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="f29e5863-186a-4825-2df2-0578747f784d">
+      <Execution id="1fbe33ef-a55a-4a75-bc43-553779d81e49" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanRemoveRouteFromRouteList" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="b4271458-837d-82fd-cbce-5eb1f16a31d0">
+      <Execution id="4e31a4d8-30e8-4a8b-ab81-1fa0a823ad2b" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsRouteList" />
+    </UnitTest>
+    <UnitTest name="CanFindRootValueThrowsKeyNotFoundTreeExceptionOnNewTree" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="4854cc04-4aff-cc7f-b81a-0d628dd3edee">
+      <Execution id="d563e0b2-f067-42bf-afc4-f0166b14683c" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanFindRootValueThrowsKeyNotFoundTreeExceptionOnNewTree" />
+    </UnitTest>
+    <UnitTest name="GetContextAssemblyContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="791f5605-823c-1bb5-35fe-ba025a3168fa">
+      <Execution id="92cfab96-85e8-48db-bd51-9160ca44e2bd" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextAssemblyContextModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="9a7e0ce8-a890-76e5-0515-e3311e06f037">
+      <Execution id="0718b140-e2cf-4d5e-8603-b18c3f03e27f" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnameRouteList" />
+    </UnitTest>
+    <UnitTest name="GetTypeContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="d8184f34-057f-e69d-3079-1c304a346697">
+      <Execution id="9d2d703f-f62f-4958-9ec3-8f83dbf51693" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTypeContextModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnameREventNameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="f034a3de-7207-22c6-01d4-83591bfbd103">
+      <Execution id="a19d6541-eb04-46b2-bb7a-19f4852a99f1" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnameREventNameRouteList" />
+    </UnitTest>
+    <UnitTest name="CanFindRootValueOnNewTree" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="544a66b2-c234-6aa7-d3b7-57315f613540">
+      <Execution id="a44ebe7d-736d-435e-854c-25e558b74b3f" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanFindRootValueOnNewTree" />
+    </UnitTest>
+    <UnitTest name="GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="64a16abf-270a-7737-c6db-2335bfd6d654">
+      <Execution id="1a1e271a-44a2-463d-a087-8b77a2773a00" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespacePrefixRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="24823888-f50a-301e-fcbe-a102f5185a0e">
+      <Execution id="e485e125-fcea-4b8a-9865-532957e8f69a" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespacePrefixRouteList" />
+    </UnitTest>
+    <UnitTest name="CanAddRouteToRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="274768e3-c15c-eb07-7b78-2aec20a6e315">
+      <Execution id="d268ad27-6f7e-4189-9de0-1764850cdfa4" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanAddRouteToRouteList" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnameFFieldNameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="e64fdd11-a1b1-7a84-b4bf-d58eaa26c62d">
+      <Execution id="fb1908d5-4ab6-4ee9-9c40-4ba6117622b5" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnameFFieldNameRouteList" />
+    </UnitTest>
+    <UnitTest name="AddContextToAssemblyModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="7795dffc-b7a5-5c43-1aa2-03f78084ca66">
+      <Execution id="d22d0845-81f1-49c5-bf01-809a53e333d3" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddContextToAssemblyModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnameCRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="84ac9094-4090-126d-990c-e3f42364133f">
+      <Execution id="8155669f-f6b5-4986-a21f-78f6074091f3" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnameCRouteList" />
+    </UnitTest>
+    <UnitTest name="GetAssemblyInvalidContextThrowsInvalidAssemblyException" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="dbd8feea-a40e-8938-e358-e9b3d1f5a615">
+      <Execution id="2a6967d3-24c4-421a-8277-da39a59805b1" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAssemblyInvalidContextThrowsInvalidAssemblyException" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="f6b59a52-abc4-7e7c-f812-569555ffd07c">
+      <Execution id="0dae7413-3f42-4658-8783-bb6da4c922d4" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxRouteList" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnameMMethodNameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="6784527c-c482-0912-542b-3dcdacb47507">
+      <Execution id="2e04c048-19c3-445d-a076-bbe080115ff7" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnameMMethodNameRouteList" />
+    </UnitTest>
+    <UnitTest name="CanAddValueToEmpyTree" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="fbf8eef2-92a0-6d2b-a3cb-60c176d03a3c">
+      <Execution id="f6cac65e-2a55-473e-a1f5-50ba46d54b23" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanAddValueToEmpyTree" />
+    </UnitTest>
+    <UnitTest name="GetContextContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="f28710f9-438e-b12b-8594-ca1054ad2af5">
+      <Execution id="79fa5a24-5c81-49b5-a142-34da3b2d275e" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextContextModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootOnlyRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="cb64fb5f-ea4a-343c-9730-09998b8787bd">
+      <Execution id="01440dae-ca17-4f94-9bf9-46210f8a5b31" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootOnlyRouteList" />
+    </UnitTest>
+    <UnitTest name="InitNewTreeWithRoot" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\utils\tree.test\bin\debug\tree.test.dll" id="3b09194f-5651-fd25-6809-631b7fb4eb62">
+      <Execution id="c2c7212b-1806-4dc2-bf8e-f42ec3248c25" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Utils/Tree.Test/bin/Debug/Tree.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HttpReflector.Utils.Test.TreeTest, Tree.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitNewTreeWithRoot" />
+    </UnitTest>
+    <UnitTest name="ListAllContextReturnsAllContextModels" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="76f7c0a7-6879-6d47-f6cf-e7d87e75c556">
+      <Execution id="a5d835c7-707b-4fa0-9508-6b3c254d334f" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListAllContextReturnsAllContextModels" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxAsAssemblyNameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="d223219d-fbaf-89e7-3a49-c19c9b3b3edc">
+      <Execution id="85c3e053-f774-4c00-8de3-e079e1ed01e4" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxAsAssemblyNameRouteList" />
+    </UnitTest>
+    <UnitTest name="ListAllContextAssembliesContextModel" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="9278291c-e6b0-e32b-9ad3-6d545921b6d2">
+      <Execution id="0acb904a-1f81-40ef-b7e4-76a0858c5281" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListAllContextAssembliesContextModel" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxNsNamespaceShortnamePPropNameRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="0ce176a3-c55a-e636-d255-5e7aff6e41a8">
+      <Execution id="13f1e8c9-4bf8-4bf2-9b6a-d65083d33396" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxNsNamespaceShortnamePPropNameRouteList" />
+    </UnitTest>
+    <UnitTest name="GetContextInvalidNamespaceThrowsInvalidNamespaceModelExceptio" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="e0840f5a-cbda-60a0-b8a5-ddcac37b5ed8">
+      <Execution id="5854a2dd-f955-42b6-9827-556309b82eda" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetContextInvalidNamespaceThrowsInvalidNamespaceModelExceptio" />
+    </UnitTest>
+    <UnitTest name="AddContextWithInvalidPathThrowsInvalidPathException" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\assemblymodel.test\bin\debug\assemblymodel.test.dll" id="6fa0d37b-e32d-d89e-4167-068ec55c8ffd">
+      <Execution id="d6360b02-f4b2-41d8-a63c-2dbc742e8943" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/AssemblyModel.Test/bin/Debug/AssemblyModel.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AssemblyModelTest.AssemblyModelTest, AssemblyModel.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddContextWithInvalidPathThrowsInvalidPathException" />
+    </UnitTest>
+    <UnitTest name="RouteWorksWithRootCtxAsRouteList" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\routers\reflectorrouter.test\bin\debug\reflectorrouter.test.dll" id="b3b5bf70-eb22-7ea3-6c4a-453814fffda2">
+      <Execution id="ce3ba271-7bcf-4dba-b709-aaf36e79221e" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Routers/ReflectorRouter.Test/bin/Debug/ReflectorRouter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorRouter.Test.RouterCollection, ReflectorRouter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RouteWorksWithRootCtxAsRouteList" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0ce176a3-c55a-e636-d255-5e7aff6e41a8" executionId="13f1e8c9-4bf8-4bf2-9b6a-d65083d33396" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1133a30c-721f-dfb0-6e8e-fc4e09453bba" executionId="715ac1a0-be8b-4477-a97c-1f4c568b6326" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24823888-f50a-301e-fcbe-a102f5185a0e" executionId="e485e125-fcea-4b8a-9865-532957e8f69a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="274768e3-c15c-eb07-7b78-2aec20a6e315" executionId="d268ad27-6f7e-4189-9de0-1764850cdfa4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2896e079-7af6-aed4-10c7-ee442a00cf0b" executionId="4b400280-0588-44e0-94de-cf190a9bb873" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b09194f-5651-fd25-6809-631b7fb4eb62" executionId="c2c7212b-1806-4dc2-bf8e-f42ec3248c25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43754c34-18a7-b891-3c8a-c6f51c87076d" executionId="25de7e1f-9741-4760-88b9-05fba00b127c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4854cc04-4aff-cc7f-b81a-0d628dd3edee" executionId="d563e0b2-f067-42bf-afc4-f0166b14683c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b243ddf-9b4e-7f68-2282-1d15a85bab9b" executionId="93642f02-b3a1-419c-898d-7342493acbdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="516b6c68-c5e5-bf9c-2c60-a4dfddc51fb8" executionId="82fe9cf2-6b58-413d-bf5b-2cfb7540680b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="544a66b2-c234-6aa7-d3b7-57315f613540" executionId="a44ebe7d-736d-435e-854c-25e558b74b3f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64a16abf-270a-7737-c6db-2335bfd6d654" executionId="1a1e271a-44a2-463d-a087-8b77a2773a00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6784527c-c482-0912-542b-3dcdacb47507" executionId="2e04c048-19c3-445d-a076-bbe080115ff7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6fa0d37b-e32d-d89e-4167-068ec55c8ffd" executionId="d6360b02-f4b2-41d8-a63c-2dbc742e8943" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76f7c0a7-6879-6d47-f6cf-e7d87e75c556" executionId="a5d835c7-707b-4fa0-9508-6b3c254d334f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" executionId="d22d0845-81f1-49c5-bf01-809a53e333d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="791f5605-823c-1bb5-35fe-ba025a3168fa" executionId="92cfab96-85e8-48db-bd51-9160ca44e2bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84ac9094-4090-126d-990c-e3f42364133f" executionId="8155669f-f6b5-4986-a21f-78f6074091f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9278291c-e6b0-e32b-9ad3-6d545921b6d2" executionId="0acb904a-1f81-40ef-b7e4-76a0858c5281" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a7e0ce8-a890-76e5-0515-e3311e06f037" executionId="0718b140-e2cf-4d5e-8603-b18c3f03e27f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3b5bf70-eb22-7ea3-6c4a-453814fffda2" executionId="ce3ba271-7bcf-4dba-b709-aaf36e79221e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4271458-837d-82fd-cbce-5eb1f16a31d0" executionId="4e31a4d8-30e8-4a8b-ab81-1fa0a823ad2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb64fb5f-ea4a-343c-9730-09998b8787bd" executionId="01440dae-ca17-4f94-9bf9-46210f8a5b31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d223219d-fbaf-89e7-3a49-c19c9b3b3edc" executionId="85c3e053-f774-4c00-8de3-e079e1ed01e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8184f34-057f-e69d-3079-1c304a346697" executionId="9d2d703f-f62f-4958-9ec3-8f83dbf51693" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbd8feea-a40e-8938-e358-e9b3d1f5a615" executionId="2a6967d3-24c4-421a-8277-da39a59805b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0840f5a-cbda-60a0-b8a5-ddcac37b5ed8" executionId="5854a2dd-f955-42b6-9827-556309b82eda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e64fdd11-a1b1-7a84-b4bf-d58eaa26c62d" executionId="fb1908d5-4ab6-4ee9-9c40-4ba6117622b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f034a3de-7207-22c6-01d4-83591bfbd103" executionId="a19d6541-eb04-46b2-bb7a-19f4852a99f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f28710f9-438e-b12b-8594-ca1054ad2af5" executionId="79fa5a24-5c81-49b5-a142-34da3b2d275e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f29e5863-186a-4825-2df2-0578747f784d" executionId="1fbe33ef-a55a-4a75-bc43-553779d81e49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6b59a52-abc4-7e7c-f812-569555ffd07c" executionId="0dae7413-3f42-4658-8783-bb6da4c922d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbf8eef2-92a0-6d2b-a3cb-60c176d03a3c" executionId="f6cac65e-2a55-473e-a1f5-50ba46d54b23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="13f1e8c9-4bf8-4bf2-9b6a-d65083d33396" testId="0ce176a3-c55a-e636-d255-5e7aff6e41a8" testName="RouteWorksWithRootCtxNsNamespaceShortnamePPropNameRouteList" computerName="BEE" duration="00:00:00.0604370" startTime="2011-05-29T18:04:20.9199219+01:00" endTime="2011-05-29T18:04:21.9179687+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13f1e8c9-4bf8-4bf2-9b6a-d65083d33396">
+    </UnitTestResult>
+    <UnitTestResult executionId="715ac1a0-be8b-4477-a97c-1f4c568b6326" testId="1133a30c-721f-dfb0-6e8e-fc4e09453bba" testName="ListAllContextNamespacesContextModel" computerName="BEE" duration="00:04:47.7176618" startTime="2011-05-29T18:04:21.9414062+01:00" endTime="2011-05-29T18:09:10.8164062+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="715ac1a0-be8b-4477-a97c-1f4c568b6326">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.ListAllContextNamespacesContextModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.ListAllContextNamespacesContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 194
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e485e125-fcea-4b8a-9865-532957e8f69a" testId="24823888-f50a-301e-fcbe-a102f5185a0e" testName="RouteWorksWithRootCtxNsNamespacePrefixRouteList" computerName="BEE" duration="00:00:00.0003628" startTime="2011-05-29T18:09:10.9091797+01:00" endTime="2011-05-29T18:09:11.0136719+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e485e125-fcea-4b8a-9865-532957e8f69a">
+    </UnitTestResult>
+    <UnitTestResult executionId="d268ad27-6f7e-4189-9de0-1764850cdfa4" testId="274768e3-c15c-eb07-7b78-2aec20a6e315" testName="CanAddRouteToRouteList" computerName="BEE" duration="00:00:00.0010509" startTime="2011-05-29T18:09:11.0488281+01:00" endTime="2011-05-29T18:09:11.0859375+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d268ad27-6f7e-4189-9de0-1764850cdfa4">
+    </UnitTestResult>
+    <UnitTestResult executionId="4b400280-0588-44e0-94de-cf190a9bb873" testId="2896e079-7af6-aed4-10c7-ee442a00cf0b" testName="AddValueToTree" computerName="BEE" duration="00:00:05.7032270" startTime="2011-05-29T18:09:11.1210937+01:00" endTime="2011-05-29T18:09:17.5947265+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b400280-0588-44e0-94de-cf190a9bb873">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2c7212b-1806-4dc2-bf8e-f42ec3248c25" testId="3b09194f-5651-fd25-6809-631b7fb4eb62" testName="InitNewTreeWithRoot" computerName="BEE" duration="00:00:00.0005062" startTime="2011-05-29T18:09:17.6201172+01:00" endTime="2011-05-29T18:09:17.6474609+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2c7212b-1806-4dc2-bf8e-f42ec3248c25">
+    </UnitTestResult>
+    <UnitTestResult executionId="25de7e1f-9741-4760-88b9-05fba00b127c" testId="43754c34-18a7-b891-3c8a-c6f51c87076d" testName="GetContextNamespaceContextModel" computerName="BEE" duration="00:00:10.6259982" startTime="2011-05-29T18:09:17.6767578+01:00" endTime="2011-05-29T18:09:28.3251953+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25de7e1f-9741-4760-88b9-05fba00b127c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.GetContextNamespaceContextModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.GetContextNamespaceContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 203
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d563e0b2-f067-42bf-afc4-f0166b14683c" testId="4854cc04-4aff-cc7f-b81a-0d628dd3edee" testName="CanFindRootValueThrowsKeyNotFoundTreeExceptionOnNewTree" computerName="BEE" duration="00:00:02.0526944" startTime="2011-05-29T18:09:28.3457031+01:00" endTime="2011-05-29T18:09:30.4326172+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d563e0b2-f067-42bf-afc4-f0166b14683c">
+    </UnitTestResult>
+    <UnitTestResult executionId="93642f02-b3a1-419c-898d-7342493acbdc" testId="4b243ddf-9b4e-7f68-2282-1d15a85bab9b" testName="ContainsResultsTrueRootValueOnNewTree" computerName="BEE" duration="00:00:00.0006280" startTime="2011-05-29T18:09:30.4482422+01:00" endTime="2011-05-29T18:09:30.4677734+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93642f02-b3a1-419c-898d-7342493acbdc">
+    </UnitTestResult>
+    <UnitTestResult executionId="82fe9cf2-6b58-413d-bf5b-2cfb7540680b" testId="516b6c68-c5e5-bf9c-2c60-a4dfddc51fb8" testName="GetAssemblyInvalidContextThrowsInvalidContextException" computerName="BEE" duration="00:00:03.3627192" startTime="2011-05-29T18:09:30.4960937+01:00" endTime="2011-05-29T18:09:33.8769531+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82fe9cf2-6b58-413d-bf5b-2cfb7540680b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.GetAssemblyInvalidContextThrowsInvalidContextException threw exception System.NullReferenceException, but exception HttpReflector.Controllers.Exception.InvalidContextModelException was expected. Exception message: System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.GetAssemblyInvalidContextThrowsInvalidContextException() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 162
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a44ebe7d-736d-435e-854c-25e558b74b3f" testId="544a66b2-c234-6aa7-d3b7-57315f613540" testName="CanFindRootValueOnNewTree" computerName="BEE" duration="00:00:00.0008738" startTime="2011-05-29T18:09:33.9472656+01:00" endTime="2011-05-29T18:09:33.9912109+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a44ebe7d-736d-435e-854c-25e558b74b3f">
+    </UnitTestResult>
+    <UnitTestResult executionId="1a1e271a-44a2-463d-a087-8b77a2773a00" testId="64a16abf-270a-7737-c6db-2335bfd6d654" testName="GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel" computerName="BEE" duration="00:00:01.6485726" startTime="2011-05-29T18:09:34.0234375+01:00" endTime="2011-05-29T18:09:35.7167969+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a1e271a-44a2-463d-a087-8b77a2773a00">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel threw exception System.NullReferenceException, but exception HttpReflector.Controllers.Exception.InvalidContextModelException was expected. Exception message: System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 118
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2e04c048-19c3-445d-a076-bbe080115ff7" testId="6784527c-c482-0912-542b-3dcdacb47507" testName="RouteWorksWithRootCtxNsNamespaceShortnameMMethodNameRouteList" computerName="BEE" duration="00:00:00.0009397" startTime="2011-05-29T18:09:35.7587890+01:00" endTime="2011-05-29T18:09:35.7900390+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e04c048-19c3-445d-a076-bbe080115ff7">
+    </UnitTestResult>
+    <UnitTestResult executionId="d6360b02-f4b2-41d8-a63c-2dbc742e8943" testId="6fa0d37b-e32d-d89e-4167-068ec55c8ffd" testName="AddContextWithInvalidPathThrowsInvalidPathException" computerName="BEE" duration="00:00:01.4553520" startTime="2011-05-29T18:09:35.8232422+01:00" endTime="2011-05-29T18:09:37.3212890+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6360b02-f4b2-41d8-a63c-2dbc742e8943">
+    </UnitTestResult>
+    <UnitTestResult executionId="a5d835c7-707b-4fa0-9508-6b3c254d334f" testId="76f7c0a7-6879-6d47-f6cf-e7d87e75c556" testName="ListAllContextReturnsAllContextModels" computerName="BEE" duration="00:00:01.9534200" startTime="2011-05-29T18:09:37.4033203+01:00" endTime="2011-05-29T18:09:39.4003906+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5d835c7-707b-4fa0-9508-6b3c254d334f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.ListAllContextReturnsAllContextModels threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.ListAllContextReturnsAllContextModels() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d22d0845-81f1-49c5-bf01-809a53e333d3" testId="7795dffc-b7a5-5c43-1aa2-03f78084ca66" testName="AddContextToAssemblyModel" computerName="BEE" duration="00:00:01.6696024" startTime="2011-05-29T18:09:39.4218750+01:00" endTime="2011-05-29T18:09:41.1201172+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d22d0845-81f1-49c5-bf01-809a53e333d3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.AddContextToAssemblyModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.AddContextToAssemblyModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="92cfab96-85e8-48db-bd51-9160ca44e2bd" testId="791f5605-823c-1bb5-35fe-ba025a3168fa" testName="GetContextAssemblyContextModel" computerName="BEE" duration="00:00:01.6301683" startTime="2011-05-29T18:09:41.1650390+01:00" endTime="2011-05-29T18:09:42.8232422+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92cfab96-85e8-48db-bd51-9160ca44e2bd">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.GetContextAssemblyContextModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.GetContextAssemblyContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 147
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8155669f-f6b5-4986-a21f-78f6074091f3" testId="84ac9094-4090-126d-990c-e3f42364133f" testName="RouteWorksWithRootCtxNsNamespaceShortnameCRouteList" computerName="BEE" duration="00:00:00.0004109" startTime="2011-05-29T18:09:42.8593750+01:00" endTime="2011-05-29T18:09:42.8994140+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8155669f-f6b5-4986-a21f-78f6074091f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="0acb904a-1f81-40ef-b7e4-76a0858c5281" testId="9278291c-e6b0-e32b-9ad3-6d545921b6d2" testName="ListAllContextAssembliesContextModel" computerName="BEE" duration="00:00:01.6937806" startTime="2011-05-29T18:09:42.9218750+01:00" endTime="2011-05-29T18:09:44.6337890+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0acb904a-1f81-40ef-b7e4-76a0858c5281">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.ListAllContextAssembliesContextModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.ListAllContextAssembliesContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 133
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0718b140-e2cf-4d5e-8603-b18c3f03e27f" testId="9a7e0ce8-a890-76e5-0515-e3311e06f037" testName="RouteWorksWithRootCtxNsNamespaceShortnameRouteList" computerName="BEE" duration="00:00:00.0003209" startTime="2011-05-29T18:09:44.6806640+01:00" endTime="2011-05-29T18:09:44.7060547+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0718b140-e2cf-4d5e-8603-b18c3f03e27f">
+    </UnitTestResult>
+    <UnitTestResult executionId="ce3ba271-7bcf-4dba-b709-aaf36e79221e" testId="b3b5bf70-eb22-7ea3-6c4a-453814fffda2" testName="RouteWorksWithRootCtxAsRouteList" computerName="BEE" startTime="2011-05-29T18:09:44.7177734+01:00" endTime="2011-05-29T18:09:44.7324219+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce3ba271-7bcf-4dba-b709-aaf36e79221e">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e31a4d8-30e8-4a8b-ab81-1fa0a823ad2b" testId="b4271458-837d-82fd-cbce-5eb1f16a31d0" testName="RouteWorksWithRootCtxNsRouteList" computerName="BEE" duration="00:00:00.0008380" startTime="2011-05-29T18:09:44.7597656+01:00" endTime="2011-05-29T18:09:44.7832031+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e31a4d8-30e8-4a8b-ab81-1fa0a823ad2b">
+    </UnitTestResult>
+    <UnitTestResult executionId="01440dae-ca17-4f94-9bf9-46210f8a5b31" testId="cb64fb5f-ea4a-343c-9730-09998b8787bd" testName="RouteWorksWithRootOnlyRouteList" computerName="BEE" duration="00:00:00.0010319" startTime="2011-05-29T18:09:44.7978515+01:00" endTime="2011-05-29T18:09:44.8271484+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01440dae-ca17-4f94-9bf9-46210f8a5b31">
+    </UnitTestResult>
+    <UnitTestResult executionId="85c3e053-f774-4c00-8de3-e079e1ed01e4" testId="d223219d-fbaf-89e7-3a49-c19c9b3b3edc" testName="RouteWorksWithRootCtxAsAssemblyNameRouteList" computerName="BEE" startTime="2011-05-29T18:09:44.8447265+01:00" endTime="2011-05-29T18:09:44.8632812+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85c3e053-f774-4c00-8de3-e079e1ed01e4">
+    </UnitTestResult>
+    <UnitTestResult executionId="9d2d703f-f62f-4958-9ec3-8f83dbf51693" testId="d8184f34-057f-e69d-3079-1c304a346697" testName="GetTypeContextModel" computerName="BEE" duration="00:00:04.5750099" startTime="2011-05-29T18:09:44.8769531+01:00" endTime="2011-05-29T18:09:49.4716797+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d2d703f-f62f-4958-9ec3-8f83dbf51693">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method AssemblyModelTest.AssemblyModelTest.GetTypeContextModel threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HttpReflector.Controllers.AssemblyModel.AddContext(String context, String path) in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\AssemblyModel.cs:line 105
+   at AssemblyModelTest.AssemblyModelTest.GetTypeContextModel() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\AssemblyModel.Test\AssemblyModelTest.cs:line 236
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a6967d3-24c4-421a-8277-da39a59805b1" testId="dbd8feea-a40e-8938-e358-e9b3d1f5a615" testName="GetAssemblyInvalidContextThrowsInvalidAssemblyException" computerName="BEE" duration="00:00:05.4716797" startTime="2011-05-29T18:09:49.5468750+01:00" endTime="2011-05-29T18:09:55.0185547+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a6967d3-24c4-421a-8277-da39a59805b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="5854a2dd-f955-42b6-9827-556309b82eda" testId="e0840f5a-cbda-60a0-b8a5-ddcac37b5ed8" testName="GetContextInvalidNamespaceThrowsInvalidNamespaceModelExceptio" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5854a2dd-f955-42b6-9827-556309b82eda">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb1908d5-4ab6-4ee9-9c40-4ba6117622b5" testId="e64fdd11-a1b1-7a84-b4bf-d58eaa26c62d" testName="RouteWorksWithRootCtxNsNamespaceShortnameFFieldNameRouteList" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb1908d5-4ab6-4ee9-9c40-4ba6117622b5">
+    </UnitTestResult>
+    <UnitTestResult executionId="a19d6541-eb04-46b2-bb7a-19f4852a99f1" testId="f034a3de-7207-22c6-01d4-83591bfbd103" testName="RouteWorksWithRootCtxNsNamespaceShortnameREventNameRouteList" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a19d6541-eb04-46b2-bb7a-19f4852a99f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="79fa5a24-5c81-49b5-a142-34da3b2d275e" testId="f28710f9-438e-b12b-8594-ca1054ad2af5" testName="GetContextContextModel" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79fa5a24-5c81-49b5-a142-34da3b2d275e">
+    </UnitTestResult>
+    <UnitTestResult executionId="1fbe33ef-a55a-4a75-bc43-553779d81e49" testId="f29e5863-186a-4825-2df2-0578747f784d" testName="CanRemoveRouteFromRouteList" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fbe33ef-a55a-4a75-bc43-553779d81e49">
+    </UnitTestResult>
+    <UnitTestResult executionId="0dae7413-3f42-4658-8783-bb6da4c922d4" testId="f6b59a52-abc4-7e7c-f812-569555ffd07c" testName="RouteWorksWithRootCtxRouteList" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0dae7413-3f42-4658-8783-bb6da4c922d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="f6cac65e-2a55-473e-a1f5-50ba46d54b23" testId="fbf8eef2-92a0-6d2b-a3cb-60c176d03a3c" testName="CanAddValueToEmpyTree" computerName="BEE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6cac65e-2a55-473e-a1f5-50ba46d54b23">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -12,7 +12,8 @@
   <Module PersistentId="D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64" ModuleId="UIBinder" />
   <Module PersistentId="07859F51-8DA9-481A-84DD-B9A84B191B37" ModuleId="HttpBinder" />
   <Module PersistentId="60B60244-8144-482E-BF22-7CEA74DA811B" ModuleId="AssemblyReflector" />
-  <Module PersistentId="65B4B8F7-7060-4DED-B88D-EC931621366E" ModuleId="ReflectorController.Test" />
   <Module PersistentId="284B67E9-1ACA-453F-A62D-3CB5686883FC" ModuleId="ReflectorController.Test_1" />
   <Module PersistentId="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C" ModuleId="AssemblyModel.Test" />
+  <Module PersistentId="9AB64D12-4998-43BE-BE87-5A4C04D83909" ModuleId="Tree" />
+  <Module PersistentId="38038D50-140C-431C-ACCC-7F9DA886544C" ModuleId="Tree.Test" />
 </Modules>
