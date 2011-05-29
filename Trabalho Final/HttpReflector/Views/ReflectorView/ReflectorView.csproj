@@ -40,7 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\CollectionView.cs" />
+    <Compile Include="Attributes\PropertyView.cs" />
+    <Compile Include="Attributes\TemplateView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootView.cs" />
+    <Compile Include="ViewBinder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Context.txt" />
+    <Content Include="RootView.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\View\View.csproj">
+      <Project>{EA4FEEB3-22D9-418C-B34A-270D03AABC08}</Project>
+      <Name>View</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyReflector.csproj">
+      <Project>{60B60244-8144-482E-BF22-7CEA74DA811B}</Project>
+      <Name>AssemblyReflector</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

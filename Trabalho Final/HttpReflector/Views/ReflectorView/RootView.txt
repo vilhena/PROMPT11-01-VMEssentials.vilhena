@@ -1,0 +1,18 @@
+﻿<HTML>
+	<BODY>
+		<H1><@Name></H1>
+		<H1><@MyType.Name></H1>
+		<H1><@MyType.FullName></H1>
+		<H1><@MyType.Contructors.Count></H1>
+		<TABLE>
+			<TR>
+				<@Contexts>
+			</TR>
+		</TABLE>
+		<TABLE>
+			<TR>
+				<@Contexts>
+			</TR>
+		</TABLE>
+	<BODY>
+</HTML>

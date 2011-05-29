@@ -1,5 +1,0 @@
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\bin\Debug\Handler.dll
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\bin\Debug\Handler.pdb
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\obj\Debug\Handler.dll
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\Handler\obj\Debug\Handler.pdb

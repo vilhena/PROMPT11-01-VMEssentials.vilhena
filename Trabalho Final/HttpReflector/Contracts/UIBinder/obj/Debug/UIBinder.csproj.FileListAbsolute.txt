@@ -1,5 +1,0 @@
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\UIBinder\bin\Debug\UIBinder.dll
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\UIBinder\bin\Debug\UIBinder.pdb
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\UIBinder\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\UIBinder\obj\Debug\UIBinder.dll
-C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\UIBinder\obj\Debug\UIBinder.pdb

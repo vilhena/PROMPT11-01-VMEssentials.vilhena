@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="619ab599-6f41-46ef-ae65-a3605f17eeba" name="gnvilhena@BEE 2011-05-29 22:17:59" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-29 22_17_59">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Views\ReflectorView\bin\Debug\ReflectorView.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\View\bin\Debug\View.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-29T22:17:59.5292969+01:00" queuing="2011-05-29T22:18:01.6464844+01:00" start="2011-05-29T22:18:01.8886719+01:00" finish="2011-05-29T22:18:36.9667969+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BEE" outcome="Error" timestamp="2011-05-29T22:18:36.9355469+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BindRootView" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\views\reflectorview.test\bin\debug\reflectorview.test.dll" id="2cd50448-5291-4f46-e77d-96205d99f315">
+      <Execution id="9e0a2882-d91a-4d8a-b7de-5623d44ea51c" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Views/ReflectorView.Test/bin/Debug/ReflectorView.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorView.Test.ReflectorViewTest, ReflectorView.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BindRootView" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2cd50448-5291-4f46-e77d-96205d99f315" executionId="9e0a2882-d91a-4d8a-b7de-5623d44ea51c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9e0a2882-d91a-4d8a-b7de-5623d44ea51c" testId="2cd50448-5291-4f46-e77d-96205d99f315" testName="BindRootView" computerName="BEE" duration="00:00:34.8828125" startTime="2011-05-29T22:18:02.0839844+01:00" endTime="2011-05-29T22:18:36.9667969+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e0a2882-d91a-4d8a-b7de-5623d44ea51c">
+    </UnitTestResult>
+  </Results>
+</TestRun>

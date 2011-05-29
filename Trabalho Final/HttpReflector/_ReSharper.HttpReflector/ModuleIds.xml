@@ -16,4 +16,5 @@
   <Module PersistentId="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C" ModuleId="AssemblyModel.Test" />
   <Module PersistentId="9AB64D12-4998-43BE-BE87-5A4C04D83909" ModuleId="Tree" />
   <Module PersistentId="38038D50-140C-431C-ACCC-7F9DA886544C" ModuleId="Tree.Test" />
+  <Module PersistentId="951DF78D-BC55-441F-8CDE-1F9730E85EE5" ModuleId="ReflectorView.Test" />
 </Modules>
