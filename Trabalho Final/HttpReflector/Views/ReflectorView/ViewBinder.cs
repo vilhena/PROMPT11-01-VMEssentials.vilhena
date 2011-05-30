@@ -29,13 +29,18 @@ namespace HttpReflector.Views
             if(tviewAtt == null)
                 throw new Exception();
 
+            return MatchViewPropeties(view, tviewAtt.TemplateFile);;
+        }
 
-            if(!File.Exists(RootFolder + tviewAtt.TemplateFile))
+        private static string MatchViewPropeties(object view, string filePath)
+        {
+            //TODO:Throw specific exception
+            if (!File.Exists(RootFolder + filePath))
                 throw new Exception();
 
             var sb = new StringBuilder();
 
-            using (TextReader reader = File.OpenText(RootFolder + tviewAtt.TemplateFile))
+            using (TextReader reader = File.OpenText(RootFolder + filePath))
             {
                 sb.Append(reader.ReadToEnd());
             }
@@ -55,14 +60,20 @@ namespace HttpReflector.Views
                 {
                     var pinfo = value.GetType().GetProperty(prop);
 
+                    //Try to Map invalid Data
+                    //TODO: Create Specific Exception
+                    if (pinfo == null)
+                        throw new Exception("Invalid Data Bind");
+                    
+
                     CollectionView cview = null;
- 
+
                     foreach (var pinfoAttribute in pinfo.GetCustomAttributes(false))
                     {
-                        if (pinfoAttribute.GetType().Equals(typeof(CollectionView))
-                            && prop == pinfo.Name) 
+                        if (pinfoAttribute.GetType().Equals(typeof (CollectionView))
+                            && prop == pinfo.Name)
                         {
-                            cview = (CollectionView)pinfoAttribute;
+                            cview = (CollectionView) pinfoAttribute;
                             break;
                         }
                     }
@@ -72,31 +83,26 @@ namespace HttpReflector.Views
                         // the enumerable
                         value = pinfo.GetValue(value, new object[] { });
 
-                        //TODO: Load from Property Text Descripton
                         var listsb = new StringBuilder();
-
                         foreach (var item in (IEnumerable)value)
                         {
-                            //TODO: Need to load propper data
-                            listsb.AppendFormat("{0} - {1}", item.GetType(), item);
-                            listsb.AppendLine();
+                            listsb.Append(MatchViewPropeties(item, cview.TemplateFile));
                         }
 
                         value = listsb.ToString();
                     }
                     else
                     {
-                         value = pinfo.GetValue(value, new object[] { });
+                        value = pinfo.GetValue(value, new object[] { });
                     }
 
                 }
 
+                //MustEscapeData
                 sb.Replace(match.Value, value.ToString());
 
                 match = match.NextMatch();
             }
-
-            
             return sb.ToString();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,19 +67,6 @@ namespace ReflectorView.Test
         {
             var rootView = new RootView()
                                {
-                                   Name = "MyFirstView",
-                                   MyType = new ReflectType()
-                                                {
-                                                    Assembly = new ReflectAssembly(),
-                                                    Contructors = new List<ReflectMethod>(),
-                                                    Events = new List<ReflectEvent>(),
-                                                    Fields = new List<ReflectField>(),
-                                                    FullName = "FullNameType",
-                                                    Name = "SimpleName",
-                                                    Methods = new List<ReflectMethod>(),
-                                                    NameSpace = new ReflectNamespace(),
-                                                    Properties = new List<ReflectProperty>()
-                                                },
                                    Contexts = new List<ReflectContext>()
                                };
             rootView.Contexts.Add(new ReflectContext()
@@ -94,9 +82,17 @@ namespace ReflectorView.Test
             }
                 );
 
-            ViewBinder.RootFolder = @"..\..\..\Views\ReflectorView\";
-            ViewBinder.BindView(rootView);
+            ViewBinder.RootFolder = @"..\..\..\Views\ReflectorView.Test\";
+            var output = ViewBinder.BindView(rootView);
+            
+            var sb = new StringBuilder();
 
+            using (TextReader reader = File.OpenText(ViewBinder.RootFolder + "RootViewOut.txt"))
+            {
+                sb.Append(reader.ReadToEnd());
+            }
+
+            Assert.AreEqual(sb.ToString(),output);
         }
     }
 }

@@ -43,13 +43,10 @@
     <Compile Include="Attributes\CollectionView.cs" />
     <Compile Include="Attributes\PropertyView.cs" />
     <Compile Include="Attributes\TemplateView.cs" />
+    <Compile Include="ContextView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RootView.cs" />
     <Compile Include="ViewBinder.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Context.txt" />
-    <Content Include="RootView.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Contracts\View\View.csproj">

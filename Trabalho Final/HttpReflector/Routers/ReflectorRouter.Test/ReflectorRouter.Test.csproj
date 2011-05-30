@@ -57,6 +57,10 @@
       <Project>{18E5EC60-0EC2-492A-9765-595689CA52A7}</Project>
       <Name>Router</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\View\View.csproj">
+      <Project>{EA4FEEB3-22D9-418C-B34A-270D03AABC08}</Project>
+      <Name>View</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReflectorRouter\ReflectorRouter.csproj">
       <Project>{06F9FF3A-A31C-444A-97CF-27872F063C31}</Project>
       <Name>ReflectorRouter</Name>

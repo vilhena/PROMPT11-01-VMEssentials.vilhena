@@ -51,9 +51,41 @@
       <Project>{7D68CEDE-CC36-4F55-8C35-0520F2CEF015}</Project>
       <Name>Controller</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Handler\Handler.csproj">
+      <Project>{BA7B44E3-D090-4812-87D8-5AF9BAA35351}</Project>
+      <Name>Handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Router\Router.csproj">
+      <Project>{18E5EC60-0EC2-492A-9765-595689CA52A7}</Project>
+      <Name>Router</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\UIBinder\UIBinder.csproj">
+      <Project>{D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64}</Project>
+      <Name>UIBinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyReflector.csproj">
+      <Project>{60B60244-8144-482E-BF22-7CEA74DA811B}</Project>
+      <Name>AssemblyReflector</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Controllers\ReflectorController\ReflectorController.csproj">
       <Project>{DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70}</Project>
       <Name>ReflectorController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Handlers\ReflectorHandler\ReflectorHandler.csproj">
+      <Project>{F65A44F3-E11C-446D-94B0-EBB5C0196108}</Project>
+      <Name>ReflectorHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HttpBinder\HttpBinder.csproj">
+      <Project>{07859F51-8DA9-481A-84DD-B9A84B191B37}</Project>
+      <Name>HttpBinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Routers\ReflectorRouter\ReflectorRouter.csproj">
+      <Project>{06F9FF3A-A31C-444A-97CF-27872F063C31}</Project>
+      <Name>ReflectorRouter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Views\ReflectorView\ReflectorView.csproj">
+      <Project>{C8E9E6EE-C8B4-4364-A751-D8079A633EC8}</Project>
+      <Name>ReflectorView</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

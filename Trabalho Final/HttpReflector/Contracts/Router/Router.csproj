@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exception\CannotFindRouterException.cs" />
+    <Compile Include="Exception\RouterException.cs" />
     <Compile Include="IRouteContainer.cs" />
     <Compile Include="IRouter.cs" />
     <Compile Include="IRouteNode.cs" />

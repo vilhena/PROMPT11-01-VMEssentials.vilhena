@@ -17,4 +17,6 @@
   <Module PersistentId="9AB64D12-4998-43BE-BE87-5A4C04D83909" ModuleId="Tree" />
   <Module PersistentId="38038D50-140C-431C-ACCC-7F9DA886544C" ModuleId="Tree.Test" />
   <Module PersistentId="951DF78D-BC55-441F-8CDE-1F9730E85EE5" ModuleId="ReflectorView.Test" />
+  <Module PersistentId="91818C64-53EE-487A-A897-B410EAEB4B45" ModuleId="HttpBinder.Test" />
+  <Module PersistentId="8A12BFC6-DAD2-43E3-8814-D36D3B3AE9FA" ModuleId="ReflectorHandler.Test" />
 </Modules>

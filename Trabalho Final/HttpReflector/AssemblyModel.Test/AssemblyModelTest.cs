@@ -52,11 +52,10 @@ namespace AssemblyModelTest
         #endregion
 
         //Use TestInitialize to run code before running each test 
-        public AssemblyModel Model { get; set; }
+        
         [TestInitialize()]
         public void MyTestInitialize()
         {
-            this.Model = new AssemblyModel();
         }
 
 
@@ -64,8 +63,8 @@ namespace AssemblyModelTest
         [TestMethod]
         public void AddContextToAssemblyModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var ctx = Model.ListContexts().Find(s => s.Name == "ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var ctx = AssemblyModel.ListContexts().Find(s => s.Name == "ContextTest1");
             Assert.AreEqual("ContextTest1", ctx.Name);
         }
 
@@ -75,7 +74,7 @@ namespace AssemblyModelTest
         {
             try
             {
-                Model.AddContext("Invalid", @"X:\");
+                AssemblyModel.AddContext("Invalid", @"X:\");
             }
             catch (InvalidPathAssemblyModelException ex)
             {
@@ -87,9 +86,9 @@ namespace AssemblyModelTest
         [TestMethod]
         public void ListAllContextReturnsAllContextModels()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            Model.AddContext("ContextTest2", @"..\..\..\Test\ContextTest2");
-            var ctxs = Model.ListContexts();
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest2", @"..\..\..\Test\ContextTest2");
+            var ctxs = AssemblyModel.ListContexts();
 
             Assert.AreEqual(2,ctxs.Count);
             Assert.IsNotNull(ctxs.Find(s => s.Name == "ContextTest1"));
@@ -101,8 +100,8 @@ namespace AssemblyModelTest
         [TestMethod]
         public void GetContextContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var asms = Model.GetContext("ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var asms = AssemblyModel.GetContext("ContextTest1");
             Assert.IsNotNull(asms);
             Assert.AreEqual("ContextTest1",asms.Name);
             Assert.AreEqual(@"..\..\..\Test\ContextTest1",asms.Folder);
@@ -115,10 +114,10 @@ namespace AssemblyModelTest
         [ExpectedException(typeof(InvalidContextModelException))]
         public void GetContextUsingInvalidContextThrowsInvalidContextExceptionContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             try
             {
-                var asms = Model.GetContext("ContextTestInvalid");
+                var asms = AssemblyModel.GetContext("ContextTestInvalid");
             }
             catch (InvalidContextModelException ex)
             {
@@ -130,8 +129,8 @@ namespace AssemblyModelTest
         [TestMethod]
         public void ListAllContextAssembliesContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var asms = Model.ListContextAssemblies("ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var asms = AssemblyModel.ListContextAssemblies("ContextTest1");
             Assert.AreEqual(3, asms.Count);
             var vb = asms.Find(s => s.Name == "Microsoft.VisualBasic");
             var addinContract = asms.Find(s => s.Name == "System.AddIn.Contract");
@@ -144,8 +143,8 @@ namespace AssemblyModelTest
         [TestMethod]
         public void GetContextAssemblyContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var asms = Model.GetAssembly("ContextTest1", "Microsoft.VisualBasic");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var asms = AssemblyModel.GetAssembly("ContextTest1", "Microsoft.VisualBasic");
             Assert.IsNotNull(asms);
             Assert.AreEqual("Microsoft.VisualBasic", asms.Name);
             Assert.AreEqual("Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",asms.FullName);
@@ -159,10 +158,10 @@ namespace AssemblyModelTest
         [ExpectedException(typeof(InvalidContextModelException))]
         public void GetAssemblyInvalidContextThrowsInvalidContextException()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             try
             {
-                var asms = Model.GetAssembly("ContextTestInvalid", "Microsoft.VisualBasic");
+                var asms = AssemblyModel.GetAssembly("ContextTestInvalid", "Microsoft.VisualBasic");
             }
             catch (InvalidContextModelException ex)
             {
@@ -175,10 +174,10 @@ namespace AssemblyModelTest
         [ExpectedException(typeof(InvalidAssemblyModelException))]
         public void GetAssemblyInvalidContextThrowsInvalidAssemblyException()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             try
             {
-                var asms = Model.GetAssembly("ContextTest1", "Microsoft.VisualBasic.Invalid");
+                var asms = AssemblyModel.GetAssembly("ContextTest1", "Microsoft.VisualBasic.Invalid");
             }
             catch (InvalidAssemblyModelException ex)
             {
@@ -191,8 +190,8 @@ namespace AssemblyModelTest
         [TestMethod]
         public void ListAllContextNamespacesContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var ns = Model.ListNamespaces("ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var ns = AssemblyModel.ListNamespaces("ContextTest1");
 
             Assert.AreEqual(18, ns.Count);
         }
@@ -200,9 +199,9 @@ namespace AssemblyModelTest
         [TestMethod]
         public void GetContextNamespaceContextModel()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
-            var ns = Model.GetNamespace("ContextTest1", "Microsoft.VisualBasic.FileIO");
-            var assemebly = Model.GetAssembly("ContextTest1", "Microsoft.VisualBasic");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            var ns = AssemblyModel.GetNamespace("ContextTest1", "Microsoft.VisualBasic.FileIO");
+            var assemebly = AssemblyModel.GetAssembly("ContextTest1", "Microsoft.VisualBasic");
 
             Assert.IsNotNull(ns);
             Assert.AreEqual("Microsoft.VisualBasic.FileIO",ns.Name);
@@ -214,10 +213,10 @@ namespace AssemblyModelTest
         [ExpectedException(typeof(InvalidNamespaceModelException))]
         public void GetContextInvalidNamespaceThrowsInvalidNamespaceModelExceptio()
         {
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             try
             {
-                var asms = Model.GetNamespace("ContextTest1", "Microsoft.VisualBasic.Invalid");
+                var asms = AssemblyModel.GetNamespace("ContextTest1", "Microsoft.VisualBasic.Invalid");
             }
             catch (InvalidNamespaceModelException ex)
             {
@@ -233,9 +232,9 @@ namespace AssemblyModelTest
             var asm = Assembly.LoadFrom(@"..\..\..\Test\ContextTest1\Microsoft.VisualBasic.dll");
             Type asmType = asm.GetType("Microsoft.VisualBasic.CompilerServices.VBInputBox");
 
-            Model.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
 
-            var type = Model.GetCtsType("ContextTest1", "Microsoft.VisualBasic.CompilerServices", "VBInputBox");
+            var type = AssemblyModel.GetCtsType("ContextTest1", "Microsoft.VisualBasic.CompilerServices", "VBInputBox");
 
             Assert.IsNotNull(type);
             Assert.AreEqual("Microsoft.VisualBasic.CompilerServices", type.NameSpace.Name);

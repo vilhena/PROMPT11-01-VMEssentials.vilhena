@@ -12,25 +12,25 @@ using HttpReflector.Utils;
 
 namespace HttpReflector.Controllers
 {
-    public class AssemblyModel
+    public static class AssemblyModel
     {
-        private Dictionary<string, ReflectContext> Contexts { get; set; }
+        private static Dictionary<string, ReflectContext> Contexts { get; set; }
 
-        public AssemblyModel()
+        static AssemblyModel()
         {
             Contexts = new Dictionary<string, ReflectContext>();
         }
 
-        private string PublicKeyToString(IEnumerable<byte> key)
+        private static string PublicKeyToString(IEnumerable<byte> key)
         {
             var sb = new StringBuilder();
             key.ToList().ForEach(s => sb.AppendFormat("{0:x}", s));
             return sb.ToString();
         }
 
-        public void AddContext(string context, string path)
+        public static void AddContext(string context, string path)
         {
-            if (this.Contexts.ContainsKey(context)) 
+            if (AssemblyModel.Contexts.ContainsKey(context)) 
                 return;
 
             var directoryInfo = new DirectoryInfo(path);
@@ -116,7 +116,7 @@ namespace HttpReflector.Controllers
             }
         }
 
-        private ReflectType AddNewSimpleReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static ReflectType AddNewSimpleReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
             var newType = new ReflectType()
             {
@@ -134,7 +134,7 @@ namespace HttpReflector.Controllers
             return newType;
         }
 
-        private ReflectType AddNewReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static ReflectType AddNewReflectType(Type type, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
     
             var newType = new ReflectType()
@@ -159,7 +159,7 @@ namespace HttpReflector.Controllers
             return newType;
         }
 
-        private void FillEvents(Type type, ReflectType newType)
+        private static void FillEvents(Type type, ReflectType newType)
         {
             foreach (var eventInfo in type.GetEvents())
             {
@@ -177,7 +177,7 @@ namespace HttpReflector.Controllers
             }
         }
 
-        private Tuple<ReflectNamespace, ReflectAssembly> FindNamespaceAndAssembly(Type type)
+        private static Tuple<ReflectNamespace, ReflectAssembly> FindNamespaceAndAssembly(Type type)
         {
             var asm = FindAssembly(type.Assembly.GetName().Name);
             if(asm == null)
@@ -204,7 +204,7 @@ namespace HttpReflector.Controllers
         }
 
 
-        private void FillProperties(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static void FillProperties(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
             foreach (var propertyInfo in type.GetProperties())
             {
@@ -220,7 +220,7 @@ namespace HttpReflector.Controllers
             }
         }
 
-        private void FillFields(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static void FillFields(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
             foreach (var fieldInfo in type.GetFields())
             {
@@ -238,7 +238,7 @@ namespace HttpReflector.Controllers
             }
         }
 
-        private void FillMethods(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static void FillMethods(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
             foreach (var methodInfo in type.GetMethods())
             {
@@ -268,7 +268,7 @@ namespace HttpReflector.Controllers
             }
         }
 
-        private void FillConstructors(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
+        private static void FillConstructors(Type type, ReflectType newType, ReflectAssembly newassembly, ReflectNamespace currNamespace)
         {
             foreach (var constructorInfo in type.GetConstructors())
             {
@@ -296,18 +296,18 @@ namespace HttpReflector.Controllers
         }
 
 
-        public List<ReflectContext> ListContexts()
+        public static List<ReflectContext> ListContexts()
         {
             return Contexts.Values.ToList();
         }
 
 
-        public List<ReflectAssembly> ListContextAssemblies(string context)
+        public static List<ReflectAssembly> ListContextAssemblies(string context)
         {
             return GetContext(context).Assemblies.Values.ToList();
         }
 
-        public ReflectAssembly FindAssembly(string assemblyName)
+        public static ReflectAssembly FindAssembly(string assemblyName)
         {
             foreach (var ctxs in Contexts.Values)
             {
@@ -319,7 +319,7 @@ namespace HttpReflector.Controllers
             return null;
         }
 
-        public ReflectNamespace FindNamespace(string nameSpace)
+        public static ReflectNamespace FindNamespace(string nameSpace)
         {
             foreach (var ctxs in Contexts.Values)
             {
@@ -331,7 +331,7 @@ namespace HttpReflector.Controllers
             return null;
         }
 
-        public ReflectAssembly GetAssembly(string context, string assembly)
+        public static ReflectAssembly GetAssembly(string context, string assembly)
         {
             var ctx = GetContext(context);
             if(!ctx.Assemblies.ContainsKey(assembly))
@@ -339,19 +339,19 @@ namespace HttpReflector.Controllers
             return GetContext(context).Assemblies[assembly];
         }
 
-        public ReflectContext GetContext(string context)
+        public static ReflectContext GetContext(string context)
         {
             if(!Contexts.ContainsKey(context))
                 throw new InvalidContextModelException(context);
             return Contexts[context];
         }
 
-        public List<ReflectNamespace> ListNamespaces(string context)
+        public static List<ReflectNamespace> ListNamespaces(string context)
         {
             return GetContext(context).Namespaces.Values.ToList();
         }
 
-        public ReflectNamespace GetNamespace(string context, string namespacePrefix)
+        public static ReflectNamespace GetNamespace(string context, string namespacePrefix)
         {
             var ctx = GetContext(context);
             if (!ctx.Namespaces.ContainsKey(namespacePrefix))
@@ -359,7 +359,7 @@ namespace HttpReflector.Controllers
             return GetContext(context).Namespaces[namespacePrefix];
         }
 
-        public ReflectType GetCtsType(string context, string namespacePrefix, string shortName)
+        public static ReflectType GetCtsType(string context, string namespacePrefix, string shortName)
         {
             var reflectNamespace = GetNamespace(context, namespacePrefix);
             if (!reflectNamespace.Types.ContainsKey(shortName))

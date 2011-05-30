@@ -54,6 +54,10 @@
       <Project>{BA7B44E3-D090-4812-87D8-5AF9BAA35351}</Project>
       <Name>Handler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Router\Router.csproj">
+      <Project>{18E5EC60-0EC2-492A-9765-595689CA52A7}</Project>
+      <Name>Router</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UIBinder\UIBinder.csproj">
       <Project>{D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64}</Project>
       <Name>UIBinder</Name>

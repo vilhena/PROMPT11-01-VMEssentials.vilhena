@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.Router;
+using HttpReflector.Contracts.Router.Exception;
+using HttpReflector.Contracts.View;
 using HttpReflector.Routers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -73,7 +75,10 @@ namespace ReflectorRouter.Test
 
         private class MyDummyHandler:IHandler
         {
-            
+            public IView Run()
+            {
+                return null;
+            }
         }
 
         [TestMethod]
@@ -174,6 +179,44 @@ namespace ReflectorRouter.Test
         {
             _container.Map("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", _dummyHandler);
             Assert.IsNotNull(_container.Seek("/teste/ns/namespace/short/e/evento"));
+        }
+
+        [TestMethod]
+        public void RouteSeekReturnsValidHandlerNoRouteResult()
+        {
+            _container.Map("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", _dummyHandler);
+            var result = _container.Seek("/Context1/ns/Visual.Basic/Form/e/OnLoad");
+            Assert.AreEqual(_dummyHandler,result.Handler);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(CannotFindRouterException))]
+        public void RouteSeekThrowsCannotFindRouterExceptionIfCannotFindPattern()
+        {
+            _container.Map("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", _dummyHandler);
+
+            try
+            {
+                var result = _container.Seek("/Context1/ns/Visual.Basic/Form/e/OnLoad/Invalid");
+            }
+            catch (CannotFindRouterException ex)
+            {
+                Assert.AreEqual("/Context1/ns/Visual.Basic/Form/e/OnLoad/Invalid", ex.Path);
+                throw;
+            }
+        }
+
+        [TestMethod]
+        public void RouteSeekReturnsAllKeysNoRouteResult()
+        {
+            _container.Map("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", _dummyHandler);
+            var result = _container.Seek("/Context1/ns/Visual.Basic/Form/e/OnLoad");
+            Assert.AreEqual("Context1", result.Map["{ctx}"]);
+            Assert.AreEqual("ns", result.Map["ns"]);
+            Assert.AreEqual("Visual.Basic", result.Map["{namespace}"]);
+            Assert.AreEqual("Form", result.Map["{shortName}"]);
+            Assert.AreEqual("e", result.Map["e"]);
+            Assert.AreEqual("OnLoad", result.Map["{eventName}"]);
         }
 
     }

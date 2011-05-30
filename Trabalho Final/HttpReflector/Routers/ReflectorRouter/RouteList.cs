@@ -5,13 +5,13 @@ using System.Text;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.Router;
 using System.Text.RegularExpressions;
+using HttpReflector.Contracts.Router.Exception;
 
 namespace HttpReflector.Routers
 {
     //make this generic
     public class RouteList<T> : IRouteContainer<T>
     {
-        //TODO:lista de componentes de pattern para a comparacao ser mais facil
         private readonly IDictionary<string, T> _routeList = new Dictionary<string, T>();
 
         public void Map(string pattern, T handler)
@@ -24,47 +24,52 @@ namespace HttpReflector.Routers
         {
             foreach (var routePatterns in this._routeList.Keys)
             {
-                if (IsMatch(path, routePatterns))
+                var map = IsMatch(path, routePatterns);
+                if (map != null)
                 {
                     var result = new RouteResult<T>
                                      {
+                                         Map = map,
                                          Handler = this._routeList[routePatterns]
                                      };
                     return result;
                 }
                     
             }
-            return null;
-
+            throw new CannotFindRouterException(path);
         }
 
-        private static bool IsMatch(string path, string routePatterns)
+        private static Dictionary<string, string> IsMatch(string path, string routePatterns)
         {
+            var map = new Dictionary<string, string>();
             var listTokens = new Stack<string>(path.Split('/'));
             var routeTokens = new Stack<string>(routePatterns.Split('/'));
             
             if(listTokens.Count != routeTokens.Count)
-                return false;
+                return null;
 
-            for(int i = 0; i < routeTokens.Count ; ++i )
+            foreach (var token in routeTokens)
             {
-                var token = routeTokens.Pop();
                 var item = listTokens.Pop();
 
                 if (token.Contains("{") && token.Contains("}"))
                 {
                     //must be a name
                     if (item.Length == 0)
-                        return false;
+                        return null;
                 }
                 else
                 {
                     if (token != item)
-                        return false;
+                        return null;
+
                 }
+
+                if (!map.ContainsKey(token))
+                    map.Add(token, item);
             }
 
-            return true;
+            return map;
         }
 
         public void UnMap(string pattern)

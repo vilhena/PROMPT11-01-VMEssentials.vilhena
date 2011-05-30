@@ -58,9 +58,29 @@
       <Project>{BA7B44E3-D090-4812-87D8-5AF9BAA35351}</Project>
       <Name>Handler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Router\Router.csproj">
+      <Project>{18E5EC60-0EC2-492A-9765-595689CA52A7}</Project>
+      <Name>Router</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Contracts\UIBinder\UIBinder.csproj">
       <Project>{D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64}</Project>
       <Name>UIBinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\View\View.csproj">
+      <Project>{EA4FEEB3-22D9-418C-B34A-270D03AABC08}</Project>
+      <Name>View</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HttpBinder\HttpBinder.csproj">
+      <Project>{07859F51-8DA9-481A-84DD-B9A84B191B37}</Project>
+      <Name>HttpBinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Routers\ReflectorRouter\ReflectorRouter.csproj">
+      <Project>{06F9FF3A-A31C-444A-97CF-27872F063C31}</Project>
+      <Name>ReflectorRouter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Views\ReflectorView\ReflectorView.csproj">
+      <Project>{C8E9E6EE-C8B4-4364-A751-D8079A633EC8}</Project>
+      <Name>ReflectorView</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

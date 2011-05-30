@@ -27,11 +27,12 @@ namespace HttpReflector.Routers
             this._route.UnMap(route);
         }
 
-        public IHandler Route(string route)
+        public IHandler Route(string path)
         {
-            //TODO: build the IRouteResult
-            this._route.Find(route);
-            return null;
+            var result = this._route.Seek(path);
+            // TODO Fill Handler with Map
+
+            return result.Handler;
         }
     }
 }

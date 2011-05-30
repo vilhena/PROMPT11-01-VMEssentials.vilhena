@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9a7df2d0-b6d8-4fb7-8f05-19b45b4cbae6" name="gnvilhena@BEE 2011-05-30 20:03:24" runUser="BEE\gnvilhena" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4a322428-db0d-47e0-9f3e-eb99e6e4bb7a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gnvilhena_BEE 2011-05-30 20_03_24">
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Controllers\AssemblyReflector\bin\Debug\AssemblyReflector.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Views\ReflectorView\bin\Debug\ReflectorView.dll" />
+      <DeploymentItem filename="C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Contracts\View\bin\Debug\View.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-30T20:03:24.3261719+01:00" queuing="2011-05-30T20:03:25.7763672+01:00" start="2011-05-30T20:03:26.0097657+01:00" finish="2011-05-30T20:04:04.1640625+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BindRootView" storage="c:\users\gnvilhena\prompt\uc01\repos\prompt11-01-vmessentials.vilhena\trabalho final\httpreflector\views\reflectorview.test\bin\debug\reflectorview.test.dll" id="2cd50448-5291-4f46-e77d-96205d99f315">
+      <Execution id="5a099114-0848-4cef-84ca-c997868e7f83" />
+      <TestMethod codeBase="C:/Users/gnvilhena/PROMPT/uc01/repos/PROMPT11-01-VMEssentials.vilhena/Trabalho Final/HttpReflector/Views/ReflectorView.Test/bin/Debug/ReflectorView.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ReflectorView.Test.ReflectorViewTest, ReflectorView.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BindRootView" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2cd50448-5291-4f46-e77d-96205d99f315" executionId="5a099114-0848-4cef-84ca-c997868e7f83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5a099114-0848-4cef-84ca-c997868e7f83" testId="2cd50448-5291-4f46-e77d-96205d99f315" testName="BindRootView" computerName="BEE" duration="00:00:37.0315280" startTime="2011-05-30T20:03:26.2226563+01:00" endTime="2011-05-30T20:04:04.0566407+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a099114-0848-4cef-84ca-c997868e7f83">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;&gt;. Actual:&lt;&lt;HTML&gt;
+	&lt;BODY&gt;
+		&lt;H1&gt;HttpReflector.Views.RootView&lt;/H1&gt;
+		&lt;H1&gt;HttpReflector.Views.RootView&lt;/H1&gt;
+		&lt;H1&gt;HttpReflector.Views.RootView&lt;/H1&gt;
+		&lt;H1&gt;HttpReflector.Views.RootView&lt;/H1&gt;
+		&lt;TABLE&gt;
+			&lt;TR&gt;&lt;TD&gt;&lt;A href="C:	este"&gt;Context1&lt;/A&gt;&lt;/TD&gt;
+&lt;TD&gt;&lt;A href="C:	este2"&gt;Context2&lt;/A&gt;&lt;/TD&gt;
+&lt;/TR&gt;
+		&lt;/TABLE&gt;
+		&lt;TABLE&gt;
+			&lt;TR&gt;&lt;TD&gt;&lt;A href="C:	este"&gt;Context1&lt;/A&gt;&lt;/TD&gt;
+&lt;TD&gt;&lt;A href="C:	este2"&gt;Context2&lt;/A&gt;&lt;/TD&gt;
+&lt;/TR&gt;
+		&lt;/TABLE&gt;
+	&lt;BODY&gt;
+&lt;/HTML&gt;&gt;. </Message>
+          <StackTrace>   at ReflectorView.Test.ReflectorViewTest.BindRootView() in C:\Users\gnvilhena\PROMPT\uc01\repos\PROMPT11-01-VMEssentials.vilhena\Trabalho Final\HttpReflector\Views\ReflectorView.Test\ReflectorViewTest.cs:line 95
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
