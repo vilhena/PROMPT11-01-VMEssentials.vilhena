@@ -13,7 +13,7 @@ namespace HttpReflector.Views
     public class AssemblyView: IView
     {
         public ReflectAssembly Assembly { get; set; }
-        [CollectionView("AssemblyView.Namespaces.txt")]
-        public List<ReflectNamespace> Namespaces { get; set; }
+        //[CollectionView("AssemblyView.Namespaces.txt")]
+        //public List<ReflectNamespace> Namespaces { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.View;
 using HttpReflector.Controllers;
+using HttpReflector.Controllers.Model;
 using HttpReflector.Handlers.Attributes;
 using HttpReflector.Views;
 
@@ -18,11 +19,12 @@ namespace HttpReflector.Handlers
         public IView Run()
         {
             var ctx = AssemblyModel.GetContext(Context);
+            var namespaces = AssemblyModel.ListNamespaces(Context);
 
             var view = new ContextNamespaceView
             {
                 Context = ctx,
-                Namespaces = ctx.Namespaces.Values.ToList()
+                Namespaces = namespaces
             };
 
             return view;

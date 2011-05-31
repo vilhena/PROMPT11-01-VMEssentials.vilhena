@@ -46,7 +46,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIBinders", "UIBinders", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpBinder", "HttpBinder\HttpBinder.csproj", "{07859F51-8DA9-481A-84DD-B9A84B191B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyReflector", "Controllers\AssemblyReflector\AssemblyReflector.csproj", "{60B60244-8144-482E-BF22-7CEA74DA811B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyModel", "Controllers\AssemblyReflector\AssemblyModel.csproj", "{60B60244-8144-482E-BF22-7CEA74DA811B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectorController.Test", "Controllers\ReflectorController.Test\ReflectorController.Test.csproj", "{284B67E9-1ACA-453F-A62D-3CB5686883FC}"
 EndProject

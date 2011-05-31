@@ -48,6 +48,37 @@ namespace HttpReflector.Utils
             return FindNode(keyList, true).Value;
         }
 
+        private IEnumerable<TValue> GetChildrenValues(INode<TKey,TValue> node)
+        {
+            var valueList = new List<TValue>();
+            foreach (var child in node.Children)
+            {
+                if (child.Value.Children == null || child.Value.Children.Count == 0)
+                {
+                    valueList.Add(child.Value.Value);
+                }
+                else
+                {
+                    valueList.Add(child.Value.Value);
+                    valueList.AddRange(GetChildrenValues(child.Value));
+                }
+            }
+            return valueList;
+        }
+
+        public IEnumerable<TValue> GetAllChildrenValues(IEnumerable<TKey> keyList)
+        {
+            var valueList = new List<TValue>();
+            var node = FindNode(keyList, true);
+
+            return GetChildrenValues(node);
+        }
+
+        public void SetValue(IEnumerable<TKey> keyList, TValue value)
+        {
+            FindNode(keyList, true).Value = value;
+        }
+
         public bool ContainsKey(IEnumerable<TKey> keyList)
         {
             return FindNode(keyList,false) != null;
@@ -120,6 +151,7 @@ namespace HttpReflector.Utils
                 throw new NotImplementedException();
             }
         }
+
 
         public int Count
         {

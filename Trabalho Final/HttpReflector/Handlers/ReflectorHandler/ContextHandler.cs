@@ -18,12 +18,13 @@ namespace HttpReflector.Handlers
         public IView Run()
         {
             var ctx = AssemblyModel.GetContext(Context);
+            var namespaces = AssemblyModel.ListNamespaces(Context);
 
             var view = new ContextView
                            {
                                Context = ctx,
                                Assemblies = ctx.Assemblies.Values.ToList(),
-                               Namespaces = ctx.Namespaces.Values.ToList()
+                               Namespaces = namespaces
                            };
 
             return view;

@@ -63,9 +63,9 @@
       <Project>{D9CCF958-58F1-4FF4-BCBC-5F5A8D51EE64}</Project>
       <Name>UIBinder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyReflector.csproj">
+    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyModel.csproj">
       <Project>{60B60244-8144-482E-BF22-7CEA74DA811B}</Project>
-      <Name>AssemblyReflector</Name>
+      <Name>AssemblyModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Controllers\ReflectorController\ReflectorController.csproj">
       <Project>{DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70}</Project>

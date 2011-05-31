@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyHandler.cs" />
+    <Compile Include="TypeHandler.cs" />
     <Compile Include="NamespaceHandler.cs" />
     <Compile Include="Exceptions\MapKeyNotFoundMapBinderException.cs" />
     <Compile Include="MapBinders\AttributeHandlerMapBinder.cs" />
@@ -60,9 +61,13 @@
       <Project>{EA4FEEB3-22D9-418C-B34A-270D03AABC08}</Project>
       <Name>View</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyReflector.csproj">
+    <ProjectReference Include="..\..\Controllers\AssemblyReflector\AssemblyModel.csproj">
       <Project>{60B60244-8144-482E-BF22-7CEA74DA811B}</Project>
-      <Name>AssemblyReflector</Name>
+      <Name>AssemblyModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\Tree\Tree.csproj">
+      <Project>{9AB64D12-4998-43BE-BE87-5A4C04D83909}</Project>
+      <Name>Tree</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Views\ReflectorView\ReflectorView.csproj">
       <Project>{C8E9E6EE-C8B4-4364-A751-D8079A633EC8}</Project>

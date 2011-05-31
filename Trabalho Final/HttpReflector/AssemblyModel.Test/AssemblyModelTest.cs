@@ -193,7 +193,7 @@ namespace AssemblyModelTest
             AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             var ns = AssemblyModel.ListNamespaces("ContextTest1");
 
-            Assert.AreEqual(18, ns.Count);
+            Assert.AreEqual(20, ns.Count);
         }
 
         [TestMethod]

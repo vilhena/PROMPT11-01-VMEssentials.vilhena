@@ -8,6 +8,6 @@ namespace HttpReflector.Controllers.Model
         public string Folder { get; set; }
 
         public Dictionary<string,ReflectAssembly> Assemblies { get; set; }
-        public Dictionary<string,ReflectNamespace> Namespaces { get; set; }
+        public Tree<string,ReflectNamespace> Namespaces { get; set; }
     }
 }

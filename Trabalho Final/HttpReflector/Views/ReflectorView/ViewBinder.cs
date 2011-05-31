@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using HttpReflector.Contracts.View;
 using HttpReflector.Views.Attributes;
+using HttpReflector.Views.Exceptions;
 
 namespace HttpReflector.Views
 {
@@ -27,16 +28,15 @@ namespace HttpReflector.Views
                 }
             }
             if(tviewAtt == null)
-                throw new Exception();
+                throw new TemplateViewAttributeNotFoundViewException(viewType.Name);
 
             return MatchViewPropeties(view, tviewAtt.TemplateFile);;
         }
 
         private static string MatchViewPropeties(object view, string filePath)
         {
-            //TODO:Throw specific exception
             if (!File.Exists(RootFolder + filePath))
-                throw new Exception();
+                throw new InvalidPathViewException(RootFolder + filePath);
 
             var sb = new StringBuilder();
 
@@ -61,9 +61,8 @@ namespace HttpReflector.Views
                     var pinfo = value.GetType().GetProperty(prop);
 
                     //Try to Map invalid Data
-                    //TODO: Create Specific Exception
                     if (pinfo == null)
-                        throw new Exception("Invalid Data Bind");
+                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name);
                     
 
                     CollectionView cview = null;

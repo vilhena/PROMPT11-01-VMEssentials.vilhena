@@ -49,9 +49,9 @@
     <Compile Include="AssemblyModelTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controllers\AssemblyReflector\AssemblyReflector.csproj">
+    <ProjectReference Include="..\Controllers\AssemblyReflector\AssemblyModel.csproj">
       <Project>{60B60244-8144-482E-BF22-7CEA74DA811B}</Project>
-      <Name>AssemblyReflector</Name>
+      <Name>AssemblyModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

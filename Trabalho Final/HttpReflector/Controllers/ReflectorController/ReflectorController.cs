@@ -51,10 +51,9 @@ namespace HttpReflector.Controllers
 
         private void ProcessRequest(object contextobj)
         {
+            var context = (HttpListenerContext)contextobj;
             try
             {
-                var context = (HttpListenerContext)contextobj;
-
                 //context.Request.Url.GetComponents()
 
                 if (context.Request.HttpMethod.Equals("GET"))
@@ -63,7 +62,7 @@ namespace HttpReflector.Controllers
 
                     IHandler runner = Router.Route(context.Request.Url.LocalPath);
                     var view = runner.Run();
-                    
+
                     var response = ViewBinder.BindView(view);
 
                     byte[] b = Encoding.UTF8.GetBytes(response);
@@ -75,12 +74,26 @@ namespace HttpReflector.Controllers
                 {
                     context.Response.StatusCode = 501;
                 }
-                context.Response.Close();
             }
             catch (Exception ex)
             {
-                //TODO: LOG ERRORS
+                //LOG ERRORS TO Console
                 Console.WriteLine("Request error: " + ex);
+                var exceptionView = new ExceptionView()
+                                        {
+                                            Exception = ex
+                                        };
+
+                var response = ViewBinder.BindView(exceptionView);
+
+                byte[] b = Encoding.UTF8.GetBytes(response);
+                context.Response.ContentLength64 = b.Length;
+                context.Response.OutputStream.Write(b, 0, b.Length);
+                context.Response.StatusCode = 500;
+            }
+            finally
+            {
+                context.Response.Close();
             }
         }
     }

@@ -43,7 +43,7 @@ namespace HttpReflector.Controllers
                                  Name = context,
                                  Folder = path,
                                  Assemblies = new Dictionary<string, ReflectAssembly>(),
-                                 Namespaces = new Dictionary<string, ReflectNamespace>()
+                                 Namespaces = new Tree<string, ReflectNamespace>()
                              };
 
             Contexts.Add(context, newCtx);
@@ -53,7 +53,7 @@ namespace HttpReflector.Controllers
                 Assembly asm = null;
 
                 try { asm = Assembly.LoadFrom(file.FullName); }
-                catch (BadImageFormatException)
+                catch
                 {
                     continue;
                 } //Ignores Invalid type of Exception
@@ -65,12 +65,22 @@ namespace HttpReflector.Controllers
                                           Name = asm.GetName().Name,
                                           FullName = asm.GetName().FullName,
                                           Version = asm.ImageRuntimeVersion,
-                                          Namespaces = new Dictionary<string, ReflectNamespace>(),
+                                          //Namespaces = new Tree<string, ReflectNamespace>(),
                                           PublicKey = PublicKeyToString(asm.GetName().GetPublicKey())
                                       };
 
                 newCtx.Assemblies.Add(newassembly.Name, newassembly);
 
+
+                try
+                {
+                    foreach (var type in asm.GetTypes()) { }
+                }
+                catch
+                {
+                    //Inheritance security rules violated by type: 'System.Web.DynamicData.ControlFilterExpression'. Derived types must either match the security accessibility of the base type or be less accessible.":"System.Web.DynamicData.ControlFilterExpression"}
+                    continue;
+                }
 
                 foreach (var type in asm.GetTypes())
                 {
@@ -79,8 +89,7 @@ namespace HttpReflector.Controllers
                     {
                         ReflectNamespace newNamesspace;
 
-                        if (!newCtx.Namespaces.ContainsKey(type.Namespace) ||
-                            !newassembly.Namespaces.ContainsKey(type.Namespace))
+                        if (!newCtx.Namespaces.ContainsKey(type.Namespace.Split('.')))
                         {
                             newNamesspace =
                                 new ReflectNamespace()
@@ -90,16 +99,43 @@ namespace HttpReflector.Controllers
                                         Types = new Dictionary<string, Lazy<ReflectType>>()
                                     };
 
-                            // Adds to assembly
-                            if (!newassembly.Namespaces.ContainsKey(type.Namespace))
-                                newassembly.Namespaces.Add(newNamesspace.Name, newNamesspace);
+                            if (!newCtx.Namespaces.ContainsKey(newNamesspace.Name.Split('.')))
+                            {
+                                newCtx.Namespaces.Add(newNamesspace.Name.Split('.'), newNamesspace);
+                                //fills null Objects with Namespaces must be on reverse order
+                                var namespaceStack = new Stack<string>(newNamesspace.Name.Split('.').Reverse());
+                                var namespaceList = new StringBuilder();
+                                //namespaceList.Append(namespaceStack.Pop());
 
-                            if (!newCtx.Namespaces.ContainsKey(newNamesspace.Name))
-                                newCtx.Namespaces.Add(newNamesspace.Name, newNamesspace);
+                                foreach (var name in namespaceStack)
+                                {
+                                    if (namespaceList.Length == 0)
+                                        namespaceList.Append(name);
+                                    else
+                                    {
+                                        namespaceList.Append(".").Append(name);
+                                    }
+
+                                    var value = newCtx.Namespaces.GetValue(namespaceList.ToString().Split('.'));
+                                    if (value == null)
+                                    {
+                                        newCtx.Namespaces.SetValue(namespaceList.ToString().Split('.'),
+                                                                   new ReflectNamespace()
+                                                                       {
+                                                                           Assembly = newassembly,
+                                                                           Name = namespaceList.ToString(),
+                                                                           Types =
+                                                                               new Dictionary<string, Lazy<ReflectType>>()
+                                                                       });
+                                    }
+                                    
+                                    
+                                }
+                            }
                         }
                         else
                         {
-                            newNamesspace = newCtx.Namespaces[type.Namespace];
+                            newNamesspace = newCtx.Namespaces.GetValue(type.Namespace.Split('.'));
                         }
                         // Adds to List
                         if (!newNamesspace.Types.ContainsKey(type.Name))
@@ -186,7 +222,7 @@ namespace HttpReflector.Controllers
                               Name = type.Assembly.GetName().Name,
                               FullName = type.Assembly.GetName().FullName,
                               Version = type.Assembly.ImageRuntimeVersion,
-                              Namespaces = new Dictionary<string, ReflectNamespace>(),
+                              //Namespaces = new Tree<string, ReflectNamespace>(),
                               PublicKey =
                                   PublicKeyToString(
                                       type.Assembly.GetName().GetPublicKey())
@@ -323,9 +359,9 @@ namespace HttpReflector.Controllers
         {
             foreach (var ctxs in Contexts.Values)
             {
-                if (ctxs.Namespaces.ContainsKey(nameSpace))
+                if (ctxs.Namespaces.ContainsKey(nameSpace.Split('.')))
                 {
-                    return ctxs.Namespaces[nameSpace];
+                    return ctxs.Namespaces.GetValue(nameSpace.Split('.'));
                 }
             }
             return null;
@@ -348,15 +384,21 @@ namespace HttpReflector.Controllers
 
         public static List<ReflectNamespace> ListNamespaces(string context)
         {
-            return GetContext(context).Namespaces.Values.ToList();
+            //var namespaces = new List<ReflectNamespace>();
+            //foreach (var assembly in GetContext(context).Assemblies.Values)
+            //{
+            //    namespaces.AddRange(assembly.Namespaces.GetAllChildrenValues(new List<string>()));
+            //}
+
+            return GetContext(context).Namespaces.GetAllChildrenValues(new List<string>()).ToList();
         }
 
         public static ReflectNamespace GetNamespace(string context, string namespacePrefix)
         {
             var ctx = GetContext(context);
-            if (!ctx.Namespaces.ContainsKey(namespacePrefix))
+            if (!ctx.Namespaces.ContainsKey(namespacePrefix.Split('.')))
                 throw new InvalidNamespaceModelException(context, namespacePrefix);
-            return GetContext(context).Namespaces[namespacePrefix];
+            return GetContext(context).Namespaces.GetValue(namespacePrefix.Split('.'));
         }
 
         public static ReflectType GetCtsType(string context, string namespacePrefix, string shortName)

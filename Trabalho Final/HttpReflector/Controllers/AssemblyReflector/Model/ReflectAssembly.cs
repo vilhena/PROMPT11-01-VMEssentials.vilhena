@@ -16,6 +16,6 @@ namespace HttpReflector.Controllers.Model
 
         public object PublicKey { get; set; }
 
-        public Dictionary<string, ReflectNamespace> Namespaces { get; set; }
+        //public Tree<string, ReflectNamespace> Namespaces { get; set; }
     }
 }

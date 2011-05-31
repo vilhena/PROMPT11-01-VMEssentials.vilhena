@@ -9,8 +9,5 @@
 		<H3>PublicKey:<@Assembly.PublicKey></H3>
 		<BR />
 		<H2><A href="/<@Assembly.Context.Name>/ns">Namespaces</A></H2>
-		<TABLE border="1">
-			<@Namespaces>
-		</TABLE>
 	<BODY>
 </HTML>

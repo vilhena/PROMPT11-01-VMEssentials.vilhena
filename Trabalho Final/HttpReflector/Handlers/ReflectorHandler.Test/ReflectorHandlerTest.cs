@@ -88,7 +88,7 @@ namespace ReflectorHandler.Test
             var view = (ContextView) result;
             Assert.AreEqual("ContextTest1", view.Context.Name);
             Assert.AreEqual(3, view.Assemblies.Count);
-            Assert.AreEqual(18, view.Namespaces.Count);
+            Assert.AreEqual(20, view.Namespaces.Count);
         }
 
         [TestMethod]

@@ -25,7 +25,7 @@ namespace HttpReflector.Handlers
             var view = new AssemblyView
                            {
                                Assembly = ctx,
-                               Namespaces = ctx.Namespaces.Values.ToList()
+                               //Namespaces = ctx.Namespaces.GetAllChildrenValues(new List<string>()).ToList()
                            };
 
             return view;

@@ -1,0 +1,8 @@
+﻿<HTML>
+	<BODY>
+		<TABLE border="1">
+			<TR><TD><@Exception.Message></TD></TR>
+			<TR><TD><@Exception.StackTrace></TD></TR>
+		</TABLE>
+	<BODY>
+</HTML>

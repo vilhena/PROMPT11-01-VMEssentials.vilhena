@@ -20,9 +20,14 @@ namespace HttpReflector.HttpReflectorSrv
             router.RegisterRoute("/{ctx}/ns", new ContextNamespaceHandler());
             router.RegisterRoute("/{ctx}/as/{assemblyName}", new AssemblyHandler());
             router.RegisterRoute("/{ctx}/ns/{namespacePrefix}", new NamespaceHandler());
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}", new TypeHandler());
 
-            AssemblyModel.AddContext("ContextTest1", @"..\..\..\..\Test\ContextTest1");
-            AssemblyModel.AddContext("ContextTest2", @"..\..\..\..\Test\ContextTest2");
+            //TODO:deixar de ser estatico
+            //AssemblyModel.AddContext("ContextTest1", @"..\..\..\..\Test\ContextTest1");
+            //AssemblyModel.AddContext("ContextTest2", @"..\..\..\..\Test\ContextTest2");
+            
+            AssemblyModel.AddContext("System32",
+                                     @"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0");
 
             ViewBinder.RootFolder = @"..\..\..\..\Test\Views\";
 
