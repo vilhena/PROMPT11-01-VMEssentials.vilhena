@@ -1,0 +1,3 @@
+﻿<TR><TD>
+Name:<A href="/<@Assembly.Context.Name>/ns/<@Namespace.Name>/<@Name>"><@Name></A>
+</TD></TR>

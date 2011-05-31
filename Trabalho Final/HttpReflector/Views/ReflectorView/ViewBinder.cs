@@ -78,6 +78,7 @@ namespace HttpReflector.Views
                         }
                     }
 
+                    //Iterate over Enumerable
                     if (cview != null)
                     {
                         // the enumerable

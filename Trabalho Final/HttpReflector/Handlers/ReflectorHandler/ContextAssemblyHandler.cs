@@ -5,19 +5,27 @@ using System.Text;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.View;
 using HttpReflector.Controllers;
+using HttpReflector.Handlers.Attributes;
+using HttpReflector.Views;
 
 namespace HttpReflector.Handlers
 {
     public class ContextAssemblyHandler:IHandler
     {
+        [HandlerMapAttribute("{ctx}")]
         public string Context { get; set; }
 
         public IView Run()
         {
+            var ctx = AssemblyModel.GetContext(Context);
 
-            AssemblyModel.ListContextAssemblies(Context);
+            var view = new ContextAssemblyView
+            {
+                Context = ctx,
+                Assemblies = ctx.Assemblies.Values.ToList()
+            };
 
-            return null;
+            return view;
         }
     }
 }

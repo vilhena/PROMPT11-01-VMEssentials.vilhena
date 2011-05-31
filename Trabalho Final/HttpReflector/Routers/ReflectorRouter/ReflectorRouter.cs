@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.Router;
+using HttpReflector.Handlers.MapBinders;
 
 namespace HttpReflector.Routers
 {
     public class ReflectorRouter: IRouter<IHandler>
     {
         private readonly IRouteContainer<IHandler> _route;
+        private readonly IHandlerMapBinder _binder; 
 
         public ReflectorRouter()
         {
-            //TODO: change this to RouteMap
+            //TODO: change this to RouteTree
             _route = new RouteList<IHandler>();
+            _binder = new AttributeHandlerMapBinder();
         }
 
         public void RegisterRoute(string route, IHandler routeHandler)
@@ -30,8 +33,7 @@ namespace HttpReflector.Routers
         public IHandler Route(string path)
         {
             var result = this._route.Seek(path);
-            // TODO Fill Handler with Map
-
+            _binder.Bind(result.Map, result.Handler);
             return result.Handler;
         }
     }

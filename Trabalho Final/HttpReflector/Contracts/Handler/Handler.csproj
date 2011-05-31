@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IHandler.cs" />
     <Compile Include="IHandlerLoader.cs" />
+    <Compile Include="IHandlerMapBinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

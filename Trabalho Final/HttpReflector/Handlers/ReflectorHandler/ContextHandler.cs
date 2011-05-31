@@ -5,12 +5,14 @@ using System.Text;
 using HttpReflector.Contracts.Handler;
 using HttpReflector.Contracts.View;
 using HttpReflector.Controllers;
+using HttpReflector.Handlers.Attributes;
 using HttpReflector.Views;
 
 namespace HttpReflector.Handlers
 {
     public class ContextHandler:IHandler
     {
+        [HandlerMapAttribute("{ctx}")]
         public string Context { get; set; }
 
         public IView Run()
@@ -23,7 +25,6 @@ namespace HttpReflector.Handlers
                                Assemblies = ctx.Assemblies.Values.ToList(),
                                Namespaces = ctx.Namespaces.Values.ToList()
                            };
-
 
             return view;
         }

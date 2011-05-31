@@ -1,0 +1,12 @@
+﻿<HTML>
+	<BODY>
+		<H1><@Context.Name></H1>
+		<H1><@Context.Folder></H1>
+		<TABLE>
+			<TR><@Assemblies></TR>
+		</TABLE>
+		<TABLE>
+			<TR><@Namespaces></TR>
+		</TABLE>
+	<BODY>
+</HTML>

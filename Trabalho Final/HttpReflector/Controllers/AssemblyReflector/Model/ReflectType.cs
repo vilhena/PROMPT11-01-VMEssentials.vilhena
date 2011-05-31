@@ -7,7 +7,7 @@ namespace HttpReflector.Controllers.Model
 {
     public class ReflectType : ReflectModel
     {
-        public ReflectNamespace NameSpace { get; set; }
+        public ReflectNamespace Namespace { get; set; }
 
         public ReflectAssembly Assembly { get; set; }
 

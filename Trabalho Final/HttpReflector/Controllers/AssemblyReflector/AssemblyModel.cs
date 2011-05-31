@@ -122,7 +122,7 @@ namespace HttpReflector.Controllers
             {
                 Name = type.Name,
                 FullName = type.FullName,
-                NameSpace = currNamespace,
+                Namespace = currNamespace,
                 Assembly = newassembly,
                 Contructors = new List<ReflectMethod>(),
                 Methods = new List<ReflectMethod>(),
@@ -141,7 +141,7 @@ namespace HttpReflector.Controllers
                               {
                                   Name = type.Name,
                                   FullName = type.FullName,
-                                  NameSpace = currNamespace,
+                                  Namespace = currNamespace,
                                   Assembly = newassembly,
                                   Contructors = new List<ReflectMethod>(),
                                   Methods = new List<ReflectMethod>(),

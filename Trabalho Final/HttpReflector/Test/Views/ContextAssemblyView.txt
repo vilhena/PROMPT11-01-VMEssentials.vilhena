@@ -1,0 +1,11 @@
+﻿<HTML>
+	<BODY>
+		<H1><@Context.Name></H1>
+		<H1><@Context.Folder></H1>
+		<BR />
+		<H2>Assemblies</H2>
+		<TABLE border="1">
+			<@Assemblies>
+		</TABLE>
+	<BODY>
+</HTML>

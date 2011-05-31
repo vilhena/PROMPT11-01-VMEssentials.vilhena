@@ -237,7 +237,7 @@ namespace AssemblyModelTest
             var type = AssemblyModel.GetCtsType("ContextTest1", "Microsoft.VisualBasic.CompilerServices", "VBInputBox");
 
             Assert.IsNotNull(type);
-            Assert.AreEqual("Microsoft.VisualBasic.CompilerServices", type.NameSpace.Name);
+            Assert.AreEqual("Microsoft.VisualBasic.CompilerServices", type.Namespace.Name);
             Assert.AreEqual("ContextTest1", type.Assembly.Context.Name);
             Assert.AreEqual(0,type.Contructors.Count);
             Assert.AreEqual(91, type.Events.Count);

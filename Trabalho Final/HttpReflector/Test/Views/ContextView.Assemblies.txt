@@ -1,0 +1,3 @@
+﻿<TR><TD>
+Name:<A href="/<@Context.Name>/as/<@Name>"><@Name></A></TD><TD>
+</TD></TR>

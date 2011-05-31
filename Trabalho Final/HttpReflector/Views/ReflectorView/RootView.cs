@@ -8,10 +8,10 @@ using HttpReflector.Views.Attributes;
 
 namespace HttpReflector.Views
 {
-    [TemplateView(TemplateFile = "RootView.txt")]
+    [TemplateView("RootView.txt")]
     public class RootView:IView
     {
-        [CollectionView(TemplateFile = "RootView.Context.txt")]
+        [CollectionView("RootView.Context.txt")]
         public List<ReflectContext> Contexts { get; set; }
     }
 }

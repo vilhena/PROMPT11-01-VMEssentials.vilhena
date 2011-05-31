@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using HttpReflector.Controllers;
 using HttpReflector.Handlers;
+using HttpReflector.Handlers.Exceptions;
+using HttpReflector.Handlers.MapBinders;
 using HttpReflector.Views;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -87,6 +89,37 @@ namespace ReflectorHandler.Test
             Assert.AreEqual("ContextTest1", view.Context.Name);
             Assert.AreEqual(3, view.Assemblies.Count);
             Assert.AreEqual(18, view.Namespaces.Count);
+        }
+
+        [TestMethod]
+        public void AttributeHandlerMapBinderContextHandlerTest()
+        {
+            var binder = new AttributeHandlerMapBinder();
+            var handler = new ContextHandler();
+            var map = new Dictionary<string, string> {{"{ctx}", "ContextTest1"}};
+
+            binder.Bind(map, handler);
+
+            Assert.AreEqual("ContextTest1", handler.Context);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(MapKeyNotFoundMapBinderException))]
+        public void AttributeHandlerMapBinderThrowsMapKeyNotFoundMapBinderException()
+        {
+            var binder = new AttributeHandlerMapBinder();
+            var handler = new ContextHandler();
+            //empty map
+            var map = new Dictionary<string, string>();
+            try
+            {
+                binder.Bind(map, handler);
+            }
+            catch (MapKeyNotFoundMapBinderException ex)
+            {
+                Assert.AreEqual("{ctx}",ex.ExpectedKey);
+                throw;
+            }
         }
     }
 }
