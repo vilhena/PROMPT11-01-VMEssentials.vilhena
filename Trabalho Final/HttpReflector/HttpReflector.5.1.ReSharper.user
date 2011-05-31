@@ -942,16 +942,13 @@
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="240" fromTop="7" />
       <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="1037" fromTop="11" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectNamespace.cs" caret="0" fromTop="0" />
-      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Node.cs" caret="0" fromTop="0" />
       <File id="38038D50-140C-431C-ACCC-7F9DA886544C/f:TreeTest.cs" caret="5790" fromTop="24" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ContextHandler.cs" caret="862" fromTop="11" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ContextNamespaceHandler.cs" caret="663" fromTop="11" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectContext.cs" caret="296" fromTop="10" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectAssembly.cs" caret="430" fromTop="9" />
-      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Tree.cs" caret="2014" fromTop="11" />
       <File id="8A12BFC6-DAD2-43E3-8814-D36D3B3AE9FA/f:ReflectorHandlerTest.cs" caret="3043" fromTop="12" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="7175" fromTop="12" />
       <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ExceptionView.cs" caret="288" fromTop="11" />
@@ -972,6 +969,9 @@
       <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:TemplateViewAttributeNotFoundViewException.cs" caret="373" fromTop="11" />
       <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidDataBindViewException.cs" caret="605" fromTop="15" />
       <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="3668" fromTop="0" />
+      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:INode.cs" caret="0" fromTop="0" />
+      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Tree.cs" caret="2049" fromTop="0" />
+      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Node.cs" caret="180" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
       <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2159" fromTop="15" />
