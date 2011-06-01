@@ -53,6 +53,7 @@ namespace HttpReflector.UIBinders
             _httpListener.Stop();
         }
 
+        //TEST METHOD
         public void ProcessRequest(object contextobj)
         {
             try

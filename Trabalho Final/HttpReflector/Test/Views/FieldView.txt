@@ -1,0 +1,23 @@
+﻿<HTML>
+	<BODY>
+		<H1><$Type.Assembly.Context.Name></H1>
+		<H1><$Type.Assembly.Context.Folder></H1>
+		<BR />
+		<H2>Name:<A href="/<$Type.Assembly.Context.Name>/as/<$Type.Assembly.Name>"><$Type.Assembly.Name></A></H2>
+		<H2>FullName:<$Type.Assembly.FullName></H2>
+		<BR />
+		<H2><A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>"><$Type.Namespace.Name></A></H2>
+		<BR />
+		<H3>Methods</H3>
+		<TABLE border="1">
+			<TR>
+			<TD>
+			<A href="/<$Field.Type.Assembly.Context.Name>/ns/<$Field.Type.Namespace.Name>/<$Field.Type.Name>"><$Field.Type.Name></A>
+			</TD>
+			<TD>
+			<$Field.Name>
+			</TD>
+			</TR>
+		</TABLE>
+	<BODY>
+</HTML>

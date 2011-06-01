@@ -21,7 +21,12 @@ namespace HttpReflector.HttpReflectorSrv
             router.RegisterRoute("/{ctx}/as/{assemblyName}", new AssemblyHandler());
             router.RegisterRoute("/{ctx}/ns/{namespacePrefix}", new NamespaceHandler());
             router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}", new TypeHandler());
-
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/m/{methodName}", new MethodHandler());
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/c", new ConstructorHandler());
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/f/{fieldName}", new FieldHandler());
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/p/{propName}", new PropertyHandler());
+            router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", new EventHandler());
+            
             //TODO:deixar de ser estatico
             //AssemblyModel.AddContext("ContextTest1", @"..\..\..\..\Test\ContextTest1");
             //AssemblyModel.AddContext("ContextTest2", @"..\..\..\..\Test\ContextTest2");

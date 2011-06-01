@@ -1,13 +1,9 @@
 ﻿<HTML>
 	<BODY>
+		2
 		<TABLE>
-			<TR><TD><A href="C:	este">Context1</A></TD>
-<TD><A href="C:	este2">Context2</A></TD>
-</TR>
-		</TABLE>
-		<TABLE>
-			<TR><TD><A href="C:	este">Context1</A></TD>
-<TD><A href="C:	este2">Context2</A></TD>
+			<TR><TD><A href="C:	este">Context1</A>2</TD>
+<TD><A href="C:	este2">Context2</A>2</TD>
 </TR>
 		</TABLE>
 	<BODY>

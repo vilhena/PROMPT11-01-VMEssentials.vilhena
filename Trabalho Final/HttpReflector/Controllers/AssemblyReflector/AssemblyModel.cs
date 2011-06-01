@@ -357,6 +357,8 @@ namespace HttpReflector.Controllers
 
         public static ReflectNamespace FindNamespace(string nameSpace)
         {
+            if (nameSpace == null)
+                return null;
             foreach (var ctxs in Contexts.Values)
             {
                 if (ctxs.Namespaces.ContainsKey(nameSpace.Split('.')))
@@ -380,6 +382,14 @@ namespace HttpReflector.Controllers
             if(!Contexts.ContainsKey(context))
                 throw new InvalidContextModelException(context);
             return Contexts[context];
+        }
+
+        public static List<ReflectNamespace> ListSubNamespaces(string context, string namespacePrefix)
+        {
+            var ctx = GetContext(context);
+            if (!ctx.Namespaces.ContainsKey(namespacePrefix.Split('.')))
+                throw new InvalidNamespaceModelException(context, namespacePrefix);
+            return GetContext(context).Namespaces.GetAllChildrenValues(namespacePrefix.Split('.')).ToList();
         }
 
         public static List<ReflectNamespace> ListNamespaces(string context)

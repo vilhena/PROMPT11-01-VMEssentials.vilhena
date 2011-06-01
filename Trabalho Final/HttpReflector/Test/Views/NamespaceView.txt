@@ -1,9 +1,9 @@
 ﻿<HTML>
 	<BODY>
-		<H1><@Namespace.Assembly.Context.Name></H1>
-		<H1><@Namespace.Assembly.Context.Folder></H1>
+		<H1><$Namespace.Assembly.Context.Name></H1>
+		<H1><$Namespace.Assembly.Context.Folder></H1>
 		<BR />
-		<H2>Name:<A href="/<@Namespace.Assembly.Context.Name>/ns/<@Namespace.Name>"><@Namespace.Name></A></H2>
+		<H2>Name:<A href="/<$Namespace.Assembly.Context.Name>/ns/<$Namespace.Name>"><$Namespace.Name></A></H2>
 		<BR />
 		<H2>Types<H2>
 		<TABLE border="1">
@@ -11,6 +11,8 @@
 		</TABLE>
 		<BR />
 		<H2>SubNamespaces<H2>
-!!!!!TODO lista para subnamespaces
+		<TABLE border="1">
+			<@Namespaces>
+		</TABLE>
 	<BODY>
 </HTML>

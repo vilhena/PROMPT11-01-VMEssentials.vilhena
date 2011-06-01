@@ -1,6 +1,0 @@
-﻿<TD>
-Name:<A href="/<@Context.Name>/as/<@Name>"><@Name></A>
-FullName:<@FullName>
-Version:<@Version>
-PublicKey:<@PublicKey>
-</TD>

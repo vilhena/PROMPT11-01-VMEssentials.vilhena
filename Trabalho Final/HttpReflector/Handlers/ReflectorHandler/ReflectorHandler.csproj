@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyHandler.cs" />
+    <Compile Include="ConstructorHandler.cs" />
+    <Compile Include="EventHandler.cs" />
+    <Compile Include="PropertyHandler.cs" />
+    <Compile Include="FieldHandler.cs" />
+    <Compile Include="MethodHandler.cs" />
     <Compile Include="TypeHandler.cs" />
     <Compile Include="NamespaceHandler.cs" />
     <Compile Include="Exceptions\MapKeyNotFoundMapBinderException.cs" />

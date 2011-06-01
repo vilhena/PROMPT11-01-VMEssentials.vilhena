@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConstructorView.cs" />
+    <Compile Include="EventView.cs" />
+    <Compile Include="PropertyView.cs" />
+    <Compile Include="FieldView.cs" />
+    <Compile Include="MethodView.cs" />
+    <Compile Include="Exceptions\TemplateViewNotFoundViewException.cs" />
     <Compile Include="Exceptions\InvalidDataBindViewException.cs" />
     <Compile Include="Exceptions\TemplateViewAttributeNotFoundViewException.cs" />
     <Compile Include="Exceptions\InvalidPathViewException.cs" />
@@ -47,9 +53,7 @@
     <Compile Include="TypeView.cs" />
     <Compile Include="ExceptionView.cs" />
     <Compile Include="NamespaceView.cs" />
-    <Compile Include="Attributes\CollectionView.cs" />
     <Compile Include="AssemblyView.cs" />
-    <Compile Include="Attributes\TemplateView.cs" />
     <Compile Include="ContextView.cs" />
     <Compile Include="ContextAssemblyView.cs" />
     <Compile Include="ContextNamespaceView.cs" />

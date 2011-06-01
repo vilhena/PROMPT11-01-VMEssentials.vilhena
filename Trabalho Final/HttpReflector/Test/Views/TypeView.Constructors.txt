@@ -1,0 +1,8 @@
+﻿<TR>
+<TD>
+<A href="/<%Type.Assembly.Context.Name>/ns/<%Type.Namespace.Name>/<%Type.Name>/c"><%Type.Name></A>
+</TD>
+<TD>
+<@Parameters>
+</TD>
+</TR>

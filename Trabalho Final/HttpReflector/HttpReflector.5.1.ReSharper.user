@@ -9,50 +9,50 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="interface" priority="11" />
+      <Item value="interface" priority="12" />
       <Item value="void" priority="43" />
-      <Item value="string" priority="100" />
+      <Item value="string" priority="107" />
       <Item value="IRouteHandler`0" priority="1" />
       <Item value="controller" priority="10" />
-      <Item value="new" priority="151" />
+      <Item value="new" priority="155" />
       <Item value="ReflectorController" priority="0" />
       <Item value="using" priority="0" />
       <Item value="HttpReflector" priority="1" />
       <Item value="Controllers" priority="1" />
-      <Item value="private" priority="17" />
+      <Item value="private" priority="18" />
       <Item value="Dictionary" priority="22" />
       <Item value="IRouteNode`0" priority="4" />
       <Item value="ReflectorRouter`0" priority="0" />
       <Item value="ctor" priority="17" />
       <Item value="_route" priority="0" />
       <Item value="Dictionary&lt;string,ReflectorRouteNode&gt;" priority="0" />
-      <Item value="this" priority="22" />
+      <Item value="this" priority="23" />
       <Item value="route" priority="3" />
       <Item value="routeHandler" priority="0" />
-      <Item value="public" priority="62" />
+      <Item value="public" priority="67" />
       <Item value="IRouteCollection`0" priority="1" />
-      <Item value="class" priority="4" />
+      <Item value="class" priority="5" />
       <Item value="handler" priority="10" />
       <Item value="IHandler`0" priority="16" />
       <Item value="bool" priority="5" />
-      <Item value="List" priority="30" />
+      <Item value="List" priority="37" />
       <Item value="List&lt;IRouteNode&gt;" priority="0" />
-      <Item value="if" priority="43" />
+      <Item value="if" priority="48" />
       <Item value="_routeList" priority="6" />
       <Item value="s" priority="21" />
-      <Item value="prop" priority="47" />
+      <Item value="prop" priority="50" />
       <Item value="pattern" priority="10" />
       <Item value="container" priority="10" />
-      <Item value="return" priority="40" />
-      <Item value="path" priority="14" />
-      <Item value="foreach" priority="51" />
+      <Item value="return" priority="42" />
+      <Item value="path" priority="16" />
+      <Item value="foreach" priority="53" />
       <Item value="Regex`0" priority="2" />
       <Item value="routePatterns" priority="2" />
       <Item value="List&lt;string&gt;" priority="0" />
       <Item value="false" priority="13" />
-      <Item value="var" priority="66" />
+      <Item value="var" priority="75" />
       <Item value="Stack" priority="2" />
-      <Item value="null" priority="35" />
+      <Item value="null" priority="37" />
       <Item value="token" priority="11" />
       <Item value="switch" priority="0" />
       <Item value="for" priority="1" />
@@ -60,7 +60,7 @@
       <Item value="i" priority="2" />
       <Item value="routeTokens" priority="3" />
       <Item value="listTokens" priority="1" />
-      <Item value="is" priority="0" />
+      <Item value="is" priority="1" />
       <Item value="else" priority="7" />
       <Item value="item" priority="6" />
       <Item value="ParallelEnumerable`0" priority="1" />
@@ -71,7 +71,7 @@
       <Item value="TestMethod" priority="16" />
       <Item value="Test" priority="0" />
       <Item value="_dummyHandler" priority="7" />
-      <Item value="object" priority="6" />
+      <Item value="object" priority="8" />
       <Item value="T`0" priority="2" />
       <Item value="result" priority="16" />
       <Item value="Activator`0" priority="0" />
@@ -86,7 +86,7 @@
       <Item value="Tuple`0" priority="0" />
       <Item value="loader" priority="0" />
       <Item value="DictionaryBase`0" priority="0" />
-      <Item value="context" priority="38" />
+      <Item value="context" priority="39" />
       <Item value="Model" priority="8" />
       <Item value="AssemblyModel" priority="1" />
       <Item value="DirectoryInfo" priority="2" />
@@ -94,7 +94,7 @@
       <Item value="file" priority="3" />
       <Item value="Context`0" priority="4" />
       <Item value="list" priority="0" />
-      <Item value="Context" priority="9" />
+      <Item value="Context" priority="10" />
       <Item value="Folder" priority="2" />
       <Item value="Dictionary&lt;string,string&gt;" priority="0" />
       <Item value="Name" priority="17" />
@@ -105,7 +105,7 @@
       <Item value="ExpectedException" priority="4" />
       <Item value="try" priority="4" />
       <Item value="ex" priority="11" />
-      <Item value="AssemblyModel`0" priority="3" />
+      <Item value="AssemblyModel`0" priority="5" />
       <Item value="ctxs" priority="7" />
       <Item value="Model`0" priority="4" />
       <Item value="Assembly`0" priority="5" />
@@ -118,11 +118,11 @@
       <Item value="assembly" priority="18" />
       <Item value="ToList`1" priority="1" />
       <Item value="StringBuilder" priority="2" />
-      <Item value="sb" priority="10" />
+      <Item value="sb" priority="11" />
       <Item value="Namespace`0" priority="1" />
-      <Item value="type" priority="40" />
+      <Item value="type" priority="41" />
       <Item value="newassembly" priority="4" />
-      <Item value="Namespace" priority="3" />
+      <Item value="Namespace" priority="5" />
       <Item value="currNamespace" priority="7" />
       <Item value="WatcherChangeTypes`0" priority="0" />
       <Item value="ReflectType" priority="5" />
@@ -141,11 +141,11 @@
       <Item value="InvalidContextModelException" priority="0" />
       <Item value="InvalidAssemblyModelException" priority="0" />
       <Item value="TestTree`0" priority="0" />
-      <Item value="ReflectNamespace`0" priority="8" />
+      <Item value="ReflectNamespace`0" priority="12" />
       <Item value="GetContext`0" priority="5" />
       <Item value="namespaces" priority="7" />
       <Item value="List&lt;ReflectNamespace&gt;" priority="1" />
-      <Item value="ns" priority="9" />
+      <Item value="ns" priority="13" />
       <Item value="set" priority="0" />
       <Item value="ReflectAssembly`0" priority="3" />
       <Item value="FullNamespaces" priority="0" />
@@ -156,10 +156,10 @@
       <Item value="newNamesspace" priority="4" />
       <Item value="assemebly" priority="0" />
       <Item value="InvalidNamespaceModelException`0" priority="0" />
-      <Item value="GetNamespace`0" priority="0" />
-      <Item value="namespacePrefix" priority="2" />
+      <Item value="GetNamespace`0" priority="1" />
+      <Item value="namespacePrefix" priority="3" />
       <Item value="reflectNamespace" priority="3" />
-      <Item value="ReflectType`0" priority="11" />
+      <Item value="ReflectType`0" priority="14" />
       <Item value="ctsType" priority="0" />
       <Item value="Events" priority="3" />
       <Item value="Dictionary&lt;string,ReflectEvent&gt;" priority="0" />
@@ -182,7 +182,7 @@
       <Item value="fieldInfo" priority="1" />
       <Item value="ReflectProperty" priority="0" />
       <Item value="propertyInfo" priority="3" />
-      <Item value="ReflectEvent`0" priority="0" />
+      <Item value="ReflectEvent`0" priority="1" />
       <Item value="eventInfo" priority="9" />
       <Item value="listNamespaces" priority="1" />
       <Item value="t" priority="3" />
@@ -196,12 +196,12 @@
       <Item value="p" priority="2" />
       <Item value="assemblyName" priority="3" />
       <Item value="FindAssembly`0" priority="1" />
-      <Item value="nameSpace" priority="3" />
+      <Item value="nameSpace" priority="5" />
       <Item value="ReflectNamespace" priority="2" />
       <Item value="PublicKey" priority="1" />
       <Item value="byte" priority="0" />
       <Item value="PublicKeyToString`0" priority="2" />
-      <Item value="Types" priority="2" />
+      <Item value="Types" priority="3" />
       <Item value="Dictionary&lt;string,ReflectType&gt;" priority="1" />
       <Item value="AddNewReflectType`0" priority="1" />
       <Item value="KeyValuePair" priority="2" />
@@ -256,7 +256,7 @@
       <Item value="currentNode" priority="9" />
       <Item value="FindNode`0" priority="2" />
       <Item value="Exception" priority="9" />
-      <Item value="value" priority="13" />
+      <Item value="value" priority="14" />
       <Item value="default" priority="2" />
       <Item value="Tree`0" priority="1" />
       <Item value="tree" priority="11" />
@@ -275,8 +275,8 @@
       <Item value="INode" priority="1" />
       <Item value="allNamespaces" priority="0" />
       <Item value="Attribute`0" priority="4" />
-      <Item value="view" priority="21" />
-      <Item value="viewType" priority="4" />
+      <Item value="view" priority="23" />
+      <Item value="viewType" priority="5" />
       <Item value="att" priority="1" />
       <Item value="TemplateFile" priority="3" />
       <Item value="List&lt;ReflectContext&gt;" priority="0" />
@@ -299,17 +299,17 @@
       <Item value="CollectionView" priority="1" />
       <Item value="PropertyView" priority="1" />
       <Item value="property" priority="3" />
-      <Item value="PropertyName" priority="0" />
-      <Item value="matcher" priority="2" />
+      <Item value="PropertyName" priority="1" />
+      <Item value="matcher" priority="3" />
       <Item value="group" priority="1" />
       <Item value="MyType" priority="0" />
       <Item value="Properties" priority="1" />
       <Item value="List&lt;ReflectProperty&gt;" priority="0" />
-      <Item value="while" priority="2" />
+      <Item value="while" priority="3" />
       <Item value="Stack&lt;string&gt;" priority="0" />
-      <Item value="pinfo" priority="2" />
+      <Item value="pinfo" priority="5" />
       <Item value="Default" priority="0" />
-      <Item value="propCallStack" priority="0" />
+      <Item value="propCallStack" priority="2" />
       <Item value="CollectionView`0" priority="0" />
       <Item value="cview" priority="1" />
       <Item value="break" priority="1" />
@@ -344,7 +344,7 @@
       <Item value="url" priority="0" />
       <Item value="Uri" priority="0" />
       <Item value="response" priority="4" />
-      <Item value="static" priority="2" />
+      <Item value="static" priority="4" />
       <Item value="sbyte" priority="0" />
       <Item value="data" priority="1" />
       <Item value="ReadResponse`0" priority="0" />
@@ -372,7 +372,7 @@
       <Item value="RootView" priority="0" />
       <Item value="RootView`0" priority="1" />
       <Item value="model" priority="1" />
-      <Item value="output" priority="0" />
+      <Item value="output" priority="1" />
       <Item value="Exception`0" priority="1" />
       <Item value="RootHandlerRunReturnsRootView`0" priority="0" />
       <Item value="RootHandler" priority="0" />
@@ -413,10 +413,27 @@
       <Item value="TypeView`0" priority="0" />
       <Item value="TypeName" priority="0" />
       <Item value="TypeHandler`0" priority="0" />
-      <Item value="Constructors" priority="0" />
+      <Item value="Constructors" priority="1" />
       <Item value="TemplateViewAttributeNotFoundViewException`0" priority="0" />
       <Item value="InvalidDataBindViewException`0" priority="0" />
       <Item value="typeName" priority="1" />
+      <Item value="originalView" priority="0" />
+      <Item value="filePath" priority="0" />
+      <Item value="propIndex" priority="3" />
+      <Item value="Namespaces" priority="0" />
+      <Item value="NamespaceView`0" priority="1" />
+      <Item value="nsWithTypes" priority="1" />
+      <Item value="NamespacesWithTypes" priority="0" />
+      <Item value="IView`0" priority="0" />
+      <Item value="AssemblyNamespaceView" priority="0" />
+      <Item value="typeList" priority="1" />
+      <Item value="m" priority="0" />
+      <Item value="MethodName" priority="0" />
+      <Item value="Event" priority="1" />
+      <Item value="EventName" priority="0" />
+      <Item value="Field" priority="0" />
+      <Item value="Property" priority="1" />
+      <Item value="FieldName" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.ReflectorController">
       <Item value="LoadHandlers`0" priority="0" />
@@ -431,8 +448,8 @@
       <Item value="Remove`0" priority="0" />
       <Item value="ContainsKey`0" priority="9" />
       <Item value="Keys" priority="1" />
-      <Item value="Values" priority="23" />
-      <Item value="Count" priority="2" />
+      <Item value="Values" priority="24" />
+      <Item value="Count" priority="3" />
       <Item value="Select`2" priority="0" />
       <Item value="First`1" priority="0" />
     </ItemStatistics>
@@ -471,15 +488,16 @@
       <Item value="IsMatch`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Split`0" priority="21" />
+      <Item value="Split`0" priority="22" />
       <Item value="Equals`0" priority="1" />
       <Item value="Contains`0" priority="3" />
       <Item value="Length" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Stack`1">
-      <Item value="Count" priority="3" />
+      <Item value="Count" priority="6" />
       <Item value="Pop`0" priority="2" />
       <Item value="Reverse`1" priority="1" />
+      <Item value="GetEnumerator`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Threading.Tasks.Parallel">
       <Item value="ForEach`2" priority="0" />
@@ -529,15 +547,16 @@
       <Item value="Exists" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Add`0" priority="17" />
+      <Item value="Add`0" priority="19" />
       <Item value="Contains`0" priority="2" />
       <Item value="Find`0" priority="10" />
       <Item value="Count" priority="13" />
       <Item value="ForEach`0" priority="3" />
       <Item value="AddRange`0" priority="2" />
       <Item value="Select`2" priority="0" />
-      <Item value="FindAll`0" priority="0" />
+      <Item value="FindAll`0" priority="1" />
       <Item value="TrueForAll`0" priority="0" />
+      <Item value="First`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Context">
       <Item value="Name" priority="2" />
@@ -589,14 +608,14 @@
     <ItemStatistics item="Qualified:System.Text.StringBuilder">
       <Item value="Append`0" priority="8" />
       <Item value="AppendFormat`0" priority="0" />
-      <Item value="ToString`0" priority="13" />
+      <Item value="ToString`0" priority="14" />
       <Item value="Replace`0" priority="2" />
       <Item value="AppendLine`0" priority="1" />
       <Item value="Length" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Type">
       <Item value="Namespace" priority="12" />
-      <Item value="Name" priority="12" />
+      <Item value="Name" priority="14" />
       <Item value="FullName" priority="3" />
       <Item value="GetConstructors`0" priority="1" />
       <Item value="GetMethods`0" priority="1" />
@@ -610,9 +629,10 @@
       <Item value="Equals`0" priority="0" />
       <Item value="GetProperty`0" priority="1" />
       <Item value="Attributes" priority="0" />
+      <Item value="GetInterfaces`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectNamespace">
-      <Item value="Types" priority="10" />
+      <Item value="Types" priority="12" />
       <Item value="Name" priority="4" />
       <Item value="Assembly" priority="0" />
     </ItemStatistics>
@@ -623,13 +643,13 @@
       <Item value="PublicKey" priority="1" />
       <Item value="Version" priority="0" />
       <Item value="Namespaces" priority="7" />
-      <Item value="Context" priority="1" />
+      <Item value="Context" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectContext">
       <Item value="Assemblies" priority="12" />
       <Item value="Name" priority="4" />
       <Item value="Folder" priority="0" />
-      <Item value="Namespaces" priority="11" />
+      <Item value="Namespaces" priority="12" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Exception.InvalidContextModelException">
       <Item value="Context" priority="0" />
@@ -650,11 +670,11 @@
       <Item value="GetParameters`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectType">
-      <Item value="Contructors" priority="8" />
+      <Item value="Contructors" priority="9" />
       <Item value="Methods" priority="4" />
-      <Item value="Fields" priority="5" />
-      <Item value="Properties" priority="4" />
-      <Item value="Events" priority="5" />
+      <Item value="Fields" priority="6" />
+      <Item value="Properties" priority="5" />
+      <Item value="Events" priority="6" />
       <Item value="Assembly" priority="3" />
       <Item value="Name" priority="5" />
       <Item value="NameSpace" priority="0" />
@@ -668,7 +688,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectMethod">
       <Item value="Parameters" priority="7" />
-      <Item value="Name" priority="2" />
+      <Item value="Name" priority="3" />
       <Item value="Return" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.ParameterInfo">
@@ -681,8 +701,8 @@
       <Item value="MemberType" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
-      <Item value="Name" priority="3" />
-      <Item value="PropertyType" priority="1" />
+      <Item value="Name" priority="4" />
+      <Item value="PropertyType" priority="3" />
       <Item value="GetValue`0" priority="0" />
       <Item value="GetCustomAttributes`0" priority="1" />
       <Item value="SetValue`0" priority="0" />
@@ -700,7 +720,7 @@
       <Item value="Item2" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Lazy`1">
-      <Item value="Value" priority="3" />
+      <Item value="Value" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.Model.ReflectParameter">
       <Item value="Name" priority="3" />
@@ -749,7 +769,7 @@
       <Item value="Count`0" priority="1" />
       <Item value="Count" priority="1" />
       <Item value="Value" priority="0" />
-      <Item value="GetAllChildrenValues`0" priority="1" />
+      <Item value="GetAllChildrenValues`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Utils.INode`2">
       <Item value="Children" priority="4" />
@@ -765,7 +785,7 @@
       <Item value="NamedArguments" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
-      <Item value="GetType`0" priority="5" />
+      <Item value="GetType`0" priority="6" />
       <Item value="ToString`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Views.RootView">
@@ -792,7 +812,7 @@
     <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
       <Item value="Result`0" priority="4" />
       <Item value="Groups" priority="1" />
-      <Item value="Success" priority="0" />
+      <Item value="Success" priority="1" />
       <Item value="NextMatch`0" priority="0" />
       <Item value="Value" priority="0" />
     </ItemStatistics>
@@ -876,8 +896,9 @@
       <Item value="AddContext`0" priority="0" />
       <Item value="GetAssembly`0" priority="0" />
       <Item value="GetNamespace`0" priority="0" />
-      <Item value="ListNamespaces`0" priority="0" />
+      <Item value="ListNamespaces`0" priority="1" />
       <Item value="GetCtsType`0" priority="0" />
+      <Item value="ListSubNamespaces`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Handlers.RootHandler">
       <Item value="Run`0" priority="0" />
@@ -921,7 +942,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="ToString`0" priority="0" />
-      <Item value="ToList`1" priority="1" />
+      <Item value="ToList`1" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Exception">
       <Item value="StackTrace" priority="0" />
@@ -939,71 +960,74 @@
       <Item value="Property" priority="0" />
       <Item value="TypeName" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpReflector.Views.Exceptions.TemplateViewNotFoundViewException">
+      <Item value="Path" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="1037" fromTop="11" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectMethod.cs" caret="238" fromTop="6" />
+      <File id="951DF78D-BC55-441F-8CDE-1F9730E85EE5/f:ReflectorViewTest.cs" caret="2988" fromTop="18" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectParameter.cs" caret="0" fromTop="0" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectProperty.cs" caret="0" fromTop="0" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectEvent.cs" caret="0" fromTop="0" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:NamespaceView.cs" caret="420" fromTop="7" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:ViewException.cs" caret="0" fromTop="0" />
+      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Tree.cs" caret="730" fromTop="5" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="2922" fromTop="4" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="0" fromTop="0" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectType.cs" caret="0" fromTop="0" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:NamespaceHandler.cs" caret="790" fromTop="4" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectAssembly.cs" caret="0" fromTop="0" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:AssemblyView.cs" caret="517" fromTop="4" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2180" fromTop="6" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectNamespace.cs" caret="0" fromTop="0" />
-      <File id="38038D50-140C-431C-ACCC-7F9DA886544C/f:TreeTest.cs" caret="5790" fromTop="24" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ContextHandler.cs" caret="862" fromTop="11" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ContextNamespaceHandler.cs" caret="663" fromTop="11" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectContext.cs" caret="296" fromTop="10" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectAssembly.cs" caret="430" fromTop="9" />
-      <File id="8A12BFC6-DAD2-43E3-8814-D36D3B3AE9FA/f:ReflectorHandlerTest.cs" caret="3043" fromTop="12" />
-      <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="7175" fromTop="12" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ExceptionView.cs" caret="288" fromTop="11" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="957" fromTop="0" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="1821" fromTop="0" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:NamespaceHandler.cs" caret="409" fromTop="9" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectType.cs" caret="567" fromTop="15" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectMethod.cs" caret="181" fromTop="7" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ContextView.cs" caret="336" fromTop="8" />
-      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="768" fromTop="0" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:AssemblyView.cs" caret="562" fromTop="13" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="771" fromTop="8" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:TypeView.cs" caret="423" fromTop="3" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="623" fromTop="11" />
-      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="1199" fromTop="0" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:ViewException.cs" caret="34" fromTop="0" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidPathViewException.cs" caret="332" fromTop="11" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:TemplateViewAttributeNotFoundViewException.cs" caret="373" fromTop="11" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidDataBindViewException.cs" caret="605" fromTop="15" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="3668" fromTop="0" />
-      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:INode.cs" caret="0" fromTop="0" />
-      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Tree.cs" caret="2049" fromTop="0" />
-      <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Node.cs" caret="180" fromTop="7" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="704" fromTop="6" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="15019" fromTop="10" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:MethodView.cs" caret="292" fromTop="11" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:MethodHandler.cs" caret="712" fromTop="8" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ConstructorView.cs" caret="345" fromTop="6" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ConstructorHandler.cs" caret="717" fromTop="2" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:EventView.cs" caret="326" fromTop="12" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:PropertyView.cs" caret="228" fromTop="9" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:FieldView.cs" caret="326" fromTop="12" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:EventHandler.cs" caret="820" fromTop="14" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="375" fromTop="6" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="372" fromTop="5" />
+      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="1528" fromTop="10" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectField.cs" caret="136" fromTop="6" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2159" fromTop="15" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2940" fromTop="14" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ExceptionView.cs" caret="234" fromTop="9" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2223" fromTop="9" />
-      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="1213" fromTop="7" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="2855" fromTop="3" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="3151" fromTop="12" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="3498" fromTop="9" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="3928" fromTop="4" />
-      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="1804" fromTop="4" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:TypeView.cs" caret="425" fromTop="9" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:TypeView.cs" caret="581" fromTop="11" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:TypeView.cs" caret="957" fromTop="15" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="397" fromTop="5" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="710" fromTop="9" />
-      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="984" fromTop="7" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:AssemblyView.cs" caret="562" fromTop="13" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:TypeView.cs" caret="423" fromTop="3" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="1072" fromTop="18" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:ViewException.cs" caret="134" fromTop="9" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:ViewException.cs" caret="34" fromTop="0" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidPathViewException.cs" caret="196" fromTop="7" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidPathViewException.cs" caret="88" fromTop="3" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:TemplateViewAttributeNotFoundViewException.cs" caret="106" fromTop="3" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:TemplateViewAttributeNotFoundViewException.cs" caret="373" fromTop="11" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="964" fromTop="12" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidDataBindViewException.cs" caret="79" fromTop="3" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="2201" fromTop="14" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/d:Exceptions/f:InvalidDataBindViewException.cs" caret="605" fromTop="15" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="1147" fromTop="7" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="1656" fromTop="19" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:AssemblyView.cs" caret="207" fromTop="2" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:AssemblyView.cs" caret="517" fromTop="4" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="1439" fromTop="2" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="1376" fromTop="9" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="1121" fromTop="4" />
+      <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="16150" fromTop="5" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:MethodHandler.cs" caret="373" fromTop="7" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:MethodView.cs" caret="278" fromTop="11" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:MethodHandler.cs" caret="1106" fromTop="19" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:MethodHandler.cs" caret="712" fromTop="8" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ConstructorHandler.cs" caret="378" fromTop="4" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ConstructorHandler.cs" caret="678" fromTop="6" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ConstructorView.cs" caret="345" fromTop="6" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ConstructorHandler.cs" caret="950" fromTop="8" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:EventHandler.cs" caret="372" fromTop="4" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:EventHandler.cs" caret="747" fromTop="16" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:EventView.cs" caret="326" fromTop="12" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:EventHandler.cs" caret="1068" fromTop="16" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:FieldView.cs" caret="326" fromTop="12" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:PropertyView.cs" caret="228" fromTop="9" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="747" fromTop="13" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="820" fromTop="14" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="955" fromTop="15" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="752" fromTop="19" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="1070" fromTop="22" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="1053" fromTop="21" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="375" fromTop="6" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="372" fromTop="5" />
+      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="1503" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

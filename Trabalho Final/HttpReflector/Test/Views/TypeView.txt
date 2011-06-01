@@ -1,14 +1,36 @@
 ﻿<HTML>
 	<BODY>
-		<H1><@Type.Assembly.Context.Name></H1>
-		<H1><@Type.Assembly.Context.Folder></H1>
+		<H1><$Type.Assembly.Context.Name></H1>
+		<H1><$Type.Assembly.Context.Folder></H1>
 		<BR />
-		<H2>Name:<A href="/<@Type.Assembly.Context.Name>/as/<@Type.Assembly.Name>"><@Type.Assembly.Name></A></H2>
-		<H2>FullName:<@Type.Assembly.FullName></H2>
+		<H2>Name:<A href="/<$Type.Assembly.Context.Name>/as/<$Type.Assembly.Name>"><$Type.Assembly.Name></A></H2>
+		<H2>FullName:<$Type.Assembly.FullName></H2>
 		<BR />
-		<H2><A href="/<@Type.Assembly.Context.Name>/ns/<@Type.Namespace.Name>"><@Type.Namespace.Name></A></H2>
+		<H2><A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>"><$Type.Namespace.Name></A></H2>
+		<BR />
+		<H3>Methods</H3>
 		<TABLE border="1">
 			<@Methods>
+		</TABLE>
+		<BR />
+		<H3>Constructors</H3>
+		<TABLE border="1">
+			<@Constructors>
+		</TABLE>
+		<BR />
+		<H3>Fields</H3>
+		<TABLE border="1">
+			<@Fields>
+		</TABLE>
+		<BR />
+		<H3>Properties</H3>
+		<TABLE border="1">
+			<@Properties>
+		</TABLE>
+		<BR />
+		<H3>Events</H3>
+		<TABLE border="1">
+			<@Events>
 		</TABLE>
 	<BODY>
 </HTML>

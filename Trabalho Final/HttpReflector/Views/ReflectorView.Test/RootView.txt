@@ -1,8 +1,6 @@
 ﻿<HTML>
 	<BODY>
-		<TABLE>
-			<TR><@Contexts></TR>
-		</TABLE>
+		<$Contexts.Count>
 		<TABLE>
 			<TR><@Contexts></TR>
 		</TABLE>

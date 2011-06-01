@@ -1,0 +1,8 @@
+﻿<TR>
+<TD>
+<A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>/<$Type.Name>"><$Type.Name></A>
+</TD>
+<TD>
+<A href="/<%Type.Assembly.Context.Name>/ns/<%Type.Namespace.Name>/<%Type.Name>/f/<$Name>"><$Name></A>
+</TD>
+</TR>

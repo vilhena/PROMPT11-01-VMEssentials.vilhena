@@ -63,10 +63,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ContextView.Assemblies.txt" />
-    <Content Include="ContextView.Namespaces.txt" />
-    <Content Include="ContextView.txt" />
-    <Content Include="RootView.Context.txt">
+    <Content Include="RootView.Contexts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="RootView.txt">

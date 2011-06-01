@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using HttpReflector.Contracts.View;
 using HttpReflector.Controllers.Model;
-using HttpReflector.Views.Attributes;
 
 namespace HttpReflector.Views
 {
-    //TODO: use by default same name of class plus html
-    [TemplateView("ContextAssemblyView.txt")]
     public class ContextAssemblyView: IView
     {
         public ReflectContext Context { get; set; }
-        [CollectionView("ContextView.Assemblies.txt")]
         public List<ReflectAssembly> Assemblies { get; set; }
     }
 }

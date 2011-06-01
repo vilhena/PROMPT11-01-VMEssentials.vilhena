@@ -25,10 +25,12 @@ namespace HttpReflector.Handlers
 
             var typesList = ctx.Types.Values.Select(lazyType => lazyType.Value).ToList();
 
+
             var view = new NamespaceView
                            {
                                Namespace = ctx,
-                               Types = typesList
+                               Types = typesList,
+                               Namespaces = AssemblyModel.ListSubNamespaces(Context, Namespace)
                            };
 
             return view;
