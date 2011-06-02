@@ -1,13 +1,18 @@
 ﻿<HTML>
 	<BODY>
-		<H1><$Type.Assembly.Context.Name></H1>
-		<H1><$Type.Assembly.Context.Folder></H1>
+		<H1>Type</H1>
+		<H1><$Type.CSharpName></H1>
 		<BR />
-		<H2>Name:<A href="/<$Type.Assembly.Context.Name>/as/<$Type.Assembly.Name>"><$Type.Assembly.Name></A></H2>
+		<H2>AssemblyName:<A href="/<$Type.Assembly.Context.Name>/as/<$Type.Assembly.Name>"><$Type.Assembly.Name></A></H2>
+		<BR />
+		<H2><$Type.Assembly.Context.Name></H2>
+		<H2><$Type.Assembly.Context.Folder></H2>
+		<BR />
 		<H2>FullName:<$Type.Assembly.FullName></H2>
 		<BR />
-		<H2><A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>"><$Type.Namespace.Name></A></H2>
+		<H2>Namespace:<A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>"><$Type.Namespace.Name></A></H2>
 		<BR />
+		<H3><$Type.CSharpName><H3>
 		<H3>Methods</H3>
 		<TABLE border="1">
 			<@Methods>

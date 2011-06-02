@@ -15,6 +15,7 @@ namespace HttpReflector.Controllers
     {
         private IUIBinder Binder { get; set; }
         private IRouter<IHandler> Router { get; set; }
+        private bool _started = false;
 
         public void RegisterUI(IUIBinder binder)
         {
@@ -36,17 +37,19 @@ namespace HttpReflector.Controllers
         public void Start()
         {
             Binder.Start();
-
-            //TODO: CHANGE THIS
-            while (true)
+            Console.WriteLine("Started");
+            
+            while (_started)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(5000);
             }
         }
 
         public void Stop()
         {
             Binder.Stop();
+            _started = false;
+            Console.WriteLine("Stoped");
         }
 
         private void ProcessRequest(object contextobj)
@@ -54,25 +57,23 @@ namespace HttpReflector.Controllers
             var context = (HttpListenerContext)contextobj;
             try
             {
-                //context.Request.Url.GetComponents()
-
                 if (context.Request.HttpMethod.Equals("GET"))
                 {
                     var msg = context.Request.HttpMethod + " " + context.Request.Url;
 
-                    IHandler runner = Router.Route(context.Request.Url.LocalPath);
+                    var runner = Router.Route(context.Request.Url.LocalPath);
                     var view = runner.Run();
 
                     var response = ViewBinder.BindView(view);
 
-                    byte[] b = Encoding.UTF8.GetBytes(response);
+                    var b = Encoding.UTF8.GetBytes(response);
                     context.Response.ContentLength64 = b.Length;
                     context.Response.OutputStream.Write(b, 0, b.Length);
                     context.Response.StatusCode = 200;
                 }
                 else
                 {
-                    context.Response.StatusCode = 501;
+                    throw new Exception(context.Request.HttpMethod + " Not Implemented");
                 }
             }
             catch (Exception ex)

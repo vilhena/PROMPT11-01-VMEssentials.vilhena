@@ -28,9 +28,9 @@ namespace HttpReflector.HttpReflectorSrv
             router.RegisterRoute("/{ctx}/ns/{namespace}/{shortName}/e/{eventName}", new EventHandler());
             
             //TODO:deixar de ser estatico
-            //AssemblyModel.AddContext("ContextTest1", @"..\..\..\..\Test\ContextTest1");
-            //AssemblyModel.AddContext("ContextTest2", @"..\..\..\..\Test\ContextTest2");
-            
+            AssemblyModel.AddContext("ContextTest1", @"..\..\..\..\Test\ContextTest1");
+            AssemblyModel.AddContext("ContextTest2", @"..\..\..\..\Test\ContextTest2");
+
             AssemblyModel.AddContext("System32",
                                      @"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0");
 

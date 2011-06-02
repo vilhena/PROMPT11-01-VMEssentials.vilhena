@@ -35,9 +35,7 @@ namespace HttpReflector.Utils
                     return null;
                 }
 
-
                 currentNode = currentNode.Children[key];
-
             }
             return currentNode;
         }

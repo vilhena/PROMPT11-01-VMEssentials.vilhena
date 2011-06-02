@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Security;
 using System.Text;
 using System.Text.RegularExpressions;
 using HttpReflector.Contracts.View;
@@ -43,11 +44,11 @@ namespace HttpReflector.Views
                     var pinfo = value.GetType().GetProperty(prop);
                     //Try to Map invalid Data
                     if (pinfo == null)
-                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name);
+                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name, "Master");
                     value = pinfo.GetValue(value, new object[] { });
                 }
                 //MustEscapeData
-                sb.Replace(match.Value, value.ToString());
+                sb.Replace(match.Value, SecurityElement.Escape(value.ToString()));
                 match = match.NextMatch();
             }
             return sb.ToString();
@@ -81,11 +82,11 @@ namespace HttpReflector.Views
                     var pinfo = value.GetType().GetProperty(prop);
                     //Try to Map invalid Data
                     if (pinfo == null)
-                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name);
+                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name, filePath);
                     value = pinfo.GetValue(value, new object[] { });
                 }
                 //MustEscapeData
-                sb.Replace(match.Value, value.ToString());
+                sb.Replace(match.Value, SecurityElement.Escape(value.ToString()));
                 match = match.NextMatch();
             }
 
@@ -107,7 +108,7 @@ namespace HttpReflector.Views
 
                     //Try to Map invalid Data
                     if (pinfo == null)
-                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name);
+                        throw new InvalidDataBindViewException(listProperties, prop, value.GetType().Name, filePath);
 
                     value = pinfo.GetValue(value, new object[] { });
 

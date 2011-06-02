@@ -10,19 +10,19 @@ namespace HttpReflector.Routers
 {
     public class ReflectorRouter: IRouter<IHandler>
     {
-        private readonly IRouteContainer<IHandler> _route;
+        private readonly IRouteContainer<Type> _route;
         private readonly IHandlerMapBinder _binder; 
 
         public ReflectorRouter()
         {
             //TODO: change this to RouteTree
-            _route = new RouteList<IHandler>();
+            _route = new RouteList<Type>();
             _binder = new AttributeHandlerMapBinder();
         }
 
         public void RegisterRoute(string route, IHandler routeHandler)
         {
-            this._route.Map(route, routeHandler);
+            this._route.Map(route, routeHandler.GetType());
         }
 
         public void UnregisterRoute(string route)
@@ -33,8 +33,10 @@ namespace HttpReflector.Routers
         public IHandler Route(string path)
         {
             var result = this._route.Seek(path);
-            _binder.Bind(result.Map, result.Handler);
-            return result.Handler;
+            //new Instance
+            var handler = (IHandler) Activator.CreateInstance(result.Handler);
+            _binder.Bind(result.Map, handler);
+            return handler;
         }
     }
 }

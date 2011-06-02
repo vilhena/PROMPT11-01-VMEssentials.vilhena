@@ -16,7 +16,6 @@ namespace HttpReflector.UIBinders
             _httpListener = new HttpListener();
             _httpListener.Prefixes.Add("http://127.0.0.1:8080/");
 
-            //TODO: REMOVE THIS ONLY FOR TEST
             Callback = new WaitCallback(ProcessRequest);
         }
 
@@ -78,7 +77,6 @@ namespace HttpReflector.UIBinders
             }
             catch (Exception ex)
             {
-                //TODO: LOG ERRORS
                 Console.WriteLine("Request error: " + ex);
             }
         }

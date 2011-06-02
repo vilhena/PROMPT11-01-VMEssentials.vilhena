@@ -1,6 +1,6 @@
-﻿<TR><TD>
-<A href="/<$Namespace.Assembly.Context.Name>/ns/<$Name>"><$Namespace.Name></A></BR>
-<TABLE border="1">
+﻿<LI>
+<A href="/<$Namespace.Assembly.Context.Name>/ns/<$Namespace.Name>"><$Namespace.Name></A></BR>
+<UL>
 	<@Types>
-</TABLE>
-</TD></TR>
+</UL>
+</LI>

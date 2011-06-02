@@ -1,9 +1,10 @@
 ﻿<HTML>
 	<BODY>
+		<H1>Namespace</H1><BR />
+		<H1><A href="/<$Namespace.Assembly.Context.Name>/ns/<$Namespace.Name>"><$Namespace.Name></A></H1>
 		<H1><$Namespace.Assembly.Context.Name></H1>
 		<H1><$Namespace.Assembly.Context.Folder></H1>
 		<BR />
-		<H2>Name:<A href="/<$Namespace.Assembly.Context.Name>/ns/<$Namespace.Name>"><$Namespace.Name></A></H2>
 		<BR />
 		<H2>Types<H2>
 		<TABLE border="1">

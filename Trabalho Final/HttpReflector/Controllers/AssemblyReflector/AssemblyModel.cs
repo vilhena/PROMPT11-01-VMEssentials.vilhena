@@ -85,7 +85,7 @@ namespace HttpReflector.Controllers
                 foreach (var type in asm.GetTypes())
                 {
                     //adds to context namespace list
-                    if (type.Namespace != null)
+                    if (type.Namespace != null && type.IsPublic)
                     {
                         ReflectNamespace newNamesspace;
 
@@ -164,7 +164,8 @@ namespace HttpReflector.Controllers
                 Methods = new List<ReflectMethod>(),
                 Fields = new List<ReflectField>(),
                 Properties = new List<ReflectProperty>(),
-                Events = new List<ReflectEvent>()
+                Events = new List<ReflectEvent>(),
+                CSharpName = ToGenericTypeString(type)
             };
 
             return newType;
@@ -183,7 +184,8 @@ namespace HttpReflector.Controllers
                                   Methods = new List<ReflectMethod>(),
                                   Fields = new List<ReflectField>(),
                                   Properties = new List<ReflectProperty>(),
-                                  Events = new List<ReflectEvent>()
+                                  Events = new List<ReflectEvent>(),
+                                  CSharpName = ToGenericTypeString(type)
                               };
 
             FillConstructors(type, newType, newassembly,currNamespace);
@@ -201,6 +203,7 @@ namespace HttpReflector.Controllers
             {
                 // Finds or crates a new Type on this assembly
                 Tuple<ReflectNamespace,ReflectAssembly> asmns = FindNamespaceAndAssembly(eventInfo.EventHandlerType);
+
 
                 var newEvent = new ReflectEvent()
                                    {
@@ -225,7 +228,14 @@ namespace HttpReflector.Controllers
                               //Namespaces = new Tree<string, ReflectNamespace>(),
                               PublicKey =
                                   PublicKeyToString(
-                                      type.Assembly.GetName().GetPublicKey())
+                                      type.Assembly.GetName().GetPublicKey()),
+                              Context = new ReflectContext()
+                                            {
+                                                Assemblies = new Dictionary<string, ReflectAssembly>(),
+                                                Folder = "NotFound",
+                                                Name = "NotFound",
+                                                Namespaces = new Tree<string, ReflectNamespace>()
+                                            }
                           };
 
             var ns = FindNamespace(type.Namespace);
@@ -382,6 +392,30 @@ namespace HttpReflector.Controllers
             if(!Contexts.ContainsKey(context))
                 throw new InvalidContextModelException(context);
             return Contexts[context];
+        }
+
+        public static string ToGenericTypeString(Type type)
+        {
+            if (!type.IsGenericType) 
+                return type.Name;
+
+            try //there are some types that IsGenericType is true but GetGenericTypeDefinition throws
+            {
+                string genericTypeName = type.GetGenericTypeDefinition().Name;
+
+
+                genericTypeName = genericTypeName.Substring(0, genericTypeName.IndexOf('`'));
+                    
+
+                string genericArgs = string.Join(",",
+                                                 type.GetGenericArguments().Select(ta => ToGenericTypeString(ta)).
+                                                     ToArray());
+                return genericTypeName + "<" + genericArgs + ">";
+            }
+            catch
+            {
+                return type.Name;
+            }
         }
 
         public static List<ReflectNamespace> ListSubNamespaces(string context, string namespacePrefix)

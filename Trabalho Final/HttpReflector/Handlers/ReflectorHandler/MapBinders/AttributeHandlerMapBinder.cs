@@ -19,7 +19,7 @@ namespace HttpReflector.Handlers.MapBinders
                 if (attrs.Length > 0)
                 {
                     var mapper = (HandlerMapAttribute)attrs[0];
-                    //TODO: Need to throws Custom exception
+                    
                     if (!map.ContainsKey(mapper.Pattern))
                         throw new MapKeyNotFoundMapBinderException(mapper.Pattern);
 

@@ -1,6 +1,6 @@
 ﻿<TR>
 <TD>
-<A href="/<$Return.Assembly.Context.Name>/ns/<$Return.Namespace.Name>/<$Return.Name>"><$Return.Name></A>
+<A href="/<$Return.Assembly.Context.Name>/ns/<$Return.Namespace.Name>/<$Return.Name>"><$Return.CSharpName></A>
 </TD>
 <TD>
 <A href="/<%Type.Assembly.Context.Name>/ns/<%Type.Namespace.Name>/<%Type.Name>/m/<$Name>"><$Name></A>

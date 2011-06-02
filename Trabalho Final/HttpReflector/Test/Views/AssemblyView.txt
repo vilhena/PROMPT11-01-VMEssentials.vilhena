@@ -1,16 +1,17 @@
 ﻿<HTML>
 	<BODY>
+		<H1>Assembly</H1><BR />
+		<H1>Name:<A href="/<$Assembly.Context.Name>/as/<$Assembly.Name>"><$Assembly.Name></A></H1>		
 		<H1><$Assembly.Context.Name></H1>
 		<H1><$Assembly.Context.Folder></H1>
 		<BR />
-		<H2>Name:<A href="/<$Assembly.Context.Name>/as/<$Assembly.Name>"><$Assembly.Name></A></H2>
 		<H2>FullName:<$Assembly.FullName></H2>
 		<H3>Version:<$Assembly.Version></H3>
 		<H3>PublicKey:<$Assembly.PublicKey></H3>
 		<BR />
 		<H2><A href="/<$Assembly.Context.Name>/ns">Namespaces With Types</A></H2>
-		<TABLE border="1">
+		<UL>
 			<@NamespacesWithTypes>
-		</TABLE>
+		</UL>
 	<BODY>
 </HTML>

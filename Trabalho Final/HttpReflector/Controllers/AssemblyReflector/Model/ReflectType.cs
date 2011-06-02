@@ -7,6 +7,8 @@ namespace HttpReflector.Controllers.Model
 {
     public class ReflectType : ReflectModel
     {
+        public string CSharpName { get; set; }
+
         public ReflectNamespace Namespace { get; set; }
 
         public ReflectAssembly Assembly { get; set; }

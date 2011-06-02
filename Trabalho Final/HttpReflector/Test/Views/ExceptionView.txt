@@ -1,5 +1,6 @@
 ﻿<HTML>
 	<BODY>
+		<H1>Exception</H1><BR />
 		<TABLE border="1">
 			<TR><TD><$Exception.Message></TD></TR>
 			<TR><TD><$Exception.StackTrace></TD></TR>

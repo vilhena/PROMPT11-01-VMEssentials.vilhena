@@ -1,3 +1,3 @@
-﻿<TR><TD>
-Name:<A href="/<$Assembly.Context.Name>/ns/<$Namespace.Name>/<$Name>"><$Name></A>
-</TD></TR>
+﻿<LI>
+<A href="/<$Assembly.Context.Name>/ns/<$Namespace.Name>/<$Name>"><$CSharpName></A>
+</LI>

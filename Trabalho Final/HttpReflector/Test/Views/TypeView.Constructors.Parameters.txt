@@ -1,1 +1,1 @@
-﻿<A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>/<$Type.Name>"><$Type.Name></A> <$Name>,
+﻿<A href="/<$Type.Assembly.Context.Name>/ns/<$Type.Namespace.Name>/<$Type.Name>"><$Type.CSharpName></A> <$Name>,

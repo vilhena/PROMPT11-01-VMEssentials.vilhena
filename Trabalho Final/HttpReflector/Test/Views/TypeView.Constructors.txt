@@ -1,6 +1,6 @@
 ﻿<TR>
 <TD>
-<A href="/<%Type.Assembly.Context.Name>/ns/<%Type.Namespace.Name>/<%Type.Name>/c"><%Type.Name></A>
+<A href="/<%Type.Assembly.Context.Name>/ns/<%Type.Namespace.Name>/<%Type.Name>/c"><%Type.CSharpName></A>
 </TD>
 <TD>
 <@Parameters>

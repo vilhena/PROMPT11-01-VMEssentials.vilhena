@@ -193,7 +193,7 @@ namespace AssemblyModelTest
             AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
             var ns = AssemblyModel.ListNamespaces("ContextTest1");
 
-            Assert.AreEqual(20, ns.Count);
+            Assert.AreEqual(16, ns.Count);
         }
 
         [TestMethod]
@@ -206,7 +206,7 @@ namespace AssemblyModelTest
             Assert.IsNotNull(ns);
             Assert.AreEqual("Microsoft.VisualBasic.FileIO",ns.Name);
             Assert.AreEqual(assemebly,ns.Assembly);
-            Assert.AreEqual(17,ns.Types.Count);
+            Assert.AreEqual(10,ns.Types.Count);
         }
 
         [TestMethod]
@@ -230,21 +230,22 @@ namespace AssemblyModelTest
         public void GetTypeContextModel()
         {
             var asm = Assembly.LoadFrom(@"..\..\..\Test\ContextTest1\Microsoft.VisualBasic.dll");
-            Type asmType = asm.GetType("Microsoft.VisualBasic.CompilerServices.VBInputBox");
+            Type asmType = asm.GetType("Microsoft.VisualBasic.CompilerServices.IncompleteInitialization");
 
             AssemblyModel.AddContext("ContextTest1", @"..\..\..\Test\ContextTest1");
 
-            var type = AssemblyModel.GetCtsType("ContextTest1", "Microsoft.VisualBasic.CompilerServices", "VBInputBox");
+            var ns = AssemblyModel.FindNamespace("Microsoft.VisualBasic.CompilerServices");
+            var type = AssemblyModel.GetCtsType("ContextTest1", "Microsoft.VisualBasic.CompilerServices", "IncompleteInitialization");
 
             Assert.IsNotNull(type);
             Assert.AreEqual("Microsoft.VisualBasic.CompilerServices", type.Namespace.Name);
             Assert.AreEqual("ContextTest1", type.Assembly.Context.Name);
-            Assert.AreEqual(0,type.Contructors.Count);
-            Assert.AreEqual(91, type.Events.Count);
-            Assert.AreEqual(1, type.Fields.Count);
-            Assert.AreEqual("Microsoft.VisualBasic.CompilerServices.VBInputBox", type.FullName);
-            Assert.AreEqual(496, type.Methods.Count);
-            Assert.AreEqual(126,type.Properties.Count);
+            Assert.AreEqual(3,type.Contructors.Count);
+            Assert.AreEqual(0, type.Events.Count);
+            Assert.AreEqual(0, type.Fields.Count);
+            Assert.AreEqual("Microsoft.VisualBasic.CompilerServices.IncompleteInitialization", type.FullName);
+            Assert.AreEqual(16, type.Methods.Count);
+            Assert.AreEqual(7,type.Properties.Count);
 
             foreach (var fieldInfo in asmType.GetFields())
             {
@@ -274,7 +275,6 @@ namespace AssemblyModelTest
 
                 Assert.IsNotNull(ctor);
                 Assert.AreEqual(constructorInfo.Name, ctor.Name);
-                Assert.AreEqual(constructorInfo.GetParameters().Count(), ctor.Parameters.Count);
             }
             foreach (var methodInfo in asmType.GetMethods())
             {
