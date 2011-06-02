@@ -17,14 +17,27 @@ Gonçalo Vilhena
   * Constituido por um IRouter e um IUIBinder
   * Recebe pedidos do UIBinder através de uma Callback registada, encaminha o pedido para o Router e devolve a resposta ao UIBinder
 
+ * UIBinder
+
  * Router
   * Entidade responsável por armazenar pares de Rotas e Tipos
   * Implementação ReflectorRouter da interface IRouter
-  * Constituido por uma IRouterCollection, colecção de armazenamento de rotas
+  * Constituido por uma IRouteContainer, colecção de armazenamento de rotas
   * Recebe um pedido encaminha a rota ao IRouterCollection e devolve um IHandler
-  * Nesta implementalção o IRouterCoollection é uma implementação com Dicionário (RouteList)
+  * Nesta implementalção o IRouteContainer é uma implementação com Dicionário (RouteList)
   * O RouteList é um container de pares Rotas -> Type, onde o type é o tipo do objecto que deve ser instanciado e devolvido ao controller
-  *
+  * Recebe do RouteContainer um RouteResult, o qual é constituido por um Mapa <pattern, valor> encontrado pelo pattern e o Objecto guardado no RouteContainter, neste caso o tipo do Handler
+
+ * RouteContainer
+  * Container Genérico de armazenamento de rotas
+  * Implementação da RouteList a interface IRouteContainer
+  * Regista rotas com patterns com um Type associado, neste caso o tipo do IHandler a ser executado
+  * Retorna um RouteResult
+
+ * Handlers
+  * Entidades que contêm as acções necessárias executar sobre o AssemblyModel (responsável por retornar os tipos carregados)
+  * Impementa a interface IHandler, que é constituida por um método Run que retorna uma IView
+  * 
 
 4 semanas, 10h / semana (total de 40h)
  
