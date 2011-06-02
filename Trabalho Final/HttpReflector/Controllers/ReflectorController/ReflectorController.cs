@@ -38,7 +38,7 @@ namespace HttpReflector.Controllers
         {
             Binder.Start();
             Console.WriteLine("Started");
-            
+            _started = true;
             while (_started)
             {
                 Thread.Sleep(5000);

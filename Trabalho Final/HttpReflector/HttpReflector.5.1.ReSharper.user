@@ -177,7 +177,7 @@
       <Item value="parameterInfo" priority="7" />
       <Item value="Type" priority="1" />
       <Item value="IsOnContext" priority="0" />
-      <Item value="true" priority="3" />
+      <Item value="true" priority="4" />
       <Item value="ReflectField" priority="0" />
       <Item value="fieldInfo" priority="1" />
       <Item value="ReflectProperty" priority="0" />
@@ -438,7 +438,7 @@
       <Item value="Tree&lt;string,ReflectNamespace&gt;" priority="0" />
       <Item value="CSharpName" priority="0" />
       <Item value="ToGenericTypeString`0" priority="0" />
-      <Item value="_started" priority="1" />
+      <Item value="_started" priority="2" />
       <Item value="String`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HttpReflector.Controllers.ReflectorController">
@@ -976,8 +976,6 @@
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:FieldView.cs" caret="326" fromTop="12" />
-      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:EventHandler.cs" caret="820" fromTop="14" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:PropertyHandler.cs" caret="375" fromTop="6" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectField.cs" caret="136" fromTop="6" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectEvent.cs" caret="155" fromTop="7" />
@@ -986,26 +984,28 @@
       <File id="BA7B44E3-D090-4812-87D8-5AF9BAA35351/f:IHandler.cs" caret="121" fromTop="5" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:ContextHandler.cs" caret="0" fromTop="0" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectContext.cs" caret="0" fromTop="0" />
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="1314" fromTop="17" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:TypeHandler.cs" caret="0" fromTop="0" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/d:Model/f:ReflectType.cs" caret="235" fromTop="9" />
-      <File id="284B67E9-1ACA-453F-A62D-3CB5686883FC/f:ReflectorController.cs" caret="0" fromTop="0" />
       <File id="9AB64D12-4998-43BE-BE87-5A4C04D83909/f:Tree.cs" caret="730" fromTop="6" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:AssemblyHandler.cs" caret="0" fromTop="0" />
       <File id="18E5EC60-0EC2-492A-9765-595689CA52A7/f:IRouter.cs" caret="168" fromTop="5" />
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="10758" fromTop="2" />
       <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteTree.cs" caret="640" fromTop="5" />
-      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="2318" fromTop="78" />
       <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:ReflectorRouterTest.cs" caret="1920" fromTop="5" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/d:MapBinders/f:AttributeHandlerMapBinder.cs" caret="763" fromTop="5" />
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:FieldHandler.cs" caret="907" fromTop="5" />
-      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="2194" fromTop="8" />
       <File id="ED6655D3-11F8-4A53-AFF0-CFC547F4C721/f:RouterCollection.cs" caret="0" fromTop="0" />
-      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="485" fromTop="8" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2229" fromTop="1" />
       <File id="8A12BFC6-DAD2-43E3-8814-D36D3B3AE9FA/f:ReflectorHandlerTest.cs" caret="3043" fromTop="7" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="10776" fromTop="9" />
-      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="3740" fromTop="62" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:RouteList.cs" caret="367" fromTop="0" />
+      <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/f:RootHandler.cs" caret="0" fromTop="0" />
+      <File id="91818C64-53EE-487A-A897-B410EAEB4B45/f:HttpBinderTest.cs" caret="0" fromTop="0" />
+      <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="0" fromTop="0" />
+      <File id="06F9FF3A-A31C-444A-97CF-27872F063C31/f:ReflectorRouter.cs" caret="0" fromTop="0" />
+      <File id="C8E9E6EE-C8B4-4364-A751-D8079A633EC8/f:ViewBinder.cs" caret="2031" fromTop="6" />
+      <File id="A4953711-FF0B-4327-85E3-AB17F4F6D423/f:Program.cs" caret="887" fromTop="0" />
+      <File id="284B67E9-1ACA-453F-A62D-3CB5686883FC/f:ReflectorController.cs" caret="0" fromTop="0" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1070" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
       <File id="60B60244-8144-482E-BF22-7CEA74DA811B/f:AssemblyModel.cs" caret="18481" fromTop="7" />
@@ -1022,14 +1022,13 @@
       <File id="F65A44F3-E11C-446D-94B0-EBB5C0196108/d:MapBinders/f:AttributeHandlerMapBinder.cs" caret="763" fromTop="5" />
       <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="461" fromTop="4" />
       <File id="07859F51-8DA9-481A-84DD-B9A84B191B37/f:HttpBinder.cs" caret="2318" fromTop="4" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1131" fromTop="14" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1147" fromTop="14" />
       <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="544" fromTop="10" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1083" fromTop="19" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1301" fromTop="22" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1476" fromTop="11" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1672" fromTop="10" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1902" fromTop="12" />
-      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2229" fromTop="19" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1317" fromTop="22" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1492" fromTop="11" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1688" fromTop="10" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1918" fromTop="12" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="2245" fromTop="19" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="7175" fromTop="7" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="7761" fromTop="7" />
       <File id="8A12BFC6-DAD2-43E3-8814-D36D3B3AE9FA/f:ReflectorHandlerTest.cs" caret="3043" fromTop="7" />
@@ -1038,6 +1037,7 @@
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="9430" fromTop="6" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="8763" fromTop="3" />
       <File id="C202249C-0FE8-44E3-AADB-AFF57D7CBD7C/f:AssemblyModelTest.cs" caret="10776" fromTop="6" />
+      <File id="DE1B72D1-AC9B-4A5D-BB0C-81B2282E9C70/f:ReflectorController.cs" caret="1070" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
