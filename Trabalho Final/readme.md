@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿# PROMPT11-01-VMEssentials.vilhena - Projecto Final #
-=======
 # PROMPT11-01-VMEssentials.vilhena - Projecto Final #
->>>>>>> 3b448d5833c3a75f462d94c6ce179258b965bde1
 
 # Autor #
 
@@ -13,9 +9,6 @@ Gonçalo Vilhena
 ### Componentes ###
 
  * HttpReflector
-<<<<<<< HEAD
-	* Programa responsável
-=======
   * Console Application responsável pelo carregamento dos vários componentes
 
  * Controler
@@ -73,18 +66,13 @@ Gonçalo Vilhena
 
  * Utils
   * Contém uma implementação genérica de uma Tree<TKey, TValue> que permite guardar TValues, indexados em árvore pelas TKeys
->>>>>>> 3b448d5833c3a75f462d94c6ce179258b965bde1
 
  
 ### Exemplo de um Pedido ###
 
 Este módulo tem por objectivo dotar os participantes com a capacidade de compreensão e utilização de técnicas actuais de programação em C# 3.0, 3.5 e 4.0, conseguindo identificar problemas a que estas se adequam.
 
-<<<<<<< HEAD
-## Limitações ##
-=======
 ## Compromissos ##
->>>>>>> 3b448d5833c3a75f462d94c6ce179258b965bde1
 
  * Router implementado com uma implementação de IRouterCollection em Dicionário, existe uma outra implementação em Tree mas não está a funcionar correctamente, como o Router utiliza uma IRouterCollection é basta alterar uma linha de código para passar a utilizar uma implementação de IRouterCollection em Tree
  * O tratamento de excepções na UI é global pelo que não são diferenciados os diferentes pedidos por cada tipo de excepção. Estas excepões são tratadas de igual modo que qualguer pedido, pelo que o controller devolve sempre uma IView, que neste caso é uma ExceptionView onde é mostrada a mensagem da excepção ao utilizador, com a arquitectura implementada é bastante fácil extender para comportamentos diferentes de diferentes tipos de excepções
