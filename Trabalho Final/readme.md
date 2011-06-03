@@ -70,22 +70,22 @@ Gonçalo Vilhena
  
 ### Exemplo de um Pedido ###
 
- 1 - Pedido Http GET do cliente ao endereço http://localhost:8080/system32
- 2 - O pedido é rerireccionado para a Waitcallback registada no ReflectorControllor com o nome ProcessRequest
- 3 - O ProcessRequest chama o método Router.Route com o URL system32
- 4 - O Router chama o método this._route.Seek do objecto IRouteContainer<Type> com o URL passado
- 5 - O RouterContainer (implementado em lista) percorre o dicionário de patterns e identifica a rota correspontente
- 6 - O método Seek do RouterCollection revolve um RouteResult com um Map (dicionário de chave, valor com os pares patter e valor do URL encontrado) e o Type do handler específico responsável por tratar os dados, neste caso o ContextHandler
- 7 - O Router do controller cria uma instância do tipo devolvido pelo Router, Activator.CreateInstance(result.Handler)
- 8 - Chama o método _binder.Bind(result.Map, handler) sobre o handler instanciado e o mapa, fazendo o match da propriedade [HandlerMapAttribute("{ctx}")] com o nome Context afectando o valor system32 definido no Map
- 9 - Devolve o ContextHandler ao Controller
- 10 - O ReflectorController executa o método Run() sobre o ContextHandler
- 11 - O ContextHandler na implementação do método Run() chama o serviço AssemblyModel.GetContext(Context) para obter o contexto e em seguida executa o método AssemblyModel.ListNamespaces(Context) para obter a lista dos namespaces do contexto system32
- 12 - Utiliza o Objecto Context e a lista de Namespace e cria um objecto ContextView com estes dados, esta view é devolvida ao ReflectorController
- 13 - O ReflectorController executa o método ViewBinder.BindView(view) sobre a view fazendo o bind de propriedades e chaves definidos no ficheiro /Test/Views/ContextView.txt (que é encontrado utilizando o mesmo nome do tipo da view)
- 14 - Como o ficheiro ContextView.txt têm por exemplo uma tag <@Assemblies> então vai iterar sobre a lista de Assemblies da view e para cada Assembly vai produzir a substituição das tags definidas no ficheiro ContextView.Assemblies.txt
- 15 - No final do Bind é devolvido ao Controller a string que contêm o HTML com a resposta
- 16 - O controller devolve a resposta do Binder na Response do pedido get http
+ * 1 - Pedido Http GET do cliente ao endereço http://localhost:8080/system32
+ * 2 - O pedido é rerireccionado para a Waitcallback registada no ReflectorControllor com o nome ProcessRequest
+ * 3 - O ProcessRequest chama o método Router.Route com o URL system32
+ * 4 - O Router chama o método this._route.Seek do objecto IRouteContainer<Type> com o URL passado
+ * 5 - O RouterContainer (implementado em lista) percorre o dicionário de patterns e identifica a rota correspontente
+ * 6 - O método Seek do RouterCollection revolve um RouteResult com um Map (dicionário de chave, valor com os pares patter e valor do URL encontrado) e o Type do handler específico responsável por tratar os dados, neste caso o ContextHandler
+ * 7 - O Router do controller cria uma instância do tipo devolvido pelo Router, Activator.CreateInstance(result.Handler)
+ * 8 - Chama o método _binder.Bind(result.Map, handler) sobre o handler instanciado e o mapa, fazendo o match da propriedade [HandlerMapAttribute("{ctx}")] com o nome Context afectando o valor system32 definido no Map
+ * 9 - Devolve o ContextHandler ao Controller
+ * 10 - O ReflectorController executa o método Run() sobre o ContextHandler
+ * 11 - O ContextHandler na implementação do método Run() chama o serviço AssemblyModel.GetContext(Context) para obter o contexto e em seguida executa o método AssemblyModel.ListNamespaces(Context) para obter a lista dos namespaces do contexto system32
+ * 12 - Utiliza o Objecto Context e a lista de Namespace e cria um objecto ContextView com estes dados, esta view é devolvida ao ReflectorController
+ * 13 - O ReflectorController executa o método ViewBinder.BindView(view) sobre a view fazendo o bind de propriedades e chaves definidos no ficheiro /Test/Views/ContextView.txt (que é encontrado utilizando o mesmo nome do tipo da view)
+ * 14 - Como o ficheiro ContextView.txt têm por exemplo uma tag <@Assemblies> então vai iterar sobre a lista de Assemblies da view e para cada Assembly vai produzir a substituição das tags definidas no ficheiro ContextView.Assemblies.txt
+ * 15 - No final do Bind é devolvido ao Controller a string que contêm o HTML com a resposta
+ * 16 - O controller devolve a resposta do Binder na Response do pedido get http
 
 ## Compromissos ##
 
